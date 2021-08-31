@@ -32,7 +32,7 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
-        public void EliminarDocenteExisteValido123()
+        public void EliminarDocenteExisteValido1256()
         {
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
             string CodDocente = "D0001";
@@ -41,6 +41,7 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
+
 
 
 
