@@ -23,25 +23,7 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
-        public void EliminarDocenteExisteValido2()
-        {
-            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = "D0001";
-            bool Expected = true;
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(true);
-            bool actual = D.Object.eliminar_docente(CodDocente);
-            Assert.AreEqual(actual, Expected);
-        }
-
-        public void EliminarDocenteExisteValido23()
-        {
-            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = "D0001";
-            bool Expected = true;
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(true);
-            bool actual = D.Object.eliminar_docente(CodDocente);
-            Assert.AreEqual(actual, Expected);
-        }
+        
 
 
 
