@@ -23,24 +23,42 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
-        public void EliminarDocenteExisteValido12()
+        [TestMethod]
+        public void EliminarDocenteNoexisteValido()
         {
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = "D0001";
-            bool Expected = true;
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(true);
-            bool actual = D.Object.eliminar_docente(CodDocente);
-            Assert.AreEqual(actual, Expected);
+            string CodDocente = "D003";
+            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, D.Object.eliminar_docente(CodDocente));
         }
-        public void EliminarDocenteExisteValido1256()
+        [TestMethod]
+        public void EliminarDocenteNoValido()
         {
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = "D0001";
-            bool Expected = true;
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(true);
-            bool actual = D.Object.eliminar_docente(CodDocente);
+            string CodDocente = null;
+            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, D.Object.eliminar_docente(CodDocente));
+
+        }
+        //_____________________________________TETS MOQ EDITAR_________________________________//
+        [TestMethod]
+        public void Editar_docente_codnoValido()
+        {
+            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
+            string codigo = "1";
+            string Nombres = "Ana Roci";
+            string Apellido = "Cardenas Maita";
+            string Titulo = "Magister en Ciencias en Sistemas de Informacion";
+            string Facultad = "Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica";
+            string EProfesional = "Ingenieria Informatica y de Sistemas";
+            string Categoria = "NOMBRADO";
+            bool Expected = false;
+            D.Setup(a => a.Editar_Docente(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(false);
+            bool actual = D.Object.Editar_Docente(codigo, Nombres, Apellido, Titulo, Facultad, EProfesional, Categoria);
             Assert.AreEqual(actual, Expected);
         }
+
+
 
 
 

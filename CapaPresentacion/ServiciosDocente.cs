@@ -14,24 +14,49 @@ namespace CapaPresentacion
         public virtual bool eliminar_docente(string codigo)
         {
             int i;
-
-           
-             conexion.Open();
-             SqlCommand cmd = new SqlCommand("SP_ELIMINARDOCENTE", conexion);
-             cmd.CommandType = CommandType.StoredProcedure;
-             conexion.Open();
-             cmd.Parameters.AddWithValue("@IDDOCENTE", codigo);
-             i = cmd.ExecuteNonQuery();
-             conexion.Close();
-             if(i==1)
-             {
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("SP_ELIMINARDOCENTE", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+            cmd.Parameters.AddWithValue("@IDDOCENTE", codigo);
+            i = cmd.ExecuteNonQuery();
+            conexion.Close();
+            if (i == 1)
+            {
                 return true;
-             }
-             else
-             {
+            }
+            else
+            {
                 return false;
-             }
-              
+            }
+
+        }
+
+        //SERVISE  DOCENTE EDIATR
+        public virtual bool Editar_Docente(string codigo, string Nombres, string Apellido, string Titulo, string Faculad, string EProfesional, string Categoria)
+        {
+            int i;
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("SP_EDITARDOCENTE", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+            cmd.Parameters.AddWithValue("@IDDOCENTE", codigo);
+            i = cmd.ExecuteNonQuery();
+            cmd.Parameters.AddWithValue("@NOMBRES", Nombres);
+            cmd.Parameters.AddWithValue("@APELLIDOS", Apellido);
+            cmd.Parameters.AddWithValue("@TITULO", Titulo);
+            cmd.Parameters.AddWithValue("@FACULTAD", Faculad);
+            cmd.Parameters.AddWithValue("@EPROFESIONAL", EProfesional);
+            cmd.Parameters.AddWithValue("@EPROFESIONAL", Categoria);
+            conexion.Close();
+            if (i == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
