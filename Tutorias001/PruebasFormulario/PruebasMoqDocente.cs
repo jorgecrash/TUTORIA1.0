@@ -192,6 +192,21 @@ namespace PruebasFormulario
 
 
         //Buscar Docente
+        
+        [TestMethod]
+        public void BuscarDocente()
+        {
+            E_Docente edoc = new E_Docente();
+            edoc.Nombres = "Abdon";
+
+            //string busq = "Abdon";
+
+            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
+            int Expected = 1;
+            D.Setup(a => a.SearchDocente(It.IsAny<E_Docente>())).Returns(1);
+            int actual = D.Object.SearchDocente(edoc);
+            Assert.AreEqual(actual, Expected);
+        }
 
 
     }
