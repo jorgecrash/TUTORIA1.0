@@ -42,7 +42,6 @@ D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.pdb
-C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb
