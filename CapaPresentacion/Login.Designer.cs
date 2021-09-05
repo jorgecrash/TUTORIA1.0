@@ -31,6 +31,7 @@ namespace CapaPresentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblError = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelContraseña = new System.Windows.Forms.Label();
             this.labelUsuario = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@ namespace CapaPresentacion
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnIniciar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lblError = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,13 @@ namespace CapaPresentacion
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // lblError
+            // 
+            resources.ApplyResources(this.lblError, "lblError");
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Name = "lblError";
             // 
             // label4
             // 
@@ -178,13 +185,6 @@ namespace CapaPresentacion
             this.bunifuMetroTextbox1.isPassword = false;
             this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // lblError
-            // 
-            resources.ApplyResources(this.lblError, "lblError");
-            this.lblError.BackColor = System.Drawing.Color.Transparent;
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Name = "lblError";
             // 
             // Login
             // 
