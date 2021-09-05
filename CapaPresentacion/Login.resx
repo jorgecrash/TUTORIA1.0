@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblError.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 230</value>
+    <value>166, 119</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblError.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lblError.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 32</value>
+    <value>97, 17</value>
   </data>
   <data name="lblError.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -153,14 +157,10 @@
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 258</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>161, 133</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 32</value>
+    <value>176, 17</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -187,13 +187,10 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="labelContraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 163</value>
-  </data>
-  <data name="labelContraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>16, 84</value>
   </data>
   <data name="labelContraseña.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 55</value>
+    <value>142, 29</value>
   </data>
   <data name="labelContraseña.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -220,13 +217,10 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 37</value>
-  </data>
-  <data name="labelUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>56, 19</value>
   </data>
   <data name="labelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 55</value>
+    <value>102, 29</value>
   </data>
   <data name="labelUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -250,16 +244,13 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="txtcontraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 163</value>
-  </data>
-  <data name="txtcontraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>164, 84</value>
   </data>
   <data name="txtcontraseña.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="txtcontraseña.Size" type="System.Drawing.Size, System.Drawing">
-    <value>546, 61</value>
+    <value>275, 34</value>
   </data>
   <data name="txtcontraseña.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -280,13 +271,10 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="txtusuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 27</value>
-  </data>
-  <data name="txtusuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>164, 14</value>
   </data>
   <data name="txtusuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>546, 61</value>
+    <value>275, 34</value>
   </data>
   <data name="txtusuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -304,13 +292,10 @@
     <value>5</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 386</value>
-  </data>
-  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>115, 199</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 310</value>
+    <value>446, 160</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -334,13 +319,10 @@
     <value>Palatino Linotype, 25pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 174</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>104, 90</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>923, 113</value>
+    <value>466, 57</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -361,16 +343,13 @@
     <value>5</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 345</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>101, 178</value>
   </data>
   <data name="pictureBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>938, 384</value>
+    <value>469, 198</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1331,13 +1310,10 @@
     <value>Zoom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1130, 138</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>565, 71</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 231</value>
+    <value>134, 119</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -8273,16 +8249,13 @@
     <value>Zoom</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 138</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>3, 71</value>
   </data>
   <data name="panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 250</value>
+    <value>96, 129</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -8361,13 +8334,10 @@
     <value>Zoom</value>
   </data>
   <data name="btnCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1320, 12</value>
-  </data>
-  <data name="btnCerrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>660, 6</value>
   </data>
   <data name="btnCerrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 74</value>
+    <value>35, 38</value>
   </data>
   <data name="btnCerrar.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -8451,13 +8421,13 @@
 </value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 742</value>
+    <value>-2, 383</value>
   </data>
   <data name="btnIniciar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 12, 12, 12</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="btnIniciar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1402, 108</value>
+    <value>701, 56</value>
   </data>
   <data name="btnIniciar.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -8481,13 +8451,13 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="bunifuMetroTextbox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 0</value>
+    <value>-2, 0</value>
   </data>
   <data name="bunifuMetroTextbox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuMetroTextbox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1394, 97</value>
+    <value>697, 50</value>
   </data>
   <data name="bunifuMetroTextbox1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -8508,10 +8478,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>16, 31</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1394, 847</value>
+    <value>697, 437</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -11959,14 +11929,8 @@
         AAA=
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Login Tutorias</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Login</value>
