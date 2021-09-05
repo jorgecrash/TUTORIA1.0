@@ -58,5 +58,22 @@ namespace CapaPresentacion
                 return false;
             }
         }
+        
+        
+        public int SearchDocente(E_Docente docente)
+        {
+            DataTable tabla = new DataTable();
+            SqlCommand cmd = new SqlCommand("SP_BUSCARDOCENTE", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+
+            cmd.Parameters.AddWithValue("@BUSCAR", docente.Search);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+
+            conexion.Close();
+            return tabla.Rows.Count;
+        }
     }
 }
