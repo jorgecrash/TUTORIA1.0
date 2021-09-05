@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CapaPresentacion",
+    "\\Tutorias001",
+    "\\Tutorias001\\PruebasFormulario"
   ],
-  "SelectedNode": "\\Tutorias001.sln",
+  "SelectedNode": "\\CapaPresentacion\\ServiciosDocente.cs",
   "PreviewInSolutionExplorer": false
 }
