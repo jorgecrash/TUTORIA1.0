@@ -17,10 +17,28 @@ namespace CapaNegocio
         {
             return data.ListTutorados();
         }
+        public DataTable ListingLISTAREGISTROESTUDIANTETUTORIA()
+        {
+            return data.LISTAREGISTROESTUDIANTETUTORIA();
+        }
+        public DataTable ListingLISTAREGISTRODOCENTETUTORIA()
+        {
+            return data.LISTAREGISTRODOCENTETUTORIA();
+        }
         public DataTable SearchingTutorados(string search)
         {
             entities.Search = search;
             return data.SearchTutorados(entities);
+        }
+        public DataTable SearchingREGISTRO_TUTOR(string search)
+        {
+            entities.Search = search;
+            return data.SearchREGISTRO_TUTOR(entities);
+        }
+        public DataTable SearchingREGISTRO_ESTUDIANTE(string search)
+        {
+            entities.Search = search;
+            return data.SearchREGISTRO_ESTUDIANTE(entities);
         }
 
         public void CreatingTutorado(E_Registro product)
@@ -33,7 +51,7 @@ namespace CapaNegocio
             data.UpdateTutorado(product);
         }
 
-        public void DeletingTutorado(int Id)
+        public void DeletingTutorado(string Id)
         {
             data.DeleteTutorado(Id);
         }

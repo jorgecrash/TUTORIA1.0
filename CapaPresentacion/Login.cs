@@ -15,19 +15,20 @@ namespace CapaPresentacion
     {
         public string usuario;
         public string clave;
+        int m, mx, my;
         public Login()
         {
             InitializeComponent();
             //buttonIngresar.Focus();
-            
+
         }
 
-        public bool logins(string _usuario,string _clave)
+        public bool logins(string _usuario, string _clave)
         {
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias"))
+                using (SqlConnection conexion = new SqlConnection("Server=LAPTOP-IUT020T4;Integrated Security=yes; Database=Tutorias"))
                 {
                     conexion.Open();
                     //_usuario = txtusuario.Text;
@@ -38,17 +39,36 @@ namespace CapaPresentacion
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            //MessageBox.Show("Login exitoso.");
+                            MessageBox.Show("Login exitoso.");
                             obtenerusuario();
                             Close();
                             return true;
-                            
+
                         }
                         else
                         {
-                           // MessageBox.Show("Datos incorrectos.");
-                            txtusuario.Text = "";
-                            txtcontraseña.Text = "";
+                            if (txtusuario.Text == "" && txtcontraseña.Text != "")
+                            {
+                                msgError("Llenar el campo usuario");
+                                txtusuario.Focus();
+                            }
+                            else if (txtusuario.Text != "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar el campo contraseña");
+                                txtcontraseña.Focus();
+                            }
+                            else if (txtusuario.Text == "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar ambos campos");
+                                txtusuario.Focus();
+                            }
+                            else
+                            {
+                                msgError("Error Usuario i/o Contraseña");
+                                txtusuario.Text = "";
+                                txtcontraseña.Text = "";
+                                txtusuario.Focus();
+                            }
                             return false;
                         }
                     }
@@ -61,9 +81,16 @@ namespace CapaPresentacion
             }
 
         }
+
+        private void msgError(string msg)
+        {
+            lblError.Text = msg;
+            lblError.Visible = true;
+        }
+
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-           
+
         }
         public string obtenerusuario()
         {
@@ -111,14 +138,46 @@ namespace CapaPresentacion
             usuario = txtusuario.Text;
             clave = txtcontraseña.Text;
             bool v = logins(usuario, clave);
-            if (v == true)
+            /*if (v == true)
             {
                 MessageBox.Show("Login exitoso.");
             }
             else
             {
                 MessageBox.Show("ERROR : Ingrese usuario y clave ");
+            }*/
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            m = 1;
+            mx = e.X;
+            my = e.Y;
+        }
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (m == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
             }
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            m = 0;
         }
     }
 }

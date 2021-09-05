@@ -46,14 +46,12 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void DeleteFicha(int Id)
+        public void DeleteFicha(string Id)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARFICHA", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-
             cmd.Parameters.AddWithValue("@IDFICHATUTORIA", Id);
-
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
