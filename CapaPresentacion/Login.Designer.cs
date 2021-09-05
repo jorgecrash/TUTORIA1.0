@@ -93,8 +93,8 @@ namespace CapaPresentacion
             this.btnIniciar.IconZoom = 90D;
             this.btnIniciar.IsTab = false;
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Normalcolor = System.Drawing.Color.Maroon;
-            this.btnIniciar.OnHovercolor = System.Drawing.Color.Maroon;
+            this.btnIniciar.Normalcolor = System.Drawing.Color.SeaGreen;
+            this.btnIniciar.OnHovercolor = System.Drawing.Color.MediumSeaGreen;
             this.btnIniciar.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnIniciar.selected = false;
             this.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,11 +144,13 @@ namespace CapaPresentacion
             // 
             // txtcontraseña
             // 
+            this.txtcontraseña.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this.txtcontraseña, "txtcontraseña");
             this.txtcontraseña.Name = "txtcontraseña";
             // 
             // txtusuario
             // 
+            this.txtusuario.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this.txtusuario, "txtusuario");
             this.txtusuario.Name = "txtusuario";
             // 
@@ -208,14 +210,16 @@ namespace CapaPresentacion
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Snow;
             this.panel4.Controls.Add(this.label1);
             resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Name = "panel4";
             // 
             // btnCerrar
             // 
             this.btnCerrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnCerrar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCerrar.BackColor = System.Drawing.Color.Maroon;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.BorderRadius = 0;
             this.btnCerrar.ButtonText = "Cerrar";
@@ -234,8 +238,8 @@ namespace CapaPresentacion
             this.btnCerrar.IconZoom = 50D;
             this.btnCerrar.IsTab = false;
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnCerrar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnCerrar.Normalcolor = System.Drawing.Color.Maroon;
+            this.btnCerrar.OnHovercolor = System.Drawing.Color.DarkRed;
             this.btnCerrar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCerrar.selected = false;
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -262,7 +266,7 @@ namespace CapaPresentacion
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel4);
