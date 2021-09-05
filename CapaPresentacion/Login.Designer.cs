@@ -73,7 +73,7 @@ namespace CapaPresentacion
             // btnIniciar
             // 
             this.btnIniciar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnIniciar.BackColor = System.Drawing.Color.Maroon;
+            this.btnIniciar.BackColor = System.Drawing.Color.SeaGreen;
             resources.ApplyResources(this.btnIniciar, "btnIniciar");
             this.btnIniciar.BorderRadius = 0;
             this.btnIniciar.ButtonText = " Iniciar ";
@@ -215,7 +215,7 @@ namespace CapaPresentacion
             // btnCerrar
             // 
             this.btnCerrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCerrar.BackColor = System.Drawing.Color.DarkRed;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.BorderRadius = 0;
             this.btnCerrar.ButtonText = "Cerrar";
