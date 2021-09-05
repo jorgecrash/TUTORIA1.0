@@ -64,14 +64,3 @@ D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb

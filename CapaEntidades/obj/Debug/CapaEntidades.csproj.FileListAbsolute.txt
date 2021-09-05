@@ -34,9 +34,3 @@ D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaEntidades\obj\Debug\CapaEntid
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaEntidades\obj\Debug\CapaEntidades.dll
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaEntidades\obj\Debug\CapaEntidades.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb

@@ -52,12 +52,3 @@ D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaDatos\obj\Debug\CapaDatos.csp
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaDatos\obj\Debug\CapaDatos.dll
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaDatos\obj\Debug\CapaDatos.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaDatos.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaDatos.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaEntidades.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaEntidades.pdb
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.dll
-C:\Users\TOSHIBA\Source\Repos\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.pdb
