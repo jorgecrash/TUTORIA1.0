@@ -40,3 +40,9 @@ D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.dll
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.pdb
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb

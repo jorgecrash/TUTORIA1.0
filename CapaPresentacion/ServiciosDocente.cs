@@ -59,7 +59,7 @@ namespace CapaPresentacion
             }
         }
         
-        
+        /*
         public int SearchDocente(E_Docente docente)
         {
             DataTable tabla = new DataTable();
@@ -74,6 +74,6 @@ namespace CapaPresentacion
 
             conexion.Close();
             return tabla.Rows.Count;
-        }
+        }*/
     }
 }
