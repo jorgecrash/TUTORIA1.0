@@ -23,7 +23,7 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
-        
+
         //_____________________________________TETS MOQ EDITAR___________________________________//
         [TestMethod]
         public void Editar_docente_codnoValido()
