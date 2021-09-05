@@ -32,7 +32,7 @@ namespace CapaPresentacion
 
         }
 
-        //SERVISE  DOCENTE EDIATR
+        //SERVISE  DOCENTE EDITAR
         public virtual bool Editar_Docente(string codigo, string Nombres, string Apellido, string Titulo, string Faculad, string EProfesional, string Categoria)
         {
             int i;

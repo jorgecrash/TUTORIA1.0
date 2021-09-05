@@ -14,6 +14,7 @@ namespace PruebasFormulario
     public class PruebasMoqDocente
     {
         [TestMethod]
+        //---------------------------- test eliminar-----------------------
         public void EliminarDocenteExisteValido()
         {
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
@@ -23,24 +24,8 @@ namespace PruebasFormulario
             bool actual = D.Object.eliminar_docente(CodDocente);
             Assert.AreEqual(actual, Expected);
         }
-        [TestMethod]
-        public void EliminarDocenteNoexisteValido()
-        {
-            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = "D003";
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(false);
-            Assert.AreEqual(false, D.Object.eliminar_docente(CodDocente));
-        }
-        [TestMethod]
-        public void EliminarDocenteNoValido()
-        {
-            Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
-            string CodDocente = null;
-            D.Setup(a => a.eliminar_docente(It.IsAny<string>())).Returns(false);
-            Assert.AreEqual(false, D.Object.eliminar_docente(CodDocente));
 
-        }
-        //_____________________________________TETS MOQ EDITAR_________________________________//
+        //_____________________________________TETS MOQ EDITAR___________________________________//
         [TestMethod]
         public void Editar_docente_codnoValido()
         {
@@ -206,7 +191,7 @@ namespace PruebasFormulario
         }
 
 
-
+        //Buscar Docente
 
 
     }
