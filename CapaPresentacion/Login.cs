@@ -163,7 +163,6 @@ namespace CapaPresentacion
             mx = e.X;
             my = e.Y;
         }
-
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
 
