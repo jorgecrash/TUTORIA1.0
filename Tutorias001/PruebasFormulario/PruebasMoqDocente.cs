@@ -24,7 +24,7 @@ namespace PruebasFormulario
             Assert.AreEqual(actual, Expected);
         }
         
-        //_____________________________________TETS MOQ EDITAR_________________________________//
+        //_____________________________________TETS MOQ EDITAR___________________________________//
         [TestMethod]
         public void Editar_docente_codnoValido()
         {
