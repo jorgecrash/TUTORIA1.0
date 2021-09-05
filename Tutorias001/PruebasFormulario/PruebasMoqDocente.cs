@@ -200,7 +200,6 @@ namespace PruebasFormulario
             edoc.Nombres = "Abdon";
 
             //string busq = "Abdon";
-
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
             int Expected = 1;
             D.Setup(a => a.SearchDocente(It.IsAny<E_Docente>())).Returns(1);
