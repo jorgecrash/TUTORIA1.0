@@ -64,3 +64,14 @@ D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.dll
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.pdb
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb

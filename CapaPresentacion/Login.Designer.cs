@@ -43,6 +43,7 @@ namespace CapaPresentacion
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnIniciar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.lblError = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@ namespace CapaPresentacion
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(244)))), ((int)(((byte)(240)))));
+            this.panel3.Controls.Add(this.lblError);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.labelContraseña);
             this.panel3.Controls.Add(this.labelUsuario);
@@ -177,6 +179,13 @@ namespace CapaPresentacion
             this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // lblError
+            // 
+            resources.ApplyResources(this.lblError, "lblError");
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Name = "lblError";
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
@@ -216,5 +225,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnCerrar;
         private Bunifu.Framework.UI.BunifuFlatButton btnIniciar;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private System.Windows.Forms.Label lblError;
     }
 }
