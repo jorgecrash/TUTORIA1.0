@@ -27,7 +27,7 @@ namespace CapaPresentacion
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias"))
+                using (SqlConnection conexion = new SqlConnection("Server=DESKTOP-8D3JFRS;Integrated Security=yes; Database=Tutorias"))
                 {
                     conexion.Open();
                     //_usuario = txtusuario.Text;
@@ -119,6 +119,11 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("ERROR : Ingrese usuario y clave ");
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
