@@ -564,7 +564,7 @@
 </value>
   </data>
   <data name="btnCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 572</value>
+    <value>25, 570</value>
   </data>
   <data name="btnCerrar.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 45</value>
@@ -664,7 +664,7 @@
     <value>0, 259</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 53</value>
+    <value>300, 49</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -829,7 +829,7 @@
 </value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 572</value>
+    <value>167, 570</value>
   </data>
   <data name="btnIniciar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -1021,7 +1021,7 @@
     <value>4</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 349</value>
+    <value>41, 336</value>
   </data>
   <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1048,7 +1048,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 318</value>
+    <value>14, 305</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
