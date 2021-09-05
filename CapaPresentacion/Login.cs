@@ -164,6 +164,10 @@ namespace CapaPresentacion
             my = e.Y;
         }
 
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
         private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)

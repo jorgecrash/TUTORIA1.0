@@ -37,11 +37,11 @@ namespace CapaPresentacion
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblError = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.labelContraseña = new System.Windows.Forms.Label();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,7 +71,7 @@ namespace CapaPresentacion
             // btnIniciar
             // 
             this.btnIniciar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnIniciar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnIniciar.BackColor = System.Drawing.Color.Maroon;
             resources.ApplyResources(this.btnIniciar, "btnIniciar");
             this.btnIniciar.BorderRadius = 0;
             this.btnIniciar.ButtonText = " Iniciar ";
@@ -125,14 +125,6 @@ namespace CapaPresentacion
             this.lblError.Name = "lblError";
             this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(102)))), ((int)(((byte)(160)))));
-            this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // labelContraseña
             // 
             resources.ApplyResources(this.labelContraseña, "labelContraseña");
@@ -157,6 +149,14 @@ namespace CapaPresentacion
             // 
             resources.ApplyResources(this.txtusuario, "txtusuario");
             this.txtusuario.Name = "txtusuario";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(102)))), ((int)(((byte)(160)))));
+            this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // bunifuElipse3
             // 
@@ -191,6 +191,7 @@ namespace CapaPresentacion
             this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources._163809372_3937792012970771_1511004919839933106_n;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             this.pictureBox2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseMove);
             this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
@@ -212,7 +213,7 @@ namespace CapaPresentacion
             // btnCerrar
             // 
             this.btnCerrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnCerrar.BackColor = System.Drawing.Color.Maroon;
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.BorderRadius = 0;
             this.btnCerrar.ButtonText = "Cerrar";
