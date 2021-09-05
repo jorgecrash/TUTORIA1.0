@@ -51,6 +51,8 @@ namespace CapaPresentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -246,6 +248,16 @@ namespace CapaPresentacion
             this.bunifuElipse4.ElipseRadius = 10;
             this.bunifuElipse4.TargetControl = this.btnCerrar;
             // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 2;
+            this.gunaElipse2.TargetControl = this.txtusuario;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 2;
+            this.gunaElipse3.TargetControl = this.txtcontraseña;
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
@@ -295,5 +307,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuFlatButton btnCerrar;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
     }
 }
