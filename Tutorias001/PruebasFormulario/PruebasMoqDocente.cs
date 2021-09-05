@@ -14,6 +14,7 @@ namespace PruebasFormulario
     public class PruebasMoqDocente
     {
         [TestMethod]
+        //---------------------------- test eliminar-----------------------
         public void EliminarDocenteExisteValido()
         {
             Mock<ServiciosDocente> D = new Mock<ServiciosDocente>();
