@@ -277,6 +277,7 @@ namespace CapaPresentacion
             this.ForeColor = System.Drawing.Color.OldLace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.Opacity = 0.9D;
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
