@@ -117,97 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelContraseña.Name" xml:space="preserve">
-    <value>labelContraseña</value>
-  </data>
-  <data name="&gt;&gt;labelContraseña.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelContraseña.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;labelContraseña.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.Name" xml:space="preserve">
-    <value>labelUsuario</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtcontraseña.Name" xml:space="preserve">
-    <value>txtcontraseña</value>
-  </data>
-  <data name="&gt;&gt;txtcontraseña.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtcontraseña.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;txtcontraseña.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtusuario.Name" xml:space="preserve">
-    <value>txtusuario</value>
-  </data>
-  <data name="&gt;&gt;txtusuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtusuario.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;txtusuario.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblError.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 199</value>
+  <data name="lblError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 230</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>446, 160</value>
+  <data name="lblError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 32</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="lblError.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+  <data name="lblError.Text" xml:space="preserve">
+    <value>Error mensaje</value>
+  </data>
+  <data name="lblError.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblError.Name" xml:space="preserve">
+    <value>lblError</value>
+  </data>
+  <data name="&gt;&gt;lblError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblError.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;lblError.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 133</value>
+    <value>322, 258</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 17</value>
+    <value>352, 32</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -225,7 +178,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelContraseña.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -234,10 +187,13 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="labelContraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 84</value>
+    <value>32, 163</value>
+  </data>
+  <data name="labelContraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="labelContraseña.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 29</value>
+    <value>287, 55</value>
   </data>
   <data name="labelContraseña.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -255,7 +211,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;labelContraseña.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="labelUsuario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,10 +220,13 @@
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 19</value>
+    <value>112, 37</value>
+  </data>
+  <data name="labelUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="labelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 29</value>
+    <value>203, 55</value>
   </data>
   <data name="labelUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -285,19 +244,22 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;labelUsuario.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtcontraseña.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="txtcontraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 84</value>
+    <value>328, 163</value>
+  </data>
+  <data name="txtcontraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="txtcontraseña.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="txtcontraseña.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 34</value>
+    <value>546, 61</value>
   </data>
   <data name="txtcontraseña.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -312,16 +274,19 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;txtcontraseña.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtusuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.16pt</value>
   </data>
   <data name="txtusuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 14</value>
+    <value>328, 27</value>
+  </data>
+  <data name="txtusuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="txtusuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 34</value>
+    <value>546, 61</value>
   </data>
   <data name="txtusuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -336,6 +301,30 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;txtusuario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 386</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>892, 310</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -345,10 +334,13 @@
     <value>Palatino Linotype, 25pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 90</value>
+    <value>208, 174</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 57</value>
+    <value>923, 113</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -369,14 +361,16 @@
     <value>5</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 178</value>
+    <value>202, 345</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
   <data name="pictureBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 198</value>
+    <value>938, 384</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1337,10 +1331,13 @@
     <value>Zoom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 71</value>
+    <value>1130, 138</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 119</value>
+    <value>268, 231</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -8276,13 +8273,16 @@
     <value>Zoom</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 71</value>
+    <value>6, 138</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 129</value>
+    <value>192, 250</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -8361,10 +8361,13 @@
     <value>Zoom</value>
   </data>
   <data name="btnCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 6</value>
+    <value>1320, 12</value>
+  </data>
+  <data name="btnCerrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="btnCerrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 38</value>
+    <value>70, 74</value>
   </data>
   <data name="btnCerrar.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -8448,13 +8451,13 @@
 </value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 383</value>
+    <value>-4, 742</value>
   </data>
   <data name="btnIniciar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="btnIniciar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>701, 56</value>
+    <value>1402, 108</value>
   </data>
   <data name="btnIniciar.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -8478,13 +8481,13 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="bunifuMetroTextbox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 0</value>
+    <value>-4, 0</value>
   </data>
   <data name="bunifuMetroTextbox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>8, 8, 8, 8</value>
   </data>
   <data name="bunifuMetroTextbox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>697, 50</value>
+    <value>1394, 97</value>
   </data>
   <data name="bunifuMetroTextbox1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -8505,10 +8508,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>16, 31</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 437</value>
+    <value>1394, 847</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -11955,6 +11958,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAA=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

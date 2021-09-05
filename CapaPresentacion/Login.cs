@@ -38,7 +38,7 @@ namespace CapaPresentacion
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            //MessageBox.Show("Login exitoso.");
+                            MessageBox.Show("Login exitoso.");
                             obtenerusuario();
                             Close();
                             return true;
@@ -46,9 +46,28 @@ namespace CapaPresentacion
                         }
                         else
                         {
-                           // MessageBox.Show("Datos incorrectos.");
-                            txtusuario.Text = "";
-                            txtcontraseña.Text = "";
+                            if (txtusuario.Text == "" && txtcontraseña.Text != "")
+                            {
+                                msgError("Llenar el campo usuario");
+                                txtusuario.Focus();
+                            }
+                            else if (txtusuario.Text != "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar el campo contraseña");
+                                txtcontraseña.Focus();
+                            }
+                            else if (txtusuario.Text == "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar ambos campos");
+                                txtusuario.Focus();
+                            }
+                            else
+                            {
+                                msgError("Error Usuario i/o Contraseña");
+                                txtusuario.Text = "";
+                                txtcontraseña.Text = "";
+                                txtusuario.Focus();
+                            }
                             return false;
                         }
                     }
@@ -61,6 +80,13 @@ namespace CapaPresentacion
             }
 
         }
+
+        private void msgError(string msg)
+        {
+            lblError.Text = msg;
+            lblError.Visible = true;
+        }
+
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
            
@@ -111,14 +137,14 @@ namespace CapaPresentacion
             usuario = txtusuario.Text;
             clave = txtcontraseña.Text;
             bool v = logins(usuario, clave);
-            if (v == true)
+            /*if (v == true)
             {
                 MessageBox.Show("Login exitoso.");
             }
             else
             {
                 MessageBox.Show("ERROR : Ingrese usuario y clave ");
-            }
+            }*/
         }
     }
 }
