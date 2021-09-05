@@ -295,3 +295,23 @@ D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresen
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\DESARROLLO DE SOFTWARE I\git\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmDocente.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiante.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFicha.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmInformation.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantDocente.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantEstudiante.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantFicha.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantRegistro.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantTutoria.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegistro.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmSuccess.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmTutoria.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
