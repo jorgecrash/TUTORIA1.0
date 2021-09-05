@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using CapaEntidades; 
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -59,7 +61,7 @@ namespace CapaPresentacion
             }
         }
         
-        
+        /*
         public int SearchDocente(E_Docente docente)
         {
             DataTable tabla = new DataTable();
@@ -74,6 +76,6 @@ namespace CapaPresentacion
 
             conexion.Close();
             return tabla.Rows.Count;
-        }
+        }*/
     }
 }

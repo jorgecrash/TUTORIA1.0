@@ -33,7 +33,7 @@ namespace CapaNegocio
             data.UpdateFicha(product);
         }
 
-        public void DeletingFicha(int Id)
+        public void DeletingFicha(string Id)
         {
             data.DeleteFicha(Id);
         }

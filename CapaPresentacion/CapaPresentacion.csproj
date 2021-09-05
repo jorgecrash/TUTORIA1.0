@@ -39,6 +39,10 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>C:\Users\User\Downloads\BUNIFU\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\Downloads\Guna-Framework-master\Guna-Framework-master\Guna Framework\Guna Framework\bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -190,6 +194,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -213,6 +218,24 @@
       <Project>{8a244e16-f793-42c9-b94d-7a0536872cb8}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\163809372_3937792012970771_1511004919839933106_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More Of My Robots Enjoying The Quiet Wonder Of The World.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeeee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink-animated-hd-wallpapers-set-anime-wallpaper-animated-backgrounds-1697898759.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widescreen-desktop-wallpapers-1288093846.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,8 +43,9 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    entities.IdTutoria = Convert.ToInt32(textIdTutoria.Text);
-                    entities.IdEstudiante = Convert.ToInt32(textIdEstudiante.Text);
+                    entities.IdFichaTutoria = textId.Text;
+                    entities.IdTutoria = textIdTutoria.Text;
+                    entities.IdEstudiante = textIdEstudiante.Text;
                     entities.NroCelular = textNroCelular.Text;
                     entities.Direccion = textDireccion.Text;
                     entities.Email = textEmail.Text;
@@ -67,9 +68,9 @@ namespace CapaPresentacion
             {
                 try
                 {
-                   // entities.IdFichaTutoria = Convert.ToInt32(textId.Text);
-                    entities.IdTutoria = Convert.ToInt32(textIdTutoria.Text);
-                    entities.IdEstudiante = Convert.ToInt32(textIdEstudiante.Text);
+                   
+                    entities.IdTutoria =textIdTutoria.Text;
+                    entities.IdEstudiante =textIdEstudiante.Text;
                     entities.NroCelular = textNroCelular.Text;
                     entities.Direccion = textDireccion.Text;
                     entities.Email = textEmail.Text;

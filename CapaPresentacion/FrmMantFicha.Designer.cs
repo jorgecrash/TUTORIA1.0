@@ -96,7 +96,7 @@ namespace CapaPresentacion
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(815, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(805, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 37);
@@ -182,7 +182,7 @@ namespace CapaPresentacion
             this.topFormularioF.Location = new System.Drawing.Point(0, 0);
             this.topFormularioF.Margin = new System.Windows.Forms.Padding(4);
             this.topFormularioF.Name = "topFormularioF";
-            this.topFormularioF.Size = new System.Drawing.Size(880, 44);
+            this.topFormularioF.Size = new System.Drawing.Size(866, 44);
             this.topFormularioF.TabIndex = 44;
             // 
             // MoverFormulario
@@ -468,7 +468,7 @@ namespace CapaPresentacion
             this.richTextBoxDescripcion.Location = new System.Drawing.Point(85, 641);
             this.richTextBoxDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDescripcion.Name = "richTextBoxDescripcion";
-            this.richTextBoxDescripcion.Size = new System.Drawing.Size(697, 125);
+            this.richTextBoxDescripcion.Size = new System.Drawing.Size(697, 109);
             this.richTextBoxDescripcion.TabIndex = 95;
             this.richTextBoxDescripcion.Text = "";
             // 
@@ -491,7 +491,7 @@ namespace CapaPresentacion
             this.textId.Location = new System.Drawing.Point(95, 63);
             this.textId.Margin = new System.Windows.Forms.Padding(4);
             this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(92, 15);
+            this.textId.Size = new System.Drawing.Size(100, 15);
             this.textId.TabIndex = 96;
             // 
             // pictureBox9
@@ -509,7 +509,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 866);
+            this.ClientSize = new System.Drawing.Size(866, 866);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textId);
             this.Controls.Add(this.pictureBox9);
