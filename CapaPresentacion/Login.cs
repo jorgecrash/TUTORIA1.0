@@ -167,6 +167,47 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void txtcontraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                usuario = txtusuario.Text;
+                clave = txtcontraseña.Text;
+                bool v = logins(usuario, clave);
+            }
+            else if (e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                Application.Exit();
+            }
+        }
+
+        private void txtusuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                usuario = txtusuario.Text;
+                clave = txtcontraseña.Text;
+                bool v = logins(usuario, clave);
+                txtcontraseña.Focus();
+            }
+            else if(e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                Application.Exit();
+            }
+
+        }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)
