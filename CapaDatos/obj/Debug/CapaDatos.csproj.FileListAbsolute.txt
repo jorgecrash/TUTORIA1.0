@@ -70,3 +70,12 @@ C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaDatos\ob
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaDatos.dll
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaEntidades.dll
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\bin\Debug\CapaEntidades.pdb
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.dll
+D:\NuevoTutoria\jorgecrash\TUTORIA1.0\CapaDatos\obj\Debug\CapaDatos.pdb

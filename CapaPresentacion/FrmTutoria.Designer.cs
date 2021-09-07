@@ -54,16 +54,17 @@ namespace CapaPresentacion
             this.flowLayoutPanel1.Controls.Add(this.Panel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1665, 753);
             this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1600, 101);
             this.panel2.TabIndex = 1;
@@ -78,16 +79,17 @@ namespace CapaPresentacion
             this.Panel1.Controls.Add(this.btnAgregarTutoria);
             this.Panel1.Controls.Add(this.TablaTutoria);
             this.Panel1.Location = new System.Drawing.Point(4, 113);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1661, 703);
             this.Panel1.TabIndex = 0;
+            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // textBuscar
             // 
             this.textBuscar.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBuscar.Location = new System.Drawing.Point(97, 101);
-            this.textBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.textBuscar.Name = "textBuscar";
             this.textBuscar.Size = new System.Drawing.Size(312, 24);
             this.textBuscar.TabIndex = 4;
@@ -97,7 +99,7 @@ namespace CapaPresentacion
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(43, 94);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +111,7 @@ namespace CapaPresentacion
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(29, 89);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(400, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,7 +169,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TablaTutoria.DefaultCellStyle = dataGridViewCellStyle1;
             this.TablaTutoria.Location = new System.Drawing.Point(29, 150);
-            this.TablaTutoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TablaTutoria.Margin = new System.Windows.Forms.Padding(4);
             this.TablaTutoria.Name = "TablaTutoria";
             this.TablaTutoria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.TablaTutoria.RowHeadersVisible = false;
@@ -198,7 +200,7 @@ namespace CapaPresentacion
             this.ClientSize = new System.Drawing.Size(1665, 753);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmTutoria";
             this.Text = "FrmTutoria";
             this.flowLayoutPanel1.ResumeLayout(false);

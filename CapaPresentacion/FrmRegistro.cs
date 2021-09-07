@@ -19,17 +19,20 @@ namespace CapaPresentacion
             InitializeComponent();
             MostrarTablaRegistro();
             OcultarMoverAncharColumnas();
+           // TablaRegistro.Columns[0].Width = 10;
         }
         public void OcultarMoverAncharColumnas()
         {
             TablaRegistro.Columns[0].DisplayIndex = 10;//0
             TablaRegistro.Columns[1].DisplayIndex = 10;//1
+          
 
         }
         public void MostrarTablaRegistro()
         {
             N_Registro oTutorado = new N_Registro();
             TablaRegistro.DataSource = oTutorado.ListingTutorados();
+            
         }
         public void BuscarTutorado(string search)
         {

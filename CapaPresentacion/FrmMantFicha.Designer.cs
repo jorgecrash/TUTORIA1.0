@@ -488,10 +488,10 @@ namespace CapaPresentacion
             // 
             this.textId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textId.Enabled = false;
-            this.textId.Location = new System.Drawing.Point(95, 63);
+            this.textId.Location = new System.Drawing.Point(88, 64);
             this.textId.Margin = new System.Windows.Forms.Padding(4);
             this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(100, 15);
+            this.textId.Size = new System.Drawing.Size(107, 15);
             this.textId.TabIndex = 96;
             // 
             // pictureBox9
