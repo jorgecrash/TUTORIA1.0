@@ -191,10 +191,10 @@ namespace CapaPresentacion
             // textTitulo
             // 
             this.textTitulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textTitulo.Location = new System.Drawing.Point(64, 264);
+            this.textTitulo.Location = new System.Drawing.Point(32, 264);
             this.textTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.textTitulo.Name = "textTitulo";
-            this.textTitulo.Size = new System.Drawing.Size(201, 15);
+            this.textTitulo.Size = new System.Drawing.Size(233, 15);
             this.textTitulo.TabIndex = 19;
             // 
             // label1

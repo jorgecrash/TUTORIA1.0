@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\CapaPresentacion",
-    "\\Tutorias001",
-    "\\Tutorias001\\PruebasFormulario"
+    "\\Tutorias001"
   ],
-  "SelectedNode": "\\CapaPresentacion\\FrmEstudiante.cs",
+  "SelectedNode": "\\CapaPresentacion\\FrmMantFicha.cs",
   "PreviewInSolutionExplorer": false
 }
