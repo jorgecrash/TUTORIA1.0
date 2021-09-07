@@ -22,7 +22,17 @@ namespace CapaPresentacion
             MostrarTablaEstudiante();
             OcultarMoverAncharColumnas();
         }
-        
+        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
+        public void PantallaOk()
+        {
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+        }
+
         public void OcultarMoverAncharColumnas()
         {
             TablaEstudiante.Columns[0].DisplayIndex = 8;//0

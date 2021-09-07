@@ -318,7 +318,6 @@ C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresenta
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaEntidades.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
-C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\Guna.UI.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaEntidades.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
@@ -327,3 +326,5 @@ C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresenta
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\BWCMM.dll
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
