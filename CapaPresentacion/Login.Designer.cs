@@ -147,12 +147,16 @@ namespace CapaPresentacion
             this.txtcontraseña.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this.txtcontraseña, "txtcontraseña");
             this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.TextChanged += new System.EventHandler(this.txtcontraseña_TextChanged);
+            this.txtcontraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcontraseña_KeyPress);
             // 
             // txtusuario
             // 
             this.txtusuario.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this.txtusuario, "txtusuario");
             this.txtusuario.Name = "txtusuario";
+            this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
+            this.txtusuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusuario_KeyPress);
             // 
             // label4
             // 
@@ -277,7 +281,7 @@ namespace CapaPresentacion
             this.ForeColor = System.Drawing.Color.OldLace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

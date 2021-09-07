@@ -124,16 +124,19 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>57</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>300, 629</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnCerrar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -664,7 +667,7 @@
     <value>Top</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 271</value>
+    <value>0, 259</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 49</value>
@@ -684,14 +687,11 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
+    <value>68, 235</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 25</value>
+    <value>181, 24</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -715,10 +715,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-11, -10</value>
+    <value>0, -8</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 309</value>
+    <value>300, 295</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -745,7 +745,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 271</value>
+    <value>300, 259</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -4522,9 +4522,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
