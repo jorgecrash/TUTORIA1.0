@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FrmMain : Form
     {
-        
+
         private DataSet aDatos;
         public DataSet Datos
         {
@@ -26,11 +26,12 @@ namespace CapaPresentacion
             test.ShowDialog();
             labelUsuario.Text = test.usuario;
             labelCategoriaU.Text = validarcategoria(test.usuario);
-            
+
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            PantallaOk();
+            //PantallaOk();
+            //InitializeComponent();
         }
         public void PantallaOk()
         {
@@ -39,9 +40,9 @@ namespace CapaPresentacion
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
         {
-           
+
             btnEstudiantes.Textcolor = Color.WhiteSmoke;
-           
+
 
             sender.selected = true;
 
@@ -50,7 +51,7 @@ namespace CapaPresentacion
                 sender.Textcolor = Color.FromArgb(98, 195, 140);
             }
         }
-        private void btnEstudiantes_Click(object sender,EventArgs e)
+        private void btnEstudiantes_Click(object sender, EventArgs e)
         {
             AbrirFormulriosEnWrapper(new FrmEstudiante());
         }
@@ -102,7 +103,8 @@ namespace CapaPresentacion
         public DataSet EjecutarSelect(string pConsulta)
         {//-- Método para ejecutar consultas del tipo SELECT
 
-            using (SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias"))
+            using (SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8D3JFRS;" +
+               "Initial Catalog=Tutorias;Integrated Security=SSPI;"))
             {
                 conexion.Open();
                 SqlDataAdapter a = new SqlDataAdapter();
@@ -134,7 +136,7 @@ namespace CapaPresentacion
         }
         public bool ValidarAcceso()
         {
-            bool categoria=false;
+            bool categoria = false;
             if (labelCategoria.Text == "Estudiante")
             {
                 categoria = true;
@@ -143,7 +145,7 @@ namespace CapaPresentacion
             {
                 categoria = true;
             }*/
-            return  categoria;
+            return categoria;
         }
 
         private void Sidebar_Paint(object sender, PaintEventArgs e)
@@ -154,6 +156,39 @@ namespace CapaPresentacion
         private void Wrapper_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void Minimized_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Maximize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Minimized_Click_1(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+            else if (WindowState == FormWindowState.Minimized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void Maximized_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
         }
     }
 }

@@ -154,7 +154,7 @@ namespace CapaPresentacion
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
             this.btnGuardar.Location = new System.Drawing.Point(13, 643);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -474,7 +474,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 640);
+            this.ClientSize = new System.Drawing.Size(650, 691);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textId);
             this.Controls.Add(this.pictureBox9);
