@@ -188,6 +188,7 @@ namespace CapaPresentacion
             else if (WindowState == FormWindowState.Maximized)
             {
                 WindowState = FormWindowState.Normal;
+
             }
         }
     }
