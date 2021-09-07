@@ -86,5 +86,15 @@ namespace CapaPresentacion
                 //ShowTotal();
             }
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
