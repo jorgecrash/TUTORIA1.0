@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.Sidebar = new System.Windows.Forms.Panel();
             this.labelCategoriaU = new System.Windows.Forms.Label();
@@ -43,29 +44,36 @@ namespace CapaPresentacion
             this.Header = new System.Windows.Forms.Panel();
             this.Salir = new System.Windows.Forms.PictureBox();
             this.Wrapper = new System.Windows.Forms.Panel();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse6 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_botones = new System.Windows.Forms.Panel();
+            this.gunaElipse7 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.panel2_image = new System.Windows.Forms.Panel();
+            this.gunaElipse8 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel_botones.SuspendLayout();
+            this.panel2_image.SuspendLayout();
             this.SuspendLayout();
             // 
             // Sidebar
             // 
-            this.Sidebar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Sidebar.BackColor = System.Drawing.Color.Transparent;
+            this.Sidebar.Controls.Add(this.panel2_image);
+            this.Sidebar.Controls.Add(this.panel1);
             this.Sidebar.Controls.Add(this.labelCategoriaU);
-            this.Sidebar.Controls.Add(this.btnTutorados);
-            this.Sidebar.Controls.Add(this.btnFicha);
-            this.Sidebar.Controls.Add(this.labelUsuario);
-            this.Sidebar.Controls.Add(this.pictureBox1);
-            this.Sidebar.Controls.Add(this.labelCategoria);
-            this.Sidebar.Controls.Add(this.btnTutoria);
-            this.Sidebar.Controls.Add(this.btnDocentes);
-            this.Sidebar.Controls.Add(this.btnEstudiantes);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(333, 703);
+            this.Sidebar.Size = new System.Drawing.Size(250, 571);
             this.Sidebar.TabIndex = 0;
             this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
@@ -73,10 +81,9 @@ namespace CapaPresentacion
             // 
             this.labelCategoriaU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelCategoriaU.ForeColor = System.Drawing.Color.Black;
-            this.labelCategoriaU.Location = new System.Drawing.Point(80, 220);
-            this.labelCategoriaU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCategoriaU.Location = new System.Drawing.Point(60, 179);
             this.labelCategoriaU.Name = "labelCategoriaU";
-            this.labelCategoriaU.Size = new System.Drawing.Size(164, 28);
+            this.labelCategoriaU.Size = new System.Drawing.Size(123, 23);
             this.labelCategoriaU.TabIndex = 8;
             this.labelCategoriaU.Text = "Categoria";
             this.labelCategoriaU.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -102,14 +109,14 @@ namespace CapaPresentacion
             this.btnTutorados.IconVisible = true;
             this.btnTutorados.IconZoom = 90D;
             this.btnTutorados.IsTab = false;
-            this.btnTutorados.Location = new System.Drawing.Point(16, 446);
-            this.btnTutorados.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTutorados.Location = new System.Drawing.Point(13, 211);
+            this.btnTutorados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTutorados.Name = "btnTutorados";
             this.btnTutorados.Normalcolor = System.Drawing.Color.Maroon;
             this.btnTutorados.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnTutorados.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTutorados.selected = false;
-            this.btnTutorados.Size = new System.Drawing.Size(288, 46);
+            this.btnTutorados.Size = new System.Drawing.Size(195, 37);
             this.btnTutorados.TabIndex = 7;
             this.btnTutorados.Text = "            Tutorados";
             this.btnTutorados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -138,14 +145,14 @@ namespace CapaPresentacion
             this.btnFicha.IconVisible = true;
             this.btnFicha.IconZoom = 90D;
             this.btnFicha.IsTab = false;
-            this.btnFicha.Location = new System.Drawing.Point(16, 501);
-            this.btnFicha.Margin = new System.Windows.Forms.Padding(5);
+            this.btnFicha.Location = new System.Drawing.Point(13, 273);
+            this.btnFicha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFicha.Name = "btnFicha";
             this.btnFicha.Normalcolor = System.Drawing.Color.Maroon;
             this.btnFicha.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnFicha.OnHoverTextColor = System.Drawing.Color.White;
             this.btnFicha.selected = false;
-            this.btnFicha.Size = new System.Drawing.Size(288, 46);
+            this.btnFicha.Size = new System.Drawing.Size(195, 37);
             this.btnFicha.TabIndex = 6;
             this.btnFicha.Text = "            Fichas de Tutoria";
             this.btnFicha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,10 +164,9 @@ namespace CapaPresentacion
             // 
             this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelUsuario.ForeColor = System.Drawing.Color.Black;
-            this.labelUsuario.Location = new System.Drawing.Point(80, 177);
-            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsuario.Location = new System.Drawing.Point(51, 136);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(164, 28);
+            this.labelUsuario.Size = new System.Drawing.Size(123, 23);
             this.labelUsuario.TabIndex = 5;
             this.labelUsuario.Text = "USUARIO1";
             this.labelUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -168,11 +174,10 @@ namespace CapaPresentacion
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(99, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -180,10 +185,9 @@ namespace CapaPresentacion
             // 
             this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelCategoria.ForeColor = System.Drawing.Color.Black;
-            this.labelCategoria.Location = new System.Drawing.Point(127, 15);
-            this.labelCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCategoria.Location = new System.Drawing.Point(83, 17);
             this.labelCategoria.Name = "labelCategoria";
-            this.labelCategoria.Size = new System.Drawing.Size(75, 28);
+            this.labelCategoria.Size = new System.Drawing.Size(56, 23);
             this.labelCategoria.TabIndex = 3;
             this.labelCategoria.Text = "CRUD";
             // 
@@ -208,14 +212,14 @@ namespace CapaPresentacion
             this.btnTutoria.IconVisible = true;
             this.btnTutoria.IconZoom = 90D;
             this.btnTutoria.IsTab = false;
-            this.btnTutoria.Location = new System.Drawing.Point(16, 390);
-            this.btnTutoria.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTutoria.Location = new System.Drawing.Point(13, 148);
+            this.btnTutoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTutoria.Name = "btnTutoria";
             this.btnTutoria.Normalcolor = System.Drawing.Color.Maroon;
             this.btnTutoria.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnTutoria.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTutoria.selected = false;
-            this.btnTutoria.Size = new System.Drawing.Size(288, 46);
+            this.btnTutoria.Size = new System.Drawing.Size(195, 37);
             this.btnTutoria.TabIndex = 2;
             this.btnTutoria.Text = "            Tutoria";
             this.btnTutoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,14 +248,14 @@ namespace CapaPresentacion
             this.btnDocentes.IconVisible = true;
             this.btnDocentes.IconZoom = 90D;
             this.btnDocentes.IsTab = false;
-            this.btnDocentes.Location = new System.Drawing.Point(16, 337);
-            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDocentes.Location = new System.Drawing.Point(13, 86);
+            this.btnDocentes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Normalcolor = System.Drawing.Color.Maroon;
             this.btnDocentes.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnDocentes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDocentes.selected = false;
-            this.btnDocentes.Size = new System.Drawing.Size(288, 46);
+            this.btnDocentes.Size = new System.Drawing.Size(195, 37);
             this.btnDocentes.TabIndex = 1;
             this.btnDocentes.Text = "            Profesores";
             this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,14 +284,14 @@ namespace CapaPresentacion
             this.btnEstudiantes.IconVisible = true;
             this.btnEstudiantes.IconZoom = 90D;
             this.btnEstudiantes.IsTab = false;
-            this.btnEstudiantes.Location = new System.Drawing.Point(16, 281);
-            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEstudiantes.Location = new System.Drawing.Point(13, 25);
+            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Normalcolor = System.Drawing.Color.Maroon;
             this.btnEstudiantes.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnEstudiantes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEstudiantes.selected = false;
-            this.btnEstudiantes.Size = new System.Drawing.Size(288, 46);
+            this.btnEstudiantes.Size = new System.Drawing.Size(195, 37);
             this.btnEstudiantes.TabIndex = 0;
             this.btnEstudiantes.Text = "            Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -300,20 +304,18 @@ namespace CapaPresentacion
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.Header.Controls.Add(this.Salir);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Header.Location = new System.Drawing.Point(333, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4);
+            this.Header.Location = new System.Drawing.Point(250, 0);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1362, 74);
+            this.Header.Size = new System.Drawing.Size(790, 60);
             this.Header.TabIndex = 1;
             // 
             // Salir
             // 
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(1221, 15);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.Salir.Location = new System.Drawing.Point(684, 12);
             this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(53, 46);
+            this.Salir.Size = new System.Drawing.Size(40, 37);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Salir.TabIndex = 0;
             this.Salir.TabStop = false;
@@ -323,23 +325,90 @@ namespace CapaPresentacion
             // 
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrapper.Location = new System.Drawing.Point(333, 0);
-            this.Wrapper.Margin = new System.Windows.Forms.Padding(4);
+            this.Wrapper.Location = new System.Drawing.Point(250, 0);
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1362, 703);
+            this.Wrapper.Size = new System.Drawing.Size(790, 571);
             this.Wrapper.TabIndex = 2;
             this.Wrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.Wrapper_Paint);
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.TargetControl = this.btnEstudiantes;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.TargetControl = this.btnDocentes;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.TargetControl = this.btnTutoria;
+            // 
+            // gunaElipse5
+            // 
+            this.gunaElipse5.TargetControl = this.btnTutorados;
+            // 
+            // gunaElipse6
+            // 
+            this.gunaElipse6.TargetControl = this.btnFicha;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SeaShell;
+            this.panel1.Controls.Add(this.panel_botones);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 179);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 392);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel_botones
+            // 
+            this.panel_botones.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_botones.Controls.Add(this.btnFicha);
+            this.panel_botones.Controls.Add(this.btnEstudiantes);
+            this.panel_botones.Controls.Add(this.btnTutorados);
+            this.panel_botones.Controls.Add(this.btnDocentes);
+            this.panel_botones.Controls.Add(this.btnTutoria);
+            this.panel_botones.Location = new System.Drawing.Point(12, 22);
+            this.panel_botones.Name = "panel_botones";
+            this.panel_botones.Size = new System.Drawing.Size(222, 332);
+            this.panel_botones.TabIndex = 0;
+            // 
+            // gunaElipse7
+            // 
+            this.gunaElipse7.Radius = 7;
+            this.gunaElipse7.TargetControl = this.panel_botones;
+            // 
+            // panel2_image
+            // 
+            this.panel2_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(99)))), ((int)(((byte)(137)))));
+            this.panel2_image.Controls.Add(this.labelUsuario);
+            this.panel2_image.Controls.Add(this.labelCategoria);
+            this.panel2_image.Controls.Add(this.pictureBox1);
+            this.panel2_image.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2_image.Location = new System.Drawing.Point(0, 0);
+            this.panel2_image.Name = "panel2_image";
+            this.panel2_image.Size = new System.Drawing.Size(250, 179);
+            this.panel2_image.TabIndex = 10;
+            // 
+            // gunaElipse8
+            // 
+            this.gunaElipse8.Radius = 7;
+            this.gunaElipse8.TargetControl = this.panel2_image;
+            // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1695, 703);
+            this.ClientSize = new System.Drawing.Size(1040, 571);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.Sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
@@ -348,6 +417,9 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel_botones.ResumeLayout(false);
+            this.panel2_image.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,5 +439,16 @@ namespace CapaPresentacion
         private Bunifu.Framework.UI.BunifuFlatButton btnTutorados;
         private Bunifu.Framework.UI.BunifuFlatButton btnFicha;
         private System.Windows.Forms.Label labelCategoriaU;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
+        private Guna.UI.WinForms.GunaElipse gunaElipse4;
+        private Guna.UI.WinForms.GunaElipse gunaElipse5;
+        private Guna.UI.WinForms.GunaElipse gunaElipse6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_botones;
+        private Guna.UI.WinForms.GunaElipse gunaElipse7;
+        private System.Windows.Forms.Panel panel2_image;
+        private Guna.UI.WinForms.GunaElipse gunaElipse8;
     }
 }
