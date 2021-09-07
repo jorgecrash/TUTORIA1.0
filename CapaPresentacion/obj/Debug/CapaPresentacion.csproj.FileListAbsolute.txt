@@ -326,3 +326,4 @@ C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresenta
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\BWCMM.dll
