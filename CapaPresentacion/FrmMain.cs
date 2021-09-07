@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace CapaPresentacion
 {
@@ -32,11 +34,6 @@ namespace CapaPresentacion
         {
             //PantallaOk();
             //InitializeComponent();
-        }
-        public void PantallaOk()
-        {
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
         {
@@ -167,7 +164,7 @@ namespace CapaPresentacion
 
         }
 
-        private void Minimized_Click_1(object sender, EventArgs e)
+        /*private void Minimized_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -177,19 +174,92 @@ namespace CapaPresentacion
             {
                 WindowState = FormWindowState.Normal;
             }
+        }*/
+
+        //METODO PARA ARRASTRAR EL FORMULARIO---------------------------------------------------------------------
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        //-------------------MAXIMIZE,MINIMIZE,CERRAR-----------------------
+        int lx, ly;
+        int sw, sh;
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnNormal_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
+            btnNormal.Visible = false;
+            btnMaximized.Visible = true;
         }
 
         private void Maximized_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-            }
-            else if (WindowState == FormWindowState.Maximized)
-            {
-                WindowState = FormWindowState.Normal;
+            lx = this.Location.X;
+            ly = this.Location.Y;
+            sw = this.Size.Width;
+            sh = this.Size.Height;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            btnMaximized.Visible = false;
+            btnNormal.Visible = true;
+        }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST:
+                    base.WndProc(ref m);
+                    var hitPoint = this.PointToClient(new Point(m.LParam.ToInt32() & 0xffff, m.LParam.ToInt32() >> 16));
+                    if (sizeGripRectangle.Contains(hitPoint))
+                        m.Result = new IntPtr(HTBOTTOMRIGHT);
+                    break;
+                default:
+                    base.WndProc(ref m);
+                    break;
             }
         }
+        //----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL 
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            var region = new Region(new Rectangle(0, 0, this.ClientRectangle.Width, this.ClientRectangle.Height));
+
+            sizeGripRectangle = new Rectangle(this.ClientRectangle.Width - tolerance, this.ClientRectangle.Height - tolerance, tolerance, tolerance);
+
+            region.Exclude(sizeGripRectangle);
+            this.panel_principal.Region = region;
+            this.Invalidate();
+        }
+
     }
 }

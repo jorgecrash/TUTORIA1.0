@@ -46,6 +46,7 @@
       <HintPath>..\..\..\..\..\Downloads\Guna-Framework-master\Guna-Framework-master\Guna Framework\Guna Framework\bin\Debug\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
