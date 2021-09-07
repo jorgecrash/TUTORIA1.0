@@ -52,3 +52,8 @@ C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEn
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\bin\Debug\CapaEntidades.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb

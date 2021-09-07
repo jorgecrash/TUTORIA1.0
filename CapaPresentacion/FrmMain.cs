@@ -103,7 +103,7 @@ namespace CapaPresentacion
         public DataSet EjecutarSelect(string pConsulta)
         {//-- Método para ejecutar consultas del tipo SELECT
 
-            using (SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8D3JFRS;" +
+            using (SqlConnection conexion = new SqlConnection("Data Source=.;" +
                "Initial Catalog=Tutorias;Integrated Security=SSPI;"))
             {
                 conexion.Open();
