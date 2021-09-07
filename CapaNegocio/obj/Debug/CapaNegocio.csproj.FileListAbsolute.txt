@@ -108,3 +108,14 @@ C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNego
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\bin\Debug\CapaEntidades.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
