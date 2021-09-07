@@ -29,44 +29,76 @@ namespace CapaPresentacion
         {
             if (Update == false)
             {
-                try
+                if (AlertasForms.ValidarTxtBoxFormulario(this, errorProvider1) == false)
                 {
-                    entities.IdDocente = Convert.ToInt32(textIdDocente.Text);
-                    entities.Horario = textHorario.Text;
-
-                    business.CreatingTutoria(entities);
-                    FrmSuccess.confirmacionForm("TUTOR REGISTRADO");
-                    Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo guardar Tutor ");
+                    try
+                    {
+                        entities.IdTutoria = textId.Text;
+                        entities.IdDocente = textIdDocente.Text;
+                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") +"  "+ dtpHora.Value.TimeOfDay.ToString();
+                        business.CreatingTutoria(entities);
+                        FrmSuccess.confirmacionForm("TUTOR REGISTRADO");
+                        Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se pudo guardar Tutor ");
+                    }
                 }
             }
             if (Update == true)
             {
-                try
+                if (AlertasForms.ValidarTxtBoxFormulario(this, errorProvider1) == false)
                 {
-                    entities.IdTutoria = Convert.ToInt32(textId.Text);
-                    entities.IdDocente = Convert.ToInt32(textIdDocente.Text);
-                    entities.Horario = textHorario.Text;
+                    try
+                    {
+                        entities.IdTutoria = textId.Text;
+                        entities.IdDocente = textIdDocente.Text; ;
+                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") +"  "+dtpHora.Value.TimeOfDay.ToString();
 
-                    business.UpdatingTutoria(entities);
 
-                    //     successView.confirmForm("PRODUCTO EDITADO");
-                    FrmSuccess.confirmacionForm("TUTORIA EDITADA");
-                    Close();
+                        business.UpdatingTutoria(entities);
 
-                    Update = false;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo editar la categoria " + ex);
+                        //     successView.confirmForm("PRODUCTO EDITADO");
+                        FrmSuccess.confirmacionForm("TUTORIA EDITADA");
+                        Close();
+
+                        Update = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se pudo editar la categoria " + ex);
+                    }
                 }
             }
         }
 
-        
+        private void FrmMantTutoria_Load(object sender, EventArgs e)
+        {
+            MostrarTablaTutoriaDocente();
+        }
+        public void MostrarTablaTutoriaDocente()
+        {
+            dgvDocenteTutoria.DataSource = business.ListingDocenteTutorias();
+        }
+        private void dgvDocenteTutoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textIdDocente.Text = dgvDocenteTutoria.Rows[e.RowIndex].Cells["IdDocente"].Value.ToString();
+        }
+        public void BuscarDocenteTutoria(string search)
+        {
+            dgvDocenteTutoria.DataSource = business.BuscarDocenteTutorias(search);
+        }
+
+        private void txtNomDocenteTutor_TextChanged(object sender, EventArgs e)
+        {
+            BuscarDocenteTutoria(txtNomDocenteTutor.Text);
+        }
+
+        private void textIdDocente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
