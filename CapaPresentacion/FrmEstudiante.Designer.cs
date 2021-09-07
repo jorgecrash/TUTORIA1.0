@@ -39,8 +39,8 @@ namespace CapaPresentacion
             this.TablaEstudiante = new System.Windows.Forms.DataGridView();
             this.EDITAR = new System.Windows.Forms.DataGridViewImageColumn();
             this.ELIMINAR = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,30 +57,27 @@ namespace CapaPresentacion
             this.Panel1.Controls.Add(this.pictureBox1);
             this.Panel1.Controls.Add(this.btnNuevoEstudiante);
             this.Panel1.Controls.Add(this.TablaEstudiante);
-            this.Panel1.Location = new System.Drawing.Point(4, 113);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Location = new System.Drawing.Point(3, 90);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1661, 703);
+            this.Panel1.Size = new System.Drawing.Size(1089, 609);
             this.Panel1.TabIndex = 0;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBuscar
             // 
             this.textBuscar.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBuscar.Location = new System.Drawing.Point(97, 101);
-            this.textBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBuscar.Location = new System.Drawing.Point(78, 33);
             this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(312, 24);
+            this.textBuscar.Size = new System.Drawing.Size(235, 21);
             this.textBuscar.TabIndex = 4;
             this.textBuscar.TextChanged += new System.EventHandler(this.textBuscar_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(43, 94);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(37, 27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -90,10 +87,9 @@ namespace CapaPresentacion
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 89);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(400, 54);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -117,10 +113,10 @@ namespace CapaPresentacion
             this.btnNuevoEstudiante.IdleFillColor = System.Drawing.Color.White;
             this.btnNuevoEstudiante.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnNuevoEstudiante.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnNuevoEstudiante.Location = new System.Drawing.Point(29, 28);
-            this.btnNuevoEstudiante.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnNuevoEstudiante.Location = new System.Drawing.Point(361, 21);
+            this.btnNuevoEstudiante.Margin = new System.Windows.Forms.Padding(5);
             this.btnNuevoEstudiante.Name = "btnNuevoEstudiante";
-            this.btnNuevoEstudiante.Size = new System.Drawing.Size(241, 50);
+            this.btnNuevoEstudiante.Size = new System.Drawing.Size(181, 41);
             this.btnNuevoEstudiante.TabIndex = 1;
             this.btnNuevoEstudiante.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNuevoEstudiante.Click += new System.EventHandler(this.btnNuevoEstudiante_Click);
@@ -129,8 +125,8 @@ namespace CapaPresentacion
             // 
             this.TablaEstudiante.AllowUserToAddRows = false;
             this.TablaEstudiante.AllowUserToOrderColumns = true;
-            this.TablaEstudiante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.TablaEstudiante.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.TablaEstudiante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.TablaEstudiante.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.TablaEstudiante.BackgroundColor = System.Drawing.Color.White;
             this.TablaEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TablaEstudiante.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -149,40 +145,33 @@ namespace CapaPresentacion
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TablaEstudiante.DefaultCellStyle = dataGridViewCellStyle1;
-            this.TablaEstudiante.Location = new System.Drawing.Point(29, 150);
-            this.TablaEstudiante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TablaEstudiante.Location = new System.Drawing.Point(27, 82);
             this.TablaEstudiante.Name = "TablaEstudiante";
             this.TablaEstudiante.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.TablaEstudiante.RowHeadersVisible = false;
             this.TablaEstudiante.RowHeadersWidth = 51;
             this.TablaEstudiante.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.TablaEstudiante.Size = new System.Drawing.Size(1592, 422);
+            this.TablaEstudiante.Size = new System.Drawing.Size(1024, 501);
             this.TablaEstudiante.TabIndex = 0;
             this.TablaEstudiante.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaEstudiante_CellContentClick);
             // 
             // EDITAR
             // 
+            this.EDITAR.FillWeight = 1.196411F;
             this.EDITAR.HeaderText = "EDITAR";
             this.EDITAR.Image = ((System.Drawing.Image)(resources.GetObject("EDITAR.Image")));
             this.EDITAR.MinimumWidth = 6;
             this.EDITAR.Name = "EDITAR";
+            this.EDITAR.Width = 6;
             // 
             // ELIMINAR
             // 
+            this.ELIMINAR.FillWeight = 198.8035F;
             this.ELIMINAR.HeaderText = "ELIMINAR";
             this.ELIMINAR.Image = ((System.Drawing.Image)(resources.GetObject("ELIMINAR.Image")));
             this.ELIMINAR.MinimumWidth = 6;
             this.ELIMINAR.Name = "ELIMINAR";
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1600, 101);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.ELIMINAR.Width = 6;
             // 
             // flowLayoutPanel1
             // 
@@ -190,20 +179,26 @@ namespace CapaPresentacion
             this.flowLayoutPanel1.Controls.Add(this.Panel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1665, 753);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1092, 699);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1089, 81);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // FrmEstudiante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1665, 753);
+            this.ClientSize = new System.Drawing.Size(1092, 699);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmEstudiante";
             this.Text = "FrmEstudiante";
             this.Panel1.ResumeLayout(false);
@@ -226,7 +221,7 @@ namespace CapaPresentacion
         public System.Windows.Forms.DataGridView TablaEstudiante;
         private System.Windows.Forms.DataGridViewImageColumn EDITAR;
         private System.Windows.Forms.DataGridViewImageColumn ELIMINAR;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

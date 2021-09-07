@@ -8,9 +8,9 @@ namespace CapaEntidades
 {
     public class E_Ficha
     {
-        private int _IdFichaTutoria;
-        private int _IdTutoria;
-        private int _IdEstudiante;
+        private string _IdFichaTutoria;
+        private string _IdTutoria;
+        private string _IdEstudiante;
         private string _NroCelular;
         private string _Direccion;
         private string _Email;
@@ -21,9 +21,9 @@ namespace CapaEntidades
         private string _Descripcion;
         private string search;
 
-        public int IdFichaTutoria { get => _IdFichaTutoria; set => _IdFichaTutoria = value; }
-        public int IdTutoria { get => _IdTutoria; set => _IdTutoria = value; }
-        public int IdEstudiante { get => _IdEstudiante; set => _IdEstudiante = value; }
+        public string IdFichaTutoria { get => _IdFichaTutoria; set => _IdFichaTutoria = value; }
+        public string IdTutoria { get => _IdTutoria; set => _IdTutoria = value; }
+        public string IdEstudiante { get => _IdEstudiante; set => _IdEstudiante = value; }
         public string NroCelular { get => _NroCelular; set => _NroCelular = value; }
         public string Direccion { get => _Direccion; set => _Direccion = value; }
         public string Email { get => _Email; set => _Email = value; }

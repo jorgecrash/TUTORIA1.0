@@ -15,19 +15,20 @@ namespace CapaPresentacion
     {
         public string usuario;
         public string clave;
+        int m, mx, my;
         public Login()
         {
             InitializeComponent();
             //buttonIngresar.Focus();
-            
+
         }
 
-        public bool logins(string _usuario,string _clave)
+        public bool logins(string _usuario, string _clave)
         {
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection("Server=DESKTOP-8D3JFRS;Integrated Security=yes; Database=Tutorias"))
+                using (SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias"))
                 {
                     conexion.Open();
                     //_usuario = txtusuario.Text;
@@ -42,7 +43,7 @@ namespace CapaPresentacion
                             obtenerusuario();
                             Close();
                             return true;
-                            
+
                         }
                         else
                         {
@@ -89,7 +90,7 @@ namespace CapaPresentacion
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-           
+
         }
         public string obtenerusuario()
         {
@@ -150,6 +151,74 @@ namespace CapaPresentacion
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            m = 1;
+            mx = e.X;
+            my = e.Y;
+        }
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcontraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                usuario = txtusuario.Text;
+                clave = txtcontraseña.Text;
+                bool v = logins(usuario, clave);
+            }
+            else if (e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                Application.Exit();
+            }
+        }
+
+        private void txtusuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                usuario = txtusuario.Text;
+                clave = txtcontraseña.Text;
+                bool v = logins(usuario, clave);
+                txtcontraseña.Focus();
+            }
+            else if(e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                Application.Exit();
+            }
+
+        }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (m == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
+            }
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            m = 0;
         }
     }
 }
