@@ -57,6 +57,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlertasForms.cs" />
+    <Compile Include="AlertaVacioTxtBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlertaVacioTxtBox.Designer.cs">
+      <DependentUpon>AlertaVacioTxtBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDocente.cs">
       <SubType>Form</SubType>
     </Compile>
