@@ -208,5 +208,82 @@ namespace PruebasFormulario
         }
 
 
+
+
+
+        [TestMethod]
+        public void AgregarDocenteNoValidoCategoria()
+        {
+            Mock<ServiciosDocente> Docente = new Mock<ServiciosDocente>();
+            string codigo = "1001";
+            string nombre = "juna";
+            string apellido = "romero santos";
+            string titulo = "ing informatico";
+            string facultad = "ing electrica electrinoca e informatica";
+            string escuela = "ingenieria informatica y sistemas";
+            string categoria = null;
+
+
+            Docente.Setup(x => x.AgregarDocente(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, Docente.Object.AgregarDocente(codigo, nombre, apellido, titulo, facultad, escuela, categoria));
+
+        }
+        [TestMethod]
+        public void AgregarDocenteNoValidoNombreApellido()
+        {
+            Mock<ServiciosDocente> Docente = new Mock<ServiciosDocente>();
+            string codigo = "1001";
+            string nombre = null;
+            string apellido = null;
+            string titulo = "ing informatico";
+            string facultad = "ing electrica electrinoca e informatica";
+            string escuela = "ingenieria informatica y sistemas";
+            string categoria = "contratado";
+
+
+            Docente.Setup(x => x.AgregarDocente(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, Docente.Object.AgregarDocente(codigo, nombre, apellido, titulo, facultad, escuela, categoria));
+
+        }
+
+        [TestMethod]
+        public void AgregarDocenteNoValidoTitulo()
+        {
+            Mock<ServiciosDocente> Docente = new Mock<ServiciosDocente>();
+            string codigo = "1001";
+            string nombre = "juan";
+            string apellido = "rome santos";
+            string titulo = null;
+            string facultad = "ing electrica electrinoca e informatica";
+            string escuela = "ingenieria informatica y sistemas";
+            string categoria = "contratado";
+
+
+            Docente.Setup(x => x.AgregarDocente(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, Docente.Object.AgregarDocente(codigo, nombre, apellido, titulo, facultad, escuela, categoria));
+
+        }
+
+        [TestMethod]
+        public void AgregarDocenteNoValidoEscuela()
+        {
+            Mock<ServiciosDocente> Docente = new Mock<ServiciosDocente>();
+            string codigo = "1001";
+            string nombre = "juan";
+            string apellido = "rome santos";
+            string titulo = "ing informatica";
+            string facultad = "ing electrica electrinoca e informatica";
+            string escuela = null;
+            string categoria = "contratado";
+
+
+            Docente.Setup(x => x.AgregarDocente(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(false);
+            Assert.AreEqual(false, Docente.Object.AgregarDocente(codigo, nombre, apellido, titulo, facultad, escuela, categoria));
+
+        }
+
+
+
+
     }
 }

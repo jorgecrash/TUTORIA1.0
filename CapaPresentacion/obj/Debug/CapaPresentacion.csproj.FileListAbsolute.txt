@@ -377,3 +377,34 @@ D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresen
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaEntidades.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmDocente.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiante.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFicha.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmInformation.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantDocente.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantEstudiante.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantFicha.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantRegistro.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantTutoria.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegistro.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmSuccess.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmTutoria.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

@@ -58,3 +58,9 @@ D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.dll
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaEntidades\obj\Debug\CapaEntidades.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\bin\Debug\CapaEntidades.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\bin\Debug\CapaEntidades.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\obj\Debug\CapaEntidades.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaEntidades\obj\Debug\CapaEntidades.pdb

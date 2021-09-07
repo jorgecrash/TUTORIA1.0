@@ -60,7 +60,7 @@ namespace CapaPresentacion
                 return false;
             }
         }
-        
+
         /*
         public int SearchDocente(E_Docente docente)
         {
@@ -77,5 +77,37 @@ namespace CapaPresentacion
             conexion.Close();
             return tabla.Rows.Count;
         }*/
+
+
+        public virtual bool AgregarDocente(string codigo, string nombre, string apellido, string titulo, string facultad, string escuela, string categoria)
+        {
+            int ejecucion;
+
+
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("SP_INSERTARDOCENTE", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@IDDOCENTE", codigo);
+            cmd.Parameters.AddWithValue("@NOMBRES", nombre);
+            cmd.Parameters.AddWithValue("@APELLIDOS", apellido);
+            cmd.Parameters.AddWithValue("@TITULO", titulo);
+            cmd.Parameters.AddWithValue("@FACULTAD", facultad);
+            cmd.Parameters.AddWithValue("@EPROFESIONAL", escuela);
+            cmd.Parameters.AddWithValue("@CATEGORIA", categoria);
+            conexion.Open();
+
+            ejecucion = cmd.ExecuteNonQuery();
+            conexion.Close();
+            if (ejecucion == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
     }
 }

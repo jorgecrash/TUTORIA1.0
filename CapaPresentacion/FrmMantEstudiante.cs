@@ -104,5 +104,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void FrmMantEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

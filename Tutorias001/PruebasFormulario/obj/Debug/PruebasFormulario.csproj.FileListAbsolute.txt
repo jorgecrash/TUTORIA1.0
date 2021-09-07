@@ -37,3 +37,45 @@ D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\Tutorias001\PruebasFormulario\bin
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\Tutorias001\PruebasFormulario\bin\Debug\Moq.xml
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\Tutorias001\PruebasFormulario\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\7moSemestre\DS\ProyectoFinal\TutoriasFinalF\Tutorias001\PruebasFormulario\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\PruebasFormulario.dll.config
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\PruebasFormulario.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\PruebasFormulario.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaDatos.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaEntidades.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaNegocio.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaPresentacion.exe
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Castle.Core.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\FluentAssertions.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Moq.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Bunifu_UI_v1.52.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Guna.UI.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaDatos.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaEntidades.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaNegocio.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaPresentacion.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\CapaPresentacion.exe.config
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Castle.Core.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\FluentAssertions.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\FluentAssertions.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\Moq.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\obj\Debug\PruebasFormulario.csproj.AssemblyReference.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\obj\Debug\PruebasFormulario.csproj.CoreCompileInputs.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\obj\Debug\PruebasFormulario.csproj.CopyComplete
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\obj\Debug\PruebasFormulario.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\Tutorias001\PruebasFormulario\obj\Debug\PruebasFormulario.pdb

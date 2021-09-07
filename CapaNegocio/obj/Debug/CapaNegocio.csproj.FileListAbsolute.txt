@@ -119,3 +119,14 @@ D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csp
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaNegocio.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaNegocio.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaDatos.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaEntidades.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaDatos.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\bin\Debug\CapaEntidades.pdb
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\obj\Debug\CapaNegocio.dll
+E:\usb pepillo\TUTORIAS UNSAAC 2021\CapaNegocio\obj\Debug\CapaNegocio.pdb
