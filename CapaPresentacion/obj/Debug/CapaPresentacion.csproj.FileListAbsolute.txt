@@ -327,3 +327,23 @@ C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresenta
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\BWCMM.dll
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmDocente.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiante.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFicha.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmInformation.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantDocente.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantEstudiante.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantFicha.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantRegistro.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantTutoria.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegistro.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmSuccess.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmTutoria.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
