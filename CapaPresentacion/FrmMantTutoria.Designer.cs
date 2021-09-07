@@ -48,7 +48,6 @@ namespace CapaPresentacion
             this.txtNomDocenteTutor = new System.Windows.Forms.TextBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
-            this.textIdDocente = new CapaPresentacion.AlertaVacioTxtBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.topFormulario.SuspendLayout();
@@ -267,17 +266,6 @@ namespace CapaPresentacion
             this.dtpHora.TabIndex = 66;
             this.dtpHora.Value = new System.DateTime(2021, 9, 5, 12, 0, 0, 0);
             // 
-            // textIdDocente
-            // 
-            this.textIdDocente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textIdDocente.Enabled = false;
-            this.textIdDocente.Location = new System.Drawing.Point(26, 87);
-            this.textIdDocente.Name = "textIdDocente";
-            this.textIdDocente.Size = new System.Drawing.Size(157, 13);
-            this.textIdDocente.TabIndex = 67;
-            this.textIdDocente.ValidarAlertaTxtBox = true;
-            this.textIdDocente.TextChanged += new System.EventHandler(this.textIdDocente_TextChanged);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -287,7 +275,6 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 362);
-            this.Controls.Add(this.textIdDocente);
             this.Controls.Add(this.dtpHora);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.txtNomDocenteTutor);
@@ -337,7 +324,6 @@ namespace CapaPresentacion
         public System.Windows.Forms.TextBox txtNomDocenteTutor;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.DateTimePicker dtpHora;
-        public AlertaVacioTxtBox textIdDocente;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
