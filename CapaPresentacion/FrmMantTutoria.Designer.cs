@@ -148,6 +148,7 @@ namespace CapaPresentacion
             this.topFormulario.Name = "topFormulario";
             this.topFormulario.Size = new System.Drawing.Size(562, 36);
             this.topFormulario.TabIndex = 41;
+            this.topFormulario.Paint += new System.Windows.Forms.PaintEventHandler(this.topFormulario_Paint);
             // 
             // label3
             // 
