@@ -208,6 +208,11 @@ namespace CapaPresentacion
 
         }
 
+        private void labelContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)

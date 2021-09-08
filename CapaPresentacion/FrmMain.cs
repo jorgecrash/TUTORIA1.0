@@ -29,6 +29,9 @@ namespace CapaPresentacion
             labelUsuario.Text = test.usuario;
             labelCategoriaU.Text = validarcategoria(test.usuario);
 
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.DoubleBuffered = true;
+
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
@@ -50,13 +53,26 @@ namespace CapaPresentacion
         }
         private void btnEstudiantes_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmEstudiante());
+            AbrirFormEnPanel(new FrmEstudiante());
         }
         private void btnDocentes_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmDocente());
+            AbrirFormEnPanel(new FrmDocente());
         }
-        private Form FormActive = null;
+        //METODO PARA ABRIR FORM DENTRO DE PANEL-----------------------------------------------------
+        private void AbrirFormEnPanel(object formHijo)
+        {
+            if (this.Wrapper.Controls.Count > 0)
+                this.Wrapper.Controls.RemoveAt(0);
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;            
+            this.Wrapper.Controls.Add(fh);
+            this.Wrapper.Tag = fh;
+            fh.Show();
+        }
+        /*private Form FormActive = null;
         private void AbrirFormulriosEnWrapper(Form FormHijo)
         {
             if (FormActive != null)
@@ -69,8 +85,7 @@ namespace CapaPresentacion
             FormHijo.BringToFront();
             FormHijo.Show();
 
-        }
-
+        }*/
         private void Salir_Click(object sender, EventArgs e)
         {
             DialogResult resultado = new DialogResult();
@@ -85,22 +100,22 @@ namespace CapaPresentacion
 
         private void btnFicha_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmFicha());
+            AbrirFormEnPanel(new FrmFicha());
         }
         private void btnTutoria_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmTutoria());
+            AbrirFormEnPanel(new FrmTutoria());
         }
 
         private void btnTutorados_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmRegistro());
+            AbrirFormEnPanel(new FrmRegistro());
         }
 
         public DataSet EjecutarSelect(string pConsulta)
         {//-- Método para ejecutar consultas del tipo SELECT
 
-            using (SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8D3JFRS;" +
+            using (SqlConnection conexion = new SqlConnection("Data Source=.;" +
                "Initial Catalog=Tutorias;Integrated Security=SSPI;"))
             {
                 conexion.Open();
@@ -164,7 +179,7 @@ namespace CapaPresentacion
 
         }
 
-        /*private void Minimized_Click_1(object sender, EventArgs e)
+        private void Minimized_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -174,7 +189,7 @@ namespace CapaPresentacion
             {
                 WindowState = FormWindowState.Normal;
             }
-        }*/
+        }
 
         //METODO PARA ARRASTRAR EL FORMULARIO---------------------------------------------------------------------
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -216,22 +231,21 @@ namespace CapaPresentacion
         {
 
         }
-        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
-        private int tolerance = 15;
-        private const int WM_NCHITTEST = 132;
-        private const int HTBOTTOMRIGHT = 17;
-        private Rectangle sizeGripRectangle;
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
         private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
+        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
 
         protected override void WndProc(ref Message m)
         {
@@ -248,6 +262,7 @@ namespace CapaPresentacion
                     break;
             }
         }
+
         //----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -257,8 +272,28 @@ namespace CapaPresentacion
             sizeGripRectangle = new Rectangle(this.ClientRectangle.Width - tolerance, this.ClientRectangle.Height - tolerance, tolerance, tolerance);
 
             region.Exclude(sizeGripRectangle);
-            this.panel_principal.Region = region;
+            this.Panel_Principal.Region = region;
             this.Invalidate();
+        }
+        //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
+        protected override void OnPaint(PaintEventArgs e)
+        {
+
+            SolidBrush blueBrush = new SolidBrush(Color.FromArgb(55, 61, 69));
+            e.Graphics.FillRectangle(blueBrush, sizeGripRectangle);
+
+            base.OnPaint(e);
+            ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, sizeGripRectangle);
+        }
+        //_____________________________METODO PARA MEJORAR Y OPTMIZAR LAS IMAGENES(EVITAR PARPADEO AL VECTORIZAR)____________________
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
         }
 
     }
