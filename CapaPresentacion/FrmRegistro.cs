@@ -19,17 +19,20 @@ namespace CapaPresentacion
             InitializeComponent();
             MostrarTablaRegistro();
             OcultarMoverAncharColumnas();
+           // TablaRegistro.Columns[0].Width = 10;
         }
         public void OcultarMoverAncharColumnas()
         {
-            TablaRegistro.Columns[0].DisplayIndex = 11;//0
-            TablaRegistro.Columns[1].DisplayIndex = 11;//1
+            TablaRegistro.Columns[0].DisplayIndex = 10;//0
+            TablaRegistro.Columns[1].DisplayIndex = 10;//1
+          
 
         }
         public void MostrarTablaRegistro()
         {
             N_Registro oTutorado = new N_Registro();
             TablaRegistro.DataSource = oTutorado.ListingTutorados();
+            
         }
         public void BuscarTutorado(string search)
         {
@@ -59,7 +62,7 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    int delete = Convert.ToInt32(TablaRegistro.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString());
+                    string delete = TablaRegistro.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
                     oTutorado.DeletingTutorado(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaRegistro();
@@ -77,6 +80,11 @@ namespace CapaPresentacion
                 MostrarTablaRegistro();
                 //ShowTotal();
             }
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
