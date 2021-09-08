@@ -104,5 +104,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void textApellidos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -273,6 +273,7 @@ namespace CapaPresentacion
             this.textApellidos.Name = "textApellidos";
             this.textApellidos.Size = new System.Drawing.Size(272, 15);
             this.textApellidos.TabIndex = 25;
+            this.textApellidos.TextChanged += new System.EventHandler(this.textApellidos_TextChanged);
             // 
             // textEscuela
             // 

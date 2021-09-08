@@ -12,7 +12,7 @@ namespace CapaPresentacion
 {
     public class ServiciosDocente
     {
-        SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias");
+        SqlConnection conexion = new SqlConnection("Server=LAPTOP-IUT020T4;Integrated Security=yes; Database=Tutorias");
         public virtual bool eliminar_docente(string codigo)
         {
             int i;
