@@ -418,7 +418,7 @@ namespace CapaPresentacion
             // 
             // Wrapper
             // 
-            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.Wrapper.Controls.Add(this.pictureBox2);
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(244, 25);
@@ -428,7 +428,7 @@ namespace CapaPresentacion
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
             this.pictureBox3.Location = new System.Drawing.Point(642, -114);
             this.pictureBox3.Name = "pictureBox3";
@@ -450,7 +450,7 @@ namespace CapaPresentacion
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
             this.pictureBox2.Location = new System.Drawing.Point(632, 420);
             this.pictureBox2.Name = "pictureBox2";
@@ -530,7 +530,7 @@ namespace CapaPresentacion
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
