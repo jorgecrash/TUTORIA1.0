@@ -37,7 +37,7 @@ namespace CapaPresentacion
         {
             TablaEstudiante.Columns[0].DisplayIndex = 8;//0
             TablaEstudiante.Columns[1].DisplayIndex = 8;//1
-            //TablaEstudiante.Columns[1].Visible = false;
+          
 
         }
         public void MostrarTablaEstudiante()
@@ -72,7 +72,7 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
+                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
                     oEstudiante.DeletingStudents(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaEstudiante();
@@ -83,7 +83,7 @@ namespace CapaPresentacion
             {
                 FrmMantEstudiante frm = new FrmMantEstudiante();
                 frm.Update = true;
-                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
+                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
                 frm.textNombres.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
                 frm.txtSemestreActivo.Text= TablaEstudiante.Rows[e.RowIndex].Cells["SemestreActivo"].Value.ToString();

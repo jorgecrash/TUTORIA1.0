@@ -45,7 +45,7 @@ namespace CapaDatos
             conexion.Close();
             return tabla;
         }
-        public void DeleteTutoria(int Id)
+        public void DeleteTutoria(string Id)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARTUTORIA", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -63,7 +63,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("SP_INSERTARTUTORIA", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-
+            cmd.Parameters.AddWithValue("@IDTUTORIA", tutoria.IdTutoria);
             cmd.Parameters.AddWithValue("@IDDOCENTE", tutoria.IdDocente);
             cmd.Parameters.AddWithValue("@HORARIO", tutoria.Horario);
 
@@ -83,6 +83,33 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
+        public DataTable ListDocenteTutoria()
+        {
+            DataTable table = new DataTable();
+            SqlDataReader readRows;
+            SqlCommand cmd = new SqlCommand("SP_ListarDocenteTutoria", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
 
+            readRows = cmd.ExecuteReader();
+            table.Load(readRows);
+
+            readRows.Close();
+            conexion.Close();
+
+            return table;
+        }
+        public DataTable BuscarTutoriasDocente(E_Tutoria tutoria)
+        {
+            DataTable tabla = new DataTable();
+            SqlCommand cmd = new SqlCommand("SP_BuscarDocenteTutoria", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+            cmd.Parameters.AddWithValue("@BUSCAR", tutoria.BucarDocenteTutoria);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+            conexion.Close();
+            return tabla;
+        }
     }
 }

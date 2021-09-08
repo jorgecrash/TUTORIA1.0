@@ -22,7 +22,11 @@ namespace CapaNegocio
             entities.Search = search;
             return data.SearchTutorias(entities);
         }
-
+        public DataTable BuscarDocenteTutorias(string search)
+        {
+            entities.BucarDocenteTutoria = search;
+            return data.BuscarTutoriasDocente(entities);
+        }
         public void CreatingTutoria(E_Tutoria product)
         {
             data.CreateTutoria(product);
@@ -33,9 +37,13 @@ namespace CapaNegocio
             data.UpdateTutoria(product);
         }
 
-        public void DeletingTutoria(int Id)
+        public void DeletingTutoria(string Id)
         {
             data.DeleteTutoria(Id);
+        }
+        public DataTable ListingDocenteTutorias()
+        {
+            return data.ListDocenteTutoria();
         }
     }
 }
