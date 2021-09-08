@@ -38,18 +38,24 @@ namespace CapaPresentacion
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse6 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse7 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse8 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.labelCategoria = new System.Windows.Forms.Label();
-            this.labelUsuario = new System.Windows.Forms.Label();
             this.panel_botones = new System.Windows.Forms.Panel();
-            this.labelCategoriaU = new System.Windows.Forms.Label();
-            this.Wrapper = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaElipse8 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse9 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.Sidebar = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelCategoriaU = new System.Windows.Forms.Label();
+            this.labelUsuario = new System.Windows.Forms.Label();
+            this.labelCategoria = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.Panel_Principal = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Wrapper = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnNormal = new System.Windows.Forms.PictureBox();
+            this.btnMaximized = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.PictureBox();
-            this.Minimized = new System.Windows.Forms.PictureBox();
-            this.Maximized = new System.Windows.Forms.PictureBox();
             this.btnFicha = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEstudiantes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutorados = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -57,18 +63,26 @@ namespace CapaPresentacion
             this.btnTutoria = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel_botones.SuspendLayout();
-            this.Wrapper.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.Sidebar.SuspendLayout();
+            this.Panel_Principal.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.Wrapper.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimized)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximized)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
             // 
+            this.gunaElipse1.Radius = 0;
             this.gunaElipse1.TargetControl = this;
             // 
             // gunaElipse2
@@ -93,23 +107,59 @@ namespace CapaPresentacion
             // 
             // gunaElipse7
             // 
-            this.gunaElipse7.Radius = 7;
+            this.gunaElipse7.Radius = 10;
             this.gunaElipse7.TargetControl = this.panel_botones;
+            // 
+            // panel_botones
+            // 
+            this.panel_botones.BackColor = System.Drawing.Color.Silver;
+            this.panel_botones.Controls.Add(this.btnFicha);
+            this.panel_botones.Controls.Add(this.btnEstudiantes);
+            this.panel_botones.Controls.Add(this.btnTutorados);
+            this.panel_botones.Controls.Add(this.btnDocentes);
+            this.panel_botones.Controls.Add(this.btnTutoria);
+            this.panel_botones.Location = new System.Drawing.Point(12, 241);
+            this.panel_botones.Name = "panel_botones";
+            this.panel_botones.Size = new System.Drawing.Size(222, 337);
+            this.panel_botones.TabIndex = 0;
             // 
             // gunaElipse8
             // 
             this.gunaElipse8.Radius = 7;
             this.gunaElipse8.TargetControl = this;
             // 
-            // labelCategoria
+            // gunaElipse9
             // 
-            this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelCategoria.ForeColor = System.Drawing.Color.Black;
-            this.labelCategoria.Location = new System.Drawing.Point(82, 43);
-            this.labelCategoria.Name = "labelCategoria";
-            this.labelCategoria.Size = new System.Drawing.Size(56, 23);
-            this.labelCategoria.TabIndex = 3;
-            this.labelCategoria.Text = "CRUD";
+            this.gunaElipse9.Radius = 0;
+            this.gunaElipse9.TargetControl = this;
+            // 
+            // Sidebar
+            // 
+            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(124)))), ((int)(((byte)(155)))));
+            this.Sidebar.Controls.Add(this.panel3);
+            this.Sidebar.Controls.Add(this.labelCategoriaU);
+            this.Sidebar.Controls.Add(this.panel_botones);
+            this.Sidebar.Controls.Add(this.labelUsuario);
+            this.Sidebar.Controls.Add(this.pictureBox1);
+            this.Sidebar.Controls.Add(this.labelCategoria);
+            this.Sidebar.Controls.Add(this.shapeContainer1);
+            this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Sidebar.Location = new System.Drawing.Point(0, 0);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Size = new System.Drawing.Size(244, 600);
+            this.Sidebar.TabIndex = 2;
+            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
+            // 
+            // labelCategoriaU
+            // 
+            this.labelCategoriaU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelCategoriaU.ForeColor = System.Drawing.Color.Black;
+            this.labelCategoriaU.Location = new System.Drawing.Point(67, 196);
+            this.labelCategoriaU.Name = "labelCategoriaU";
+            this.labelCategoriaU.Size = new System.Drawing.Size(109, 23);
+            this.labelCategoriaU.TabIndex = 8;
+            this.labelCategoriaU.Text = "Categoria";
+            this.labelCategoriaU.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelUsuario
             // 
@@ -122,116 +172,147 @@ namespace CapaPresentacion
             this.labelUsuario.Text = "USUARIO1";
             this.labelUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // panel_botones
+            // labelCategoria
             // 
-            this.panel_botones.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel_botones.Controls.Add(this.btnFicha);
-            this.panel_botones.Controls.Add(this.btnEstudiantes);
-            this.panel_botones.Controls.Add(this.btnTutorados);
-            this.panel_botones.Controls.Add(this.btnDocentes);
-            this.panel_botones.Controls.Add(this.btnTutoria);
-            this.panel_botones.Location = new System.Drawing.Point(12, 222);
-            this.panel_botones.Name = "panel_botones";
-            this.panel_botones.Size = new System.Drawing.Size(222, 337);
-            this.panel_botones.TabIndex = 0;
+            this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelCategoria.ForeColor = System.Drawing.Color.Black;
+            this.labelCategoria.Location = new System.Drawing.Point(96, 43);
+            this.labelCategoria.Name = "labelCategoria";
+            this.labelCategoria.Size = new System.Drawing.Size(56, 23);
+            this.labelCategoria.TabIndex = 3;
+            this.labelCategoria.Text = "CRUD";
             // 
-            // labelCategoriaU
+            // shapeContainer1
             // 
-            this.labelCategoriaU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelCategoriaU.ForeColor = System.Drawing.Color.Black;
-            this.labelCategoriaU.Location = new System.Drawing.Point(63, 185);
-            this.labelCategoriaU.Name = "labelCategoriaU";
-            this.labelCategoriaU.Size = new System.Drawing.Size(109, 23);
-            this.labelCategoriaU.TabIndex = 8;
-            this.labelCategoriaU.Text = "Categoria";
-            this.labelCategoriaU.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape4,
+            this.lineShape3});
+            this.shapeContainer1.Size = new System.Drawing.Size(244, 600);
+            this.shapeContainer1.TabIndex = 9;
+            this.shapeContainer1.TabStop = false;
             // 
-            // Wrapper
+            // lineShape4
             // 
-            this.Wrapper.BackColor = System.Drawing.Color.White;
-            this.Wrapper.Controls.Add(this.panel3);
-            this.Wrapper.Controls.Add(this.panel1);
-            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrapper.Location = new System.Drawing.Point(250, 0);
-            this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(790, 571);
-            this.Wrapper.TabIndex = 2;
-            this.Wrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.Wrapper_Paint);
+            this.lineShape4.BorderColor = System.Drawing.Color.Black;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 46;
+            this.lineShape4.X2 = 205;
+            this.lineShape4.Y1 = 285;
+            this.lineShape4.Y2 = 285;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.Black;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 17;
+            this.lineShape3.X2 = 233;
+            this.lineShape3.Y1 = 285;
+            this.lineShape3.Y2 = 285;
+            // 
+            // Panel_Principal
+            // 
+            this.Panel_Principal.Controls.Add(this.Wrapper);
+            this.Panel_Principal.Controls.Add(this.panel2);
+            this.Panel_Principal.Controls.Add(this.panel1);
+            this.Panel_Principal.Controls.Add(this.Sidebar);
+            this.Panel_Principal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_Principal.Location = new System.Drawing.Point(0, 0);
+            this.Panel_Principal.Name = "Panel_Principal";
+            this.Panel_Principal.Size = new System.Drawing.Size(1100, 600);
+            this.Panel_Principal.TabIndex = 4;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.panel1.Controls.Add(this.btnNormal);
+            this.panel1.Controls.Add(this.btnMaximized);
+            this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.Salir);
-            this.panel1.Controls.Add(this.Minimized);
-            this.panel1.Controls.Add(this.Maximized);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(244, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 25);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(856, 25);
+            this.panel1.TabIndex = 3;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // Sidebar
+            // Wrapper
             // 
-            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(137)))), ((int)(((byte)(165)))));
-            this.Sidebar.Controls.Add(this.panel2);
-            this.Sidebar.Controls.Add(this.labelCategoriaU);
-            this.Sidebar.Controls.Add(this.panel_botones);
-            this.Sidebar.Controls.Add(this.labelUsuario);
-            this.Sidebar.Controls.Add(this.pictureBox1);
-            this.Sidebar.Controls.Add(this.labelCategoria);
-            this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(250, 571);
-            this.Sidebar.TabIndex = 0;
-            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
+            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.Wrapper.Controls.Add(this.pictureBox3);
+            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrapper.Location = new System.Drawing.Point(244, 25);
+            this.Wrapper.Name = "Wrapper";
+            this.Wrapper.Size = new System.Drawing.Size(856, 524);
+            this.Wrapper.TabIndex = 5;
             // 
-            // panel2
+            // pictureBox2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 25);
-            this.panel2.TabIndex = 2;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
+            this.pictureBox2.Location = new System.Drawing.Point(634, -104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 221);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnNormal
+            // 
+            this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNormal.BackColor = System.Drawing.Color.Transparent;
+            this.btnNormal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNormal.Image = global::CapaPresentacion.Properties.Resources.maximize_sin_bordes;
+            this.btnNormal.Location = new System.Drawing.Point(805, 5);
+            this.btnNormal.Name = "btnNormal";
+            this.btnNormal.Size = new System.Drawing.Size(17, 20);
+            this.btnNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnNormal.TabIndex = 3;
+            this.btnNormal.TabStop = false;
+            this.btnNormal.Visible = false;
+            this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
+            // 
+            // btnMaximized
+            // 
+            this.btnMaximized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximized.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaximized.Image = global::CapaPresentacion.Properties.Resources.maximize_sin_bordes;
+            this.btnMaximized.Location = new System.Drawing.Point(805, 5);
+            this.btnMaximized.Name = "btnMaximized";
+            this.btnMaximized.Size = new System.Drawing.Size(17, 20);
+            this.btnMaximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximized.TabIndex = 0;
+            this.btnMaximized.TabStop = false;
+            this.btnMaximized.Click += new System.EventHandler(this.Maximized_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = global::CapaPresentacion.Properties.Resources.minimize_sin_bordes;
+            this.btnMinimizar.Location = new System.Drawing.Point(782, 5);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(17, 20);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // Salir
             // 
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Salir.Image = global::CapaPresentacion.Properties.Resources.cerrar;
-            this.Salir.Location = new System.Drawing.Point(767, 3);
+            this.Salir.Location = new System.Drawing.Point(828, 5);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(17, 20);
-            this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Salir.TabIndex = 2;
             this.Salir.TabStop = false;
             this.Salir.Click += new System.EventHandler(this.Salir_Click);
-            // 
-            // Minimized
-            // 
-            this.Minimized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Minimized.BackColor = System.Drawing.Color.Transparent;
-            this.Minimized.Image = global::CapaPresentacion.Properties.Resources.minimize_sin_bordes;
-            this.Minimized.Location = new System.Drawing.Point(721, 3);
-            this.Minimized.Name = "Minimized";
-            this.Minimized.Size = new System.Drawing.Size(17, 20);
-            this.Minimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Minimized.TabIndex = 2;
-            this.Minimized.TabStop = false;
-            this.Minimized.Click += new System.EventHandler(this.Minimized_Click_1);
-            // 
-            // Maximized
-            // 
-            this.Maximized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Maximized.BackColor = System.Drawing.Color.Transparent;
-            this.Maximized.Image = global::CapaPresentacion.Properties.Resources.maximize_sin_bordes;
-            this.Maximized.Location = new System.Drawing.Point(744, 3);
-            this.Maximized.Name = "Maximized";
-            this.Maximized.Size = new System.Drawing.Size(17, 20);
-            this.Maximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Maximized.TabIndex = 0;
-            this.Maximized.TabStop = false;
-            this.Maximized.Click += new System.EventHandler(this.Maximized_Click);
             // 
             // btnFicha
             // 
@@ -425,32 +506,61 @@ namespace CapaPresentacion
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(65, 175);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1);
-            this.panel3.TabIndex = 9;
+            this.panel3.Size = new System.Drawing.Size(244, 25);
+            this.panel3.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(244, 549);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(856, 51);
+            this.panel2.TabIndex = 4;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
+            this.pictureBox3.Location = new System.Drawing.Point(644, 440);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(292, 184);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 571);
-            this.Controls.Add(this.Wrapper);
-            this.Controls.Add(this.Sidebar);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.Controls.Add(this.Panel_Principal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMain";
+            this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panel_botones.ResumeLayout(false);
-            this.Wrapper.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
+            this.Panel_Principal.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.Wrapper.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimized)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximized)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -464,7 +574,11 @@ namespace CapaPresentacion
         private Guna.UI.WinForms.GunaElipse gunaElipse6;
         private Guna.UI.WinForms.GunaElipse gunaElipse7;
         private Guna.UI.WinForms.GunaElipse gunaElipse8;
-        private System.Windows.Forms.Panel Wrapper;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnMaximized;
+        private System.Windows.Forms.PictureBox btnNormal;
+        private System.Windows.Forms.PictureBox Salir;
+        private System.Windows.Forms.Panel Sidebar;
         private System.Windows.Forms.Label labelCategoriaU;
         private System.Windows.Forms.Panel panel_botones;
         private Bunifu.Framework.UI.BunifuFlatButton btnFicha;
@@ -475,12 +589,16 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelCategoria;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
+        private Guna.UI.WinForms.GunaElipse gunaElipse9;
+        private System.Windows.Forms.Panel Panel_Principal;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox Minimized;
-        private System.Windows.Forms.PictureBox Salir;
-        private System.Windows.Forms.PictureBox Maximized;
-        private System.Windows.Forms.Panel Sidebar;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Wrapper;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
