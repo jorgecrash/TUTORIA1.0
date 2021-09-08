@@ -26,6 +26,13 @@ namespace CapaPresentacion
             TablaTutoria.Columns[0].DisplayIndex = 6;//0
             TablaTutoria.Columns[1].DisplayIndex = 6;//1
 
+            TablaTutoria.Columns[0].Width = 10;
+            TablaTutoria.Columns[1].Width = 10;
+            TablaTutoria.Columns[2].Width = 100;
+            TablaTutoria.Columns[3].Width = 100;
+            TablaTutoria.Columns[4].Width = 150;
+            TablaTutoria.Columns[5].Width = 200;
+            TablaTutoria.Columns[6].Width = 170;
         }
         public void MostrarTablaTutoria()
         {
@@ -54,12 +61,12 @@ namespace CapaPresentacion
         {
             if (TablaTutoria.Rows[e.RowIndex].Cells["eliminar"].Selected)
             {
-                Form message = new FrmInformation("¿ESTAS SEGURO DE ELIMINAR EL DOCENTE?");
+                Form message = new FrmInformation("¿ESTAS SEGURO DE ELIMINAR LA TUTORIA?");
                 DialogResult result = message.ShowDialog();
 
                 if (result == DialogResult.OK)
                 {
-                    int delete = Convert.ToInt32(TablaTutoria.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    string delete = TablaTutoria.Rows[e.RowIndex].Cells[2].Value.ToString();
                     oTutoria.DeletingTutoria(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaTutoria();
@@ -72,12 +79,22 @@ namespace CapaPresentacion
                 frm.Update = true;
                 frm.textId.Text = TablaTutoria.Rows[e.RowIndex].Cells["IdTutoria"].Value.ToString();
                 frm.textIdDocente.Text = TablaTutoria.Rows[e.RowIndex].Cells["IdDocente"].Value.ToString();
-                frm.textHorario.Text = TablaTutoria.Rows[e.RowIndex].Cells["Horario"].Value.ToString();
+                //frm.textHorario.Text = TablaTutoria.Rows[e.RowIndex].Cells["Horario"].Value.ToString();
                 
                 frm.ShowDialog();
                 MostrarTablaTutoria();
                 //ShowTotal();
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

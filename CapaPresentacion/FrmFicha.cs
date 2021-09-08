@@ -67,7 +67,7 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    int delete = Convert.ToInt32(TablaFicha.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    string delete = TablaFicha.Rows[e.RowIndex].Cells[2].Value.ToString();
                     oFicha.DeletingFicha(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaFicha();
@@ -95,6 +95,11 @@ namespace CapaPresentacion
                 MostrarTablaFicha();
                 //ShowTotal();
             }
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
