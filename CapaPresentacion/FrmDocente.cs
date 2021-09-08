@@ -77,8 +77,8 @@ namespace CapaPresentacion
                 frm.textNombres.Text = TablaDocente.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaDocente.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
                 frm.textTitulo.Text = TablaDocente.Rows[e.RowIndex].Cells["TituloAcademico"].Value.ToString();
-                frm.textFacultad.Text = TablaDocente.Rows[e.RowIndex].Cells["Facultad"].Value.ToString();
-                frm.textEscuela.Text = TablaDocente.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
+                frm.comboBoxFacultad.Text = TablaDocente.Rows[e.RowIndex].Cells["Facultad"].Value.ToString();
+                frm.comboBoxEscuela.Text = TablaDocente.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
                 frm.comboBoxCategoria.Text = TablaDocente.Rows[e.RowIndex].Cells["Categoria"].Value.ToString();
 
                 frm.ShowDialog();
@@ -91,6 +91,10 @@ namespace CapaPresentacion
         {
 
         }
-       
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace CapaPresentacion
 {
@@ -27,16 +29,14 @@ namespace CapaPresentacion
             labelUsuario.Text = test.usuario;
             labelCategoriaU.Text = validarcategoria(test.usuario);
 
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.DoubleBuffered = true;
+
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
             //PantallaOk();
             //InitializeComponent();
-        }
-        public void PantallaOk()
-        {
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
         {
@@ -53,13 +53,26 @@ namespace CapaPresentacion
         }
         private void btnEstudiantes_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmEstudiante());
+            AbrirFormEnPanel(new FrmEstudiante());
         }
         private void btnDocentes_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmDocente());
+            AbrirFormEnPanel(new FrmDocente());
         }
-        private Form FormActive = null;
+        //METODO PARA ABRIR FORM DENTRO DE PANEL-----------------------------------------------------
+        private void AbrirFormEnPanel(object formHijo)
+        {
+            if (this.Wrapper.Controls.Count > 0)
+                this.Wrapper.Controls.RemoveAt(0);
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;            
+            this.Wrapper.Controls.Add(fh);
+            this.Wrapper.Tag = fh;
+            fh.Show();
+        }
+        /*private Form FormActive = null;
         private void AbrirFormulriosEnWrapper(Form FormHijo)
         {
             if (FormActive != null)
@@ -72,8 +85,7 @@ namespace CapaPresentacion
             FormHijo.BringToFront();
             FormHijo.Show();
 
-        }
-
+        }*/
         private void Salir_Click(object sender, EventArgs e)
         {
             DialogResult resultado = new DialogResult();
@@ -88,16 +100,16 @@ namespace CapaPresentacion
 
         private void btnFicha_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmFicha());
+            AbrirFormEnPanel(new FrmFicha());
         }
         private void btnTutoria_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmTutoria());
+            AbrirFormEnPanel(new FrmTutoria());
         }
 
         private void btnTutorados_Click(object sender, EventArgs e)
         {
-            AbrirFormulriosEnWrapper(new FrmRegistro());
+            AbrirFormEnPanel(new FrmRegistro());
         }
 
         public DataSet EjecutarSelect(string pConsulta)
@@ -179,16 +191,110 @@ namespace CapaPresentacion
             }
         }
 
+        //METODO PARA ARRASTRAR EL FORMULARIO---------------------------------------------------------------------
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        //-------------------MAXIMIZE,MINIMIZE,CERRAR-----------------------
+        int lx, ly;
+        int sw, sh;
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnNormal_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
+            btnNormal.Visible = false;
+            btnMaximized.Visible = true;
+        }
+
         private void Maximized_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
+            lx = this.Location.X;
+            ly = this.Location.Y;
+            sw = this.Size.Width;
+            sh = this.Size.Height;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            btnMaximized.Visible = false;
+            btnNormal.Visible = true;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
+
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
             {
-                WindowState = FormWindowState.Maximized;
-            }
-            else if (WindowState == FormWindowState.Maximized)
-            {
-                WindowState = FormWindowState.Normal;
+                case WM_NCHITTEST:
+                    base.WndProc(ref m);
+                    var hitPoint = this.PointToClient(new Point(m.LParam.ToInt32() & 0xffff, m.LParam.ToInt32() >> 16));
+                    if (sizeGripRectangle.Contains(hitPoint))
+                        m.Result = new IntPtr(HTBOTTOMRIGHT);
+                    break;
+                default:
+                    base.WndProc(ref m);
+                    break;
             }
         }
+
+        //----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL 
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            var region = new Region(new Rectangle(0, 0, this.ClientRectangle.Width, this.ClientRectangle.Height));
+
+            sizeGripRectangle = new Rectangle(this.ClientRectangle.Width - tolerance, this.ClientRectangle.Height - tolerance, tolerance, tolerance);
+
+            region.Exclude(sizeGripRectangle);
+            this.Panel_Principal.Region = region;
+            this.Invalidate();
+        }
+        //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
+        protected override void OnPaint(PaintEventArgs e)
+        {
+
+            SolidBrush blueBrush = new SolidBrush(Color.FromArgb(55, 61, 69));
+            e.Graphics.FillRectangle(blueBrush, sizeGripRectangle);
+
+            base.OnPaint(e);
+            ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, sizeGripRectangle);
+        }
+        //_____________________________METODO PARA MEJORAR Y OPTMIZAR LAS IMAGENES(EVITAR PARPADEO AL VECTORIZAR)____________________
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
     }
 }
