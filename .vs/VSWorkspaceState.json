@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CapaPresentacion",
+    "\\Tutorias001"
   ],
-  "SelectedNode": "\\Tutorias001.sln",
+  "SelectedNode": "\\CapaPresentacion\\FrmMain.cs",
   "PreviewInSolutionExplorer": false
 }
