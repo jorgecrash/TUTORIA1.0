@@ -275,6 +275,12 @@ namespace CapaPresentacion
             this.Panel_Principal.Region = region;
             this.Invalidate();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
         protected override void OnPaint(PaintEventArgs e)
         {
