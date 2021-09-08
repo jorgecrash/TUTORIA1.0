@@ -347,3 +347,35 @@ C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\Cap
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Jorge\Source\Repos\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaEntidades.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmDocente.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiante.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFicha.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmInformation.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantDocente.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantEstudiante.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantFicha.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantRegistro.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantTutoria.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegistro.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmSuccess.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmTutoria.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll

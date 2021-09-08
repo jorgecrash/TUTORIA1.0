@@ -40,7 +40,6 @@ namespace CapaPresentacion
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.topFormularioF = new System.Windows.Forms.Panel();
             this.MoverFormulario = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textIdEstudiante = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -59,7 +58,6 @@ namespace CapaPresentacion
             this.label9 = new System.Windows.Forms.Label();
             this.textCelularReferencia = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
@@ -69,6 +67,11 @@ namespace CapaPresentacion
             this.label14 = new System.Windows.Forms.Label();
             this.textId = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.topFormularioF.SuspendLayout();
@@ -79,6 +82,8 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -86,18 +91,20 @@ namespace CapaPresentacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 9);
+            this.label1.Location = new System.Drawing.Point(39, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 15);
+            this.label1.Size = new System.Drawing.Size(132, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "FICHA DE TUTORIA";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(604, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(805, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -108,26 +115,29 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Centaur", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(353, 73);
+            this.label2.Location = new System.Drawing.Point(354, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 16);
+            this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 47;
             this.label2.Text = "ID TUTORIA";
             // 
             // textIdTutoria
             // 
             this.textIdTutoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textIdTutoria.Location = new System.Drawing.Point(482, 76);
+            this.textIdTutoria.Location = new System.Drawing.Point(506, 55);
+            this.textIdTutoria.Margin = new System.Windows.Forms.Padding(4);
             this.textIdTutoria.Name = "textIdTutoria";
-            this.textIdTutoria.Size = new System.Drawing.Size(105, 13);
+            this.textIdTutoria.Size = new System.Drawing.Size(121, 15);
             this.textIdTutoria.TabIndex = 46;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(467, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(487, 42);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(162, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
@@ -153,14 +163,14 @@ namespace CapaPresentacion
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(13, 643);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Location = new System.Drawing.Point(598, 791);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(617, 48);
+            this.btnGuardar.Size = new System.Drawing.Size(223, 50);
             this.btnGuardar.TabIndex = 45;
             this.btnGuardar.Text = "                  GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,8 +185,9 @@ namespace CapaPresentacion
             this.topFormularioF.Controls.Add(this.pictureBox1);
             this.topFormularioF.Dock = System.Windows.Forms.DockStyle.Top;
             this.topFormularioF.Location = new System.Drawing.Point(0, 0);
+            this.topFormularioF.Margin = new System.Windows.Forms.Padding(4);
             this.topFormularioF.Name = "topFormularioF";
-            this.topFormularioF.Size = new System.Drawing.Size(650, 36);
+            this.topFormularioF.Size = new System.Drawing.Size(867, 44);
             this.topFormularioF.TabIndex = 44;
             // 
             // MoverFormulario
@@ -186,42 +197,34 @@ namespace CapaPresentacion
             this.MoverFormulario.TargetControl = this.topFormularioF;
             this.MoverFormulario.Vertical = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Centaur", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(33, 76);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(234, 18);
-            this.label4.TabIndex = 67;
-            this.label4.Text = "1. DATOS DEL ESTUDIANTE";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(54, 127);
+            this.label5.Location = new System.Drawing.Point(24, 50);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 15);
+            this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 69;
             this.label5.Text = "ID ESTUDIANTE";
             // 
             // textIdEstudiante
             // 
             this.textIdEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textIdEstudiante.Location = new System.Drawing.Point(188, 126);
+            this.textIdEstudiante.Location = new System.Drawing.Point(201, 53);
+            this.textIdEstudiante.Margin = new System.Windows.Forms.Padding(4);
             this.textIdEstudiante.Name = "textIdEstudiante";
-            this.textIdEstudiante.Size = new System.Drawing.Size(125, 13);
+            this.textIdEstudiante.Size = new System.Drawing.Size(121, 15);
             this.textIdEstudiante.TabIndex = 68;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(173, 117);
+            this.pictureBox3.Location = new System.Drawing.Point(181, 42);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(156, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(153, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 70;
             this.pictureBox3.TabStop = false;
@@ -231,26 +234,29 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(354, 124);
+            this.label3.Location = new System.Drawing.Point(439, 306);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 15);
+            this.label3.Size = new System.Drawing.Size(117, 17);
             this.label3.TabIndex = 72;
             this.label3.Text = "NRO. CELULAR";
             // 
             // textNroCelular
             // 
             this.textNroCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textNroCelular.Location = new System.Drawing.Point(482, 128);
+            this.textNroCelular.Location = new System.Drawing.Point(590, 306);
+            this.textNroCelular.Margin = new System.Windows.Forms.Padding(4);
             this.textNroCelular.Name = "textNroCelular";
-            this.textNroCelular.Size = new System.Drawing.Size(105, 13);
+            this.textNroCelular.Size = new System.Drawing.Size(140, 15);
             this.textNroCelular.TabIndex = 71;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(466, 118);
+            this.pictureBox4.Location = new System.Drawing.Point(568, 293);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(136, 32);
+            this.pictureBox4.Size = new System.Drawing.Size(174, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 73;
             this.pictureBox4.TabStop = false;
@@ -260,26 +266,29 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(54, 184);
+            this.label6.Location = new System.Drawing.Point(24, 115);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 15);
+            this.label6.Size = new System.Drawing.Size(91, 17);
             this.label6.TabIndex = 75;
             this.label6.Text = "DIRECCIÓN";
             // 
             // textDireccion
             // 
             this.textDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textDireccion.Location = new System.Drawing.Point(254, 184);
+            this.textDireccion.Location = new System.Drawing.Point(274, 115);
+            this.textDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.textDireccion.Name = "textDireccion";
-            this.textDireccion.Size = new System.Drawing.Size(332, 13);
+            this.textDireccion.Size = new System.Drawing.Size(443, 15);
             this.textDireccion.TabIndex = 74;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(239, 175);
+            this.pictureBox5.Location = new System.Drawing.Point(254, 104);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(364, 32);
+            this.pictureBox5.Size = new System.Drawing.Size(485, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 76;
             this.pictureBox5.TabStop = false;
@@ -289,26 +298,29 @@ namespace CapaPresentacion
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(54, 239);
+            this.label7.Location = new System.Drawing.Point(24, 177);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 15);
+            this.label7.Size = new System.Drawing.Size(54, 17);
             this.label7.TabIndex = 78;
             this.label7.Text = "EMAIL";
             // 
             // textEmail
             // 
             this.textEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textEmail.Location = new System.Drawing.Point(254, 236);
+            this.textEmail.Location = new System.Drawing.Point(276, 177);
+            this.textEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(347, 13);
+            this.textEmail.Size = new System.Drawing.Size(463, 15);
             this.textEmail.TabIndex = 77;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(239, 229);
+            this.pictureBox6.Location = new System.Drawing.Point(256, 169);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(364, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(485, 39);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 79;
             this.pictureBox6.TabStop = false;
@@ -318,26 +330,29 @@ namespace CapaPresentacion
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(54, 292);
+            this.label8.Location = new System.Drawing.Point(24, 241);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 15);
+            this.label8.Size = new System.Drawing.Size(172, 17);
             this.label8.TabIndex = 81;
             this.label8.Text = "PERSONA REFERENCIA";
             // 
             // textPersonaReferencia
             // 
             this.textPersonaReferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textPersonaReferencia.Location = new System.Drawing.Point(254, 292);
+            this.textPersonaReferencia.Location = new System.Drawing.Point(276, 241);
+            this.textPersonaReferencia.Margin = new System.Windows.Forms.Padding(4);
             this.textPersonaReferencia.Name = "textPersonaReferencia";
-            this.textPersonaReferencia.Size = new System.Drawing.Size(333, 13);
+            this.textPersonaReferencia.Size = new System.Drawing.Size(444, 15);
             this.textPersonaReferencia.TabIndex = 80;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(239, 284);
+            this.pictureBox7.Location = new System.Drawing.Point(257, 232);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(364, 32);
+            this.pictureBox7.Size = new System.Drawing.Size(485, 39);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 82;
             this.pictureBox7.TabStop = false;
@@ -347,49 +362,42 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(58, 344);
+            this.label9.Location = new System.Drawing.Point(24, 306);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 15);
+            this.label9.Size = new System.Drawing.Size(213, 17);
             this.label9.TabIndex = 84;
             this.label9.Text = "NRO. CELULAR REFERENCIA";
             // 
             // textCelularReferencia
             // 
             this.textCelularReferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textCelularReferencia.Location = new System.Drawing.Point(254, 344);
+            this.textCelularReferencia.Location = new System.Drawing.Point(266, 308);
+            this.textCelularReferencia.Margin = new System.Windows.Forms.Padding(4);
             this.textCelularReferencia.Name = "textCelularReferencia";
-            this.textCelularReferencia.Size = new System.Drawing.Size(333, 13);
+            this.textCelularReferencia.Size = new System.Drawing.Size(146, 15);
             this.textCelularReferencia.TabIndex = 83;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(239, 335);
+            this.pictureBox8.Location = new System.Drawing.Point(257, 296);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(364, 32);
+            this.pictureBox8.Size = new System.Drawing.Size(174, 39);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 85;
             this.pictureBox8.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Centaur", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(33, 387);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(218, 18);
-            this.label10.TabIndex = 86;
-            this.label10.Text = "2. SESIONES DE TUTORIA";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(346, 432);
+            this.label11.Location = new System.Drawing.Point(398, 37);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(115, 15);
+            this.label11.Size = new System.Drawing.Size(137, 17);
             this.label11.TabIndex = 91;
             this.label11.Text = "TIPO DE TUTORIA";
             // 
@@ -398,17 +406,19 @@ namespace CapaPresentacion
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(64, 432);
+            this.label12.Location = new System.Drawing.Point(22, 37);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 15);
+            this.label12.Size = new System.Drawing.Size(57, 17);
             this.label12.TabIndex = 88;
             this.label12.Text = "FECHA";
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(113, 427);
+            this.dtpFecha.Location = new System.Drawing.Point(88, 31);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(265, 22);
             this.dtpFecha.TabIndex = 92;
             // 
             // comboBoxTipoTutoria
@@ -416,9 +426,10 @@ namespace CapaPresentacion
             this.comboBoxTipoTutoria.FormattingEnabled = true;
             this.comboBoxTipoTutoria.Items.AddRange(new object[] {
             "ACADÉMICA"});
-            this.comboBoxTipoTutoria.Location = new System.Drawing.Point(467, 429);
+            this.comboBoxTipoTutoria.Location = new System.Drawing.Point(560, 33);
+            this.comboBoxTipoTutoria.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTipoTutoria.Name = "comboBoxTipoTutoria";
-            this.comboBoxTipoTutoria.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoTutoria.Size = new System.Drawing.Size(160, 24);
             this.comboBoxTipoTutoria.TabIndex = 93;
             // 
             // label13
@@ -426,17 +437,19 @@ namespace CapaPresentacion
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Centaur", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(68, 494);
+            this.label13.Location = new System.Drawing.Point(22, 111);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 15);
+            this.label13.Size = new System.Drawing.Size(107, 17);
             this.label13.TabIndex = 94;
             this.label13.Text = "DESCRIPCIÓN";
             // 
             // richTextBoxDescripcion
             // 
-            this.richTextBoxDescripcion.Location = new System.Drawing.Point(64, 521);
+            this.richTextBoxDescripcion.Location = new System.Drawing.Point(21, 145);
+            this.richTextBoxDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDescripcion.Name = "richTextBoxDescripcion";
-            this.richTextBoxDescripcion.Size = new System.Drawing.Size(524, 89);
+            this.richTextBoxDescripcion.Size = new System.Drawing.Size(717, 109);
             this.richTextBoxDescripcion.TabIndex = 95;
             this.richTextBoxDescripcion.Text = "";
             // 
@@ -445,9 +458,10 @@ namespace CapaPresentacion
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Centaur", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(33, 48);
+            this.label14.Location = new System.Drawing.Point(48, 63);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(24, 16);
+            this.label14.Size = new System.Drawing.Size(29, 20);
             this.label14.TabIndex = 97;
             this.label14.Text = "Nº";
             // 
@@ -455,61 +469,114 @@ namespace CapaPresentacion
             // 
             this.textId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textId.Enabled = false;
-            this.textId.Location = new System.Drawing.Point(71, 51);
+            this.textId.Location = new System.Drawing.Point(86, 68);
+            this.textId.Margin = new System.Windows.Forms.Padding(5);
             this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(75, 13);
+            this.textId.Size = new System.Drawing.Size(140, 15);
             this.textId.TabIndex = 96;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(56, 42);
+            this.pictureBox9.Location = new System.Drawing.Point(79, 56);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 32);
+            this.pictureBox9.Size = new System.Drawing.Size(169, 39);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 98;
             this.pictureBox9.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(358, 788);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 50);
+            this.button1.TabIndex = 99;
+            this.button1.Text = "Historial";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(671, 38);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(68, 43);
+            this.button2.TabIndex = 100;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.textCelularReferencia);
+            this.groupBox1.Controls.Add(this.pictureBox8);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.textPersonaReferencia);
+            this.groupBox1.Controls.Add(this.pictureBox7);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.textEmail);
+            this.groupBox1.Controls.Add(this.pictureBox6);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.textDireccion);
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textNroCelular);
+            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textIdEstudiante);
+            this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textIdTutoria);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(52, 112);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(785, 346);
+            this.groupBox1.TabIndex = 101;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "1. DATOS DEL ESTUDIANTE";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.richTextBoxDescripcion);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.comboBoxTipoTutoria);
+            this.groupBox2.Controls.Add(this.dtpFecha);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(52, 481);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(785, 287);
+            this.groupBox2.TabIndex = 102;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "2.- SESIONES DE TUTORIA";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(73, 790);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(175, 47);
+            this.button3.TabIndex = 103;
+            this.button3.Text = "Nuevo";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // FrmMantFicha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 691);
+            this.ClientSize = new System.Drawing.Size(867, 850);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textId);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.richTextBoxDescripcion);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBoxTipoTutoria);
-            this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textCelularReferencia);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textPersonaReferencia);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textEmail);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textDireccion);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textNroCelular);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textIdEstudiante);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textIdTutoria);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.topFormularioF);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMantFicha";
             this.Text = "FrmMantFicha";
             this.Load += new System.EventHandler(this.FrmMantFicha_Load);
@@ -524,6 +591,10 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -539,7 +610,6 @@ namespace CapaPresentacion
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private System.Windows.Forms.Panel topFormularioF;
         private Bunifu.Framework.UI.BunifuDragControl MoverFormulario;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox textIdEstudiante;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -558,7 +628,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox textCelularReferencia;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -568,5 +637,10 @@ namespace CapaPresentacion
         public System.Windows.Forms.DateTimePicker dtpFecha;
         public System.Windows.Forms.ComboBox comboBoxTipoTutoria;
         public System.Windows.Forms.RichTextBox richTextBoxDescripcion;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
