@@ -379,4 +379,3 @@ D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresen
 D:\GITHUB - TUTORIAS\jorgecrash\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\bin\Debug\Guna.UI.dll

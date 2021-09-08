@@ -49,7 +49,6 @@ namespace CapaPresentacion
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.textIdDocente = new CapaPresentacion.AlertaVacioTxtBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.topFormulario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -272,21 +271,11 @@ namespace CapaPresentacion
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // textIdDocente
-            // 
-            this.textIdDocente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textIdDocente.Location = new System.Drawing.Point(26, 84);
-            this.textIdDocente.Name = "textIdDocente";
-            this.textIdDocente.Size = new System.Drawing.Size(157, 13);
-            this.textIdDocente.TabIndex = 67;
-            this.textIdDocente.ValidarAlertaTxtBox = true;
-            // 
             // FrmMantTutoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 362);
-            this.Controls.Add(this.textIdDocente);
             this.Controls.Add(this.dtpHora);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.txtNomDocenteTutor);
@@ -337,6 +326,5 @@ namespace CapaPresentacion
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.DateTimePicker dtpHora;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        public AlertaVacioTxtBox textIdDocente;
     }
 }
