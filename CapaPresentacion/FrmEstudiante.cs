@@ -14,7 +14,7 @@ namespace CapaPresentacion
 {
     public partial class FrmEstudiante : Form
     {
-        
+
         N_Estudiante oEstudiante = new N_Estudiante();
         public FrmEstudiante()
         {
@@ -22,22 +22,12 @@ namespace CapaPresentacion
             MostrarTablaEstudiante();
             OcultarMoverAncharColumnas();
         }
-        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
-        private int tolerance = 15;
-        private const int WM_NCHITTEST = 132;
-        private const int HTBOTTOMRIGHT = 17;
-        private Rectangle sizeGripRectangle;
-        public void PantallaOk()
-        {
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
-        }
 
         public void OcultarMoverAncharColumnas()
         {
             TablaEstudiante.Columns[0].DisplayIndex = 8;//0
             TablaEstudiante.Columns[1].DisplayIndex = 8;//1
-          
+            //TablaEstudiante.Columns[1].Visible = false;
 
         }
         public void MostrarTablaEstudiante()
@@ -51,7 +41,7 @@ namespace CapaPresentacion
             TablaEstudiante.DataSource = oEstudiante.SearchingStudents(search);
 
         }
-        public void textBuscar_TextChanged(object sender,EventArgs e)
+        public void textBuscar_TextChanged(object sender, EventArgs e)
         {
             BuscarEstudiante(textBuscar.Text);
         }
@@ -61,7 +51,7 @@ namespace CapaPresentacion
             frm.ShowDialog();
             frm.Update = false;
             MostrarTablaEstudiante();
-          //  ShowTotal();
+            //  ShowTotal();
         }
         private void TablaEstudiante_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -72,25 +62,25 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
+                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
                     oEstudiante.DeletingStudents(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaEstudiante();
-                   // ShowTotal();
+                    // ShowTotal();
                 }
             }
             else if (TablaEstudiante.Rows[e.RowIndex].Cells["editar"].Selected)
             {
                 FrmMantEstudiante frm = new FrmMantEstudiante();
                 frm.Update = true;
-                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
+                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
                 frm.textNombres.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
-                frm.txtSemestreActivo.Text= TablaEstudiante.Rows[e.RowIndex].Cells["SemestreActivo"].Value.ToString();
+                frm.txtSemestreActivo.Text = TablaEstudiante.Rows[e.RowIndex].Cells["SemestreActivo"].Value.ToString();
                 frm.textEscuela.Text = TablaEstudiante.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
                 frm.txtIdEP.Text = TablaEstudiante.Rows[e.RowIndex].Cells["codigoEP"].Value.ToString();
-                frm.txtIngreso .Text = TablaEstudiante.Rows[e.RowIndex].Cells["AIngreso"].Value.ToString();
-               
+                frm.txtIngreso.Text = TablaEstudiante.Rows[e.RowIndex].Cells["AIngreso"].Value.ToString();
+
                 frm.ShowDialog();
                 MostrarTablaEstudiante();
                 //ShowTotal();
@@ -108,7 +98,7 @@ namespace CapaPresentacion
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -120,5 +110,7 @@ namespace CapaPresentacion
         {
 
         }
+
     }
+
 }
