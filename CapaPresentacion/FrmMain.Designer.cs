@@ -434,7 +434,7 @@ namespace CapaPresentacion
             // 
             // Wrapper
             // 
-            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.Wrapper.BackColor = System.Drawing.SystemColors.Control;
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(244, 25);
             this.Wrapper.Name = "Wrapper";

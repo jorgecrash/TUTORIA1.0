@@ -118,7 +118,7 @@ namespace CapaPresentacion
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void Salir_Click(object sender, EventArgs e)

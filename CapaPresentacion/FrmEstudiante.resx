@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="gunaElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>89</value>
@@ -215,27 +215,19 @@
   <data name="btnNuevoEstudiante.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAAAsCAYAAAAjOvkiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVHhe7ZzNS1RhFIf7i9q1adeqVW0KgmhRLiQoMAIj
-        IqJFhCGhLkaIDIM+TCxGDJKQYgqHYkRNJJwE7XMEtegSLqQWJ37vXG8Nc3OZ8x6eB34wcD9Wz72c+857
-        zq4kSYwQT0Fq4i5ITdwFqYm7IDVxF6Qm7rKt1Ktf1+3R9ISdLV634/cu2f4bp2x39xFC/nvknhw8/bDL
-        hirj9mVtJddZ5Z9SP52fDDfqHOu18YWyTX16a7VkzQB2ArknB58tVuzik0JwU3LnudsktZ6A82N9dnLk
-        qq1vfE9vCdBa/NjcCHK3D1+xpZWPDQ43SC2hDw122uh8Kb0UoLWZXJ61o3cuWPXzUr7UekMjNMSGyhLV
-        201Sq4ZWyQEQI70v71v/i+E/UmuVQ4U3NTTEyuavn3b49jmb+1CtS62vSBXdADFz6/WoXZsYrEuttT8t
-        lQDETHX1fVjoCFIfuNlhy99q6SGAOFEJsqfnWF3qvX0nwrofQOzo38cgtX4AeACpwR1IDe5AanAHUoM7
-        kBrcgdTgDqQGdyA1uAOpwR1IDe7IpNYmEG0GAYidTGo1CNApDh7IpFZHrhoYAWJG26e1jTpIXSg9CD1e
-        ADGjpnE1jwep1V5+cOAMdTVETUex2x6/KdWlVnqe37X+8kh6GCAuNEVM4/Hkcia1Oso1O2GutpieBhAH
-        moKgSmNrvl4mtaL2crWZ068IsSCh24YuW2mhknncILVSfjcTOnIHXhXTywBaE01A0Bv6b6GVJqkVlSKa
-        n6AnQF+UDLmBVkEN4qqfNY1Xoz3yRvrmSr0VPQFaItlXaA+L2oTsdDT5QB+Empue56yyrdSExBikJu6C
-        1MRdkJq4C1ITZ0nsN0tGhZQJ93p8AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVHhe7dzBSxtBFIDxsIk1akVEKC0KtVShemiPFaGg
+        vQhCoQfBIiKFCl48RI02IWsmeOnBi//xc9+sqCGvHnXn8R1+p50kly9hdsm8WmtwI4AnRA13iBruEDXc
+        IWq4Q9Rw5+mo82s53zmQ3vKqXL6dlzA5JYNaDXh22p42mH9Yloufe3LS+Wc3W/hv1O39IwkTkxLGm+aH
+        AC8lvBqX0JyQix+7ZrsjUes3oLfyOb7IekOgKrTRfGFRTtpXQw0PRa1B92dmZZDVzTcBqkibPW317aj1
+        F5qgkSLdb49EHffQbDmQqmKf3dnYehR1fh1vCs3FQCK04dPjbhm1PiLRO0prIZCMYuvcXdsoo9Znf+Yi
+        IDH92bky6v70jLkASE6WlVGHsTF7AZCgGLV1AUgVUcMdooY7RA13iBruEDXcIWq4Q9Rwh6jhDlHDHaKG
+        O2XUWWZeBFIUo2b0ATyJUeuJXOsikBr9G3WM+u/3bRk0GuYiICW91S9l1Hq8nEO3SF1oNuX8158yatVZ
+        3+ScItJVr0u+9Gl4RIKeKL98885+AVBxYer1/Xy9h6gLerycJyFIjY5GaP8+vu94KGp1dtiKY5xCg3OL
+        qLhiy6G/0I+DViNRR8VWpPv1GzePqCydxpu//2iO9LWjvqPfAH1EwjhfVIVOPtB56To33WpWPRk1kCKi
+        hjtEDXeIGu4QNZy5kVtl4twpxPF9zgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="gunaElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>134, 17</value>
-  </metadata>
   <metadata name="gunaElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>251, 17</value>
-  </metadata>
-  <metadata name="gunaElipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>368, 17</value>
   </metadata>
 </root>
