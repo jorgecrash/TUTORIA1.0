@@ -281,6 +281,11 @@ namespace CapaPresentacion
 
         }
 
+        private void Wrapper_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
         protected override void OnPaint(PaintEventArgs e)
         {
