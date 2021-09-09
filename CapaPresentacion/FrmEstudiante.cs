@@ -22,12 +22,22 @@ namespace CapaPresentacion
             MostrarTablaEstudiante();
             OcultarMoverAncharColumnas();
         }
+        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
+        public void PantallaOk()
+        {
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+        }
 
         public void OcultarMoverAncharColumnas()
         {
             TablaEstudiante.Columns[0].DisplayIndex = 8;//0
             TablaEstudiante.Columns[1].DisplayIndex = 8;//1
-            //TablaEstudiante.Columns[1].Visible = false;
+
 
         }
         public void MostrarTablaEstudiante()
@@ -62,7 +72,7 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
+                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
                     oEstudiante.DeletingStudents(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaEstudiante();
@@ -73,7 +83,7 @@ namespace CapaPresentacion
             {
                 FrmMantEstudiante frm = new FrmMantEstudiante();
                 frm.Update = true;
-                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
+                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
                 frm.textNombres.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
                 frm.txtSemestreActivo.Text = TablaEstudiante.Rows[e.RowIndex].Cells["SemestreActivo"].Value.ToString();
@@ -110,7 +120,5 @@ namespace CapaPresentacion
         {
 
         }
-
     }
-
 }
