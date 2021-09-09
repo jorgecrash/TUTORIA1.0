@@ -14,4 +14,25 @@
 * Yuca Lima Karla Urbelinda 					      182941                         *
 * Yañez Tuero, Jose Angel					          171573                         *
 ****************************************************************************
+Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de cada INTERFAZ
+
+
+FUNCIONES:
+
+*DOCENTE
+ -Agregar
+ -Eliminar
+ -Buscar
+ -Editar
+ 
+*ALUMNO
+ -Agregar
+ -Eliminar
+ -Bsucar
+ -Editar
+ 
+*FICHA TUTORIA
+ -
+*
+ 
 
