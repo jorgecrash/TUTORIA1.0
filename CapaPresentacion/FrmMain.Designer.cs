@@ -63,6 +63,9 @@ namespace CapaPresentacion
             this.btnMaximized = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel_botones.SuspendLayout();
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +77,8 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -312,6 +317,7 @@ namespace CapaPresentacion
             // Sidebar
             // 
             this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(124)))), ((int)(((byte)(155)))));
+            this.Sidebar.Controls.Add(this.panel4);
             this.Sidebar.Controls.Add(this.panel3);
             this.Sidebar.Controls.Add(this.labelCategoriaU);
             this.Sidebar.Controls.Add(this.panel_botones);
@@ -410,6 +416,7 @@ namespace CapaPresentacion
             // Panel_Principal
             // 
             this.Panel_Principal.Controls.Add(this.Wrapper);
+            this.Panel_Principal.Controls.Add(this.panel2);
             this.Panel_Principal.Controls.Add(this.panel1);
             this.Panel_Principal.Controls.Add(this.Sidebar);
             this.Panel_Principal.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -425,7 +432,7 @@ namespace CapaPresentacion
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(244, 25);
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(856, 575);
+            this.Wrapper.Size = new System.Drawing.Size(856, 553);
             this.Wrapper.TabIndex = 5;
             this.Wrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.Wrapper_Paint_1);
             // 
@@ -433,7 +440,7 @@ namespace CapaPresentacion
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
-            this.pictureBox2.Location = new System.Drawing.Point(632, 442);
+            this.pictureBox2.Location = new System.Drawing.Point(632, 420);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(302, 221);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -509,6 +516,37 @@ namespace CapaPresentacion
             this.Salir.TabStop = false;
             this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
+            this.pictureBox3.Location = new System.Drawing.Point(642, -114);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(292, 184);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(244, 578);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(856, 22);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 578);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(244, 22);
+            this.panel4.TabIndex = 1;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -534,6 +572,8 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -571,5 +611,8 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel Wrapper;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
