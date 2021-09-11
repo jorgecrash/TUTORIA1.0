@@ -14,13 +14,11 @@ namespace CapaPresentacion
 {
     public partial class FrmEstudiante : Form
     {
-        FrmMain ma = new FrmMain();
 
         N_Estudiante oEstudiante = new N_Estudiante();
         public FrmEstudiante()
         {
             InitializeComponent();
- 
             MostrarTablaEstudiante();
             OcultarMoverAncharColumnas();
         }
