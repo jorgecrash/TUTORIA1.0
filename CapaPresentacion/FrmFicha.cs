@@ -15,10 +15,12 @@ namespace CapaPresentacion
 {
     public partial class FrmFicha : Form
     {
+        FrmMain af=new FrmMain();
         N_Ficha oFicha = new N_Ficha();
         public FrmFicha()
         {
             InitializeComponent();
+            //string a = af.labelUsuario.Text;
             MostrarTablaFicha();
             OcultarMoverAncharColumnas();
         }

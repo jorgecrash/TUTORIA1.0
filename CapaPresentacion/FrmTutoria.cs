@@ -14,10 +14,12 @@ namespace CapaPresentacion
 {
     public partial class FrmTutoria : Form
     {
+        FrmMain ma = new FrmMain();
         N_Tutoria oTutoria = new N_Tutoria();
         public FrmTutoria()
         {
             InitializeComponent();
+            string a = ma.labelUsuario.Text;
             MostrarTablaTutoria();
             OcultarMoverAncharColumnas();
         }
