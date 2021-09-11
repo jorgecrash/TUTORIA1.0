@@ -52,9 +52,6 @@ namespace CapaPresentacion
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
             this.MoverFormulario = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCodDocente = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.comboBoxFacultad = new System.Windows.Forms.ComboBox();
@@ -67,7 +64,6 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +89,7 @@ namespace CapaPresentacion
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(14, 297);
+            this.btnGuardar.Location = new System.Drawing.Point(16, 332);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.SeaGreen;
@@ -113,7 +109,7 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(20, 115);
+            this.label3.Location = new System.Drawing.Point(508, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 18;
@@ -124,7 +120,7 @@ namespace CapaPresentacion
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(486, 45);
+            this.label4.Location = new System.Drawing.Point(275, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 19);
             this.label4.TabIndex = 21;
@@ -135,7 +131,7 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(242, 45);
+            this.label2.Location = new System.Drawing.Point(33, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 19);
             this.label2.TabIndex = 17;
@@ -145,7 +141,7 @@ namespace CapaPresentacion
             // 
             this.textApellidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textApellidos.Location = new System.Drawing.Point(489, 71);
+            this.textApellidos.Location = new System.Drawing.Point(278, 80);
             this.textApellidos.Name = "textApellidos";
             this.textApellidos.Size = new System.Drawing.Size(174, 19);
             this.textApellidos.TabIndex = 20;
@@ -155,7 +151,7 @@ namespace CapaPresentacion
             // 
             this.textTitulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTitulo.Location = new System.Drawing.Point(23, 142);
+            this.textTitulo.Location = new System.Drawing.Point(511, 80);
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(174, 19);
             this.textTitulo.TabIndex = 19;
@@ -177,7 +173,7 @@ namespace CapaPresentacion
             // 
             this.textNombres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombres.Location = new System.Drawing.Point(251, 71);
+            this.textNombres.Location = new System.Drawing.Point(42, 80);
             this.textNombres.Name = "textNombres";
             this.textNombres.Size = new System.Drawing.Size(186, 19);
             this.textNombres.TabIndex = 15;
@@ -209,7 +205,7 @@ namespace CapaPresentacion
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(244, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 73);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(201, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +215,7 @@ namespace CapaPresentacion
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(15, 135);
+            this.pictureBox4.Location = new System.Drawing.Point(503, 73);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(196, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -229,7 +225,7 @@ namespace CapaPresentacion
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(480, 64);
+            this.pictureBox3.Location = new System.Drawing.Point(269, 73);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(196, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,7 +237,7 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(264, 115);
+            this.label6.Location = new System.Drawing.Point(38, 143);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 19);
             this.label6.TabIndex = 31;
@@ -250,7 +246,7 @@ namespace CapaPresentacion
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(259, 134);
+            this.pictureBox7.Location = new System.Drawing.Point(33, 162);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(304, 39);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -262,7 +258,7 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(15, 188);
+            this.label5.Location = new System.Drawing.Point(368, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 19);
             this.label5.TabIndex = 34;
@@ -271,7 +267,7 @@ namespace CapaPresentacion
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(11, 208);
+            this.pictureBox5.Location = new System.Drawing.Point(364, 162);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(310, 38);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +279,7 @@ namespace CapaPresentacion
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(377, 188);
+            this.label7.Location = new System.Drawing.Point(29, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 19);
             this.label7.TabIndex = 38;
@@ -292,7 +288,7 @@ namespace CapaPresentacion
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(379, 208);
+            this.pictureBox8.Location = new System.Drawing.Point(31, 247);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(202, 41);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -307,7 +303,7 @@ namespace CapaPresentacion
             this.comboBoxCategoria.Items.AddRange(new object[] {
             "CONTRATADO",
             "NOMBRADO"});
-            this.comboBoxCategoria.Location = new System.Drawing.Point(385, 215);
+            this.comboBoxCategoria.Location = new System.Drawing.Point(37, 254);
             this.comboBoxCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCategoria.Name = "comboBoxCategoria";
             this.comboBoxCategoria.Size = new System.Drawing.Size(178, 28);
@@ -320,37 +316,6 @@ namespace CapaPresentacion
             this.MoverFormulario.Horizontal = true;
             this.MoverFormulario.TargetControl = this.topFormularioD;
             this.MoverFormulario.Vertical = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(20, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 19);
-            this.label8.TabIndex = 49;
-            this.label8.Text = "CODIGO";
-            // 
-            // txtCodDocente
-            // 
-            this.txtCodDocente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCodDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodDocente.Location = new System.Drawing.Point(24, 71);
-            this.txtCodDocente.Name = "txtCodDocente";
-            this.txtCodDocente.Size = new System.Drawing.Size(178, 19);
-            this.txtCodDocente.TabIndex = 48;
-            this.txtCodDocente.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodDocente_Validating);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(16, 64);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(195, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 50;
-            this.pictureBox9.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -374,7 +339,7 @@ namespace CapaPresentacion
             this.btnCancelar.IconVisible = true;
             this.btnCancelar.IconZoom = 90D;
             this.btnCancelar.IsTab = false;
-            this.btnCancelar.Location = new System.Drawing.Point(379, 297);
+            this.btnCancelar.Location = new System.Drawing.Point(381, 332);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
@@ -400,7 +365,7 @@ namespace CapaPresentacion
             this.comboBoxFacultad.FormattingEnabled = true;
             this.comboBoxFacultad.Items.AddRange(new object[] {
             "FACULTAD DE INGENIERIA ELECTRICA, ELECTRONICA, INFORMATICA Y MECANICA"});
-            this.comboBoxFacultad.Location = new System.Drawing.Point(268, 139);
+            this.comboBoxFacultad.Location = new System.Drawing.Point(42, 167);
             this.comboBoxFacultad.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFacultad.Name = "comboBoxFacultad";
             this.comboBoxFacultad.Size = new System.Drawing.Size(289, 28);
@@ -413,7 +378,7 @@ namespace CapaPresentacion
             this.comboBoxEscuela.FormattingEnabled = true;
             this.comboBoxEscuela.Items.AddRange(new object[] {
             "INGENIERIA INFORMATICA Y DE SISTEMAS"});
-            this.comboBoxEscuela.Location = new System.Drawing.Point(19, 213);
+            this.comboBoxEscuela.Location = new System.Drawing.Point(372, 167);
             this.comboBoxEscuela.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEscuela.Name = "comboBoxEscuela";
             this.comboBoxEscuela.Size = new System.Drawing.Size(290, 28);
@@ -424,13 +389,10 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(715, 371);
+            this.ClientSize = new System.Drawing.Size(715, 403);
             this.Controls.Add(this.comboBoxFacultad);
             this.Controls.Add(this.comboBoxEscuela);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtCodDocente);
-            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label7);
@@ -463,7 +425,6 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -492,9 +453,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.ComboBox comboBoxCategoria;
         private Bunifu.Framework.UI.BunifuDragControl MoverFormulario;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtCodDocente;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancelar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         public System.Windows.Forms.ComboBox comboBoxFacultad;

@@ -40,7 +40,6 @@ namespace CapaPresentacion
         {
             bool ok = true;
 
-            string docen = txtCodDocente.Text;
             string name = textNombres.Text;
             string apellido = textApellidos.Text;
             string titulo = textTitulo.Text;
@@ -50,7 +49,6 @@ namespace CapaPresentacion
 
             string vacio = string.Empty;
 
-            if (docen == vacio) { ok = false; errorProvider1.SetError(txtCodDocente, "Rellene el campo"); }
             if (name == vacio) { ok = false; errorProvider1.SetError(textNombres, "Rellene el campo"); }
             if (apellido == vacio) { ok = false; errorProvider1.SetError(textApellidos, "Rellene el campo"); }
             if (titulo == vacio) { ok = false; errorProvider1.SetError(textTitulo, "Rellene el campo"); }
@@ -98,8 +96,6 @@ namespace CapaPresentacion
                 {
                     try
                     {
-                        entities.IdDocente = txtCodDocente.Text;
-                        txtCodDocente.Enabled = true;
                         entities.Nombres = textNombres.Text;
                         //   entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                         entities.Apellidos = textApellidos.Text;
@@ -121,8 +117,6 @@ namespace CapaPresentacion
                 {
                     try
                     {
-                        entities.IdDocente = txtCodDocente.Text;
-                        txtCodDocente.Enabled = false;
                         entities.Nombres = textNombres.Text;
                         // entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                         entities.Apellidos = textApellidos.Text;
@@ -152,10 +146,6 @@ namespace CapaPresentacion
             
         }
 
-        private void txtCodDocente_Validating(object sender, CancelEventArgs e)
-        {
-            metod_validating_TextBox(txtCodDocente);
-        }
 
         private void textNombres_Validating(object sender, CancelEventArgs e)
         {
