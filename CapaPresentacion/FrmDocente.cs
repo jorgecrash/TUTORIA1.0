@@ -71,8 +71,6 @@ namespace CapaPresentacion
             {
                 FrmMantDocente frm = new FrmMantDocente();
                 frm.Update = true;
-                frm.txtCodDocente .Text = TablaDocente.Rows[e.RowIndex].Cells["IdDocente"].Value.ToString();
-                frm.txtCodDocente.Enabled = false;
                // frm.textCodigo.Text = TablaDocente.Rows[e.RowIndex].Cells["CodEstudiante"].Value.ToString();
                 frm.textNombres.Text = TablaDocente.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaDocente.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
