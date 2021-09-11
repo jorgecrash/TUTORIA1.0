@@ -583,7 +583,6 @@ namespace CapaPresentacion
         private Bunifu.Framework.UI.BunifuFlatButton btnTutorados;
         private Bunifu.Framework.UI.BunifuFlatButton btnDocentes;
         private Bunifu.Framework.UI.BunifuFlatButton btnTutoria;
-        private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelCategoria;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
@@ -597,5 +596,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
+        public System.Windows.Forms.Label labelUsuario;
     }
 }

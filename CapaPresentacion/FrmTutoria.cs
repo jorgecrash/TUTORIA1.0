@@ -14,6 +14,7 @@ namespace CapaPresentacion
 {
     public partial class FrmTutoria : Form
     {
+       
         N_Tutoria oTutoria = new N_Tutoria();
         public FrmTutoria()
         {
