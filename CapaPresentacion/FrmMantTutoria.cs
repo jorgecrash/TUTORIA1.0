@@ -33,6 +33,7 @@ namespace CapaPresentacion
                 {
                     try
                     {
+                        //comentario
                         //entities.IdTutoria = textId.Text;
                         entities.IdDocente = textIdDocente.Text;
                         entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") + "  " + dtpHora.Value.TimeOfDay.ToString();
