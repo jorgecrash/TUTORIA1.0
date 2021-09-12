@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CapaPresentacion",
-    "\\Tutorias001"
+    "\\.circleci",
+    "\\CapaPresentacion"
   ],
-  "SelectedNode": "\\CapaPresentacion\\FrmMantTutoria.cs",
+  "SelectedNode": "\\CapaPresentacion\\FrmMantFicha.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
