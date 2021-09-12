@@ -14,6 +14,7 @@ namespace CapaPresentacion
 {
     public partial class FrmTutoria : Form
     {
+       
         N_Tutoria oTutoria = new N_Tutoria();
         public FrmTutoria()
         {
@@ -86,5 +87,21 @@ namespace CapaPresentacion
                 //ShowTotal();
             }
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

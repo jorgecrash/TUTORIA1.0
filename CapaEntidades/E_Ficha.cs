@@ -20,6 +20,7 @@ namespace CapaEntidades
         private string _TipoTutoria;
         private string _Descripcion;
         private string search;
+        private string _usuario;
 
         public string IdFichaTutoria { get => _IdFichaTutoria; set => _IdFichaTutoria = value; }
         public string IdTutoria { get => _IdTutoria; set => _IdTutoria = value; }
@@ -33,5 +34,6 @@ namespace CapaEntidades
         public string TipoTutoria { get => _TipoTutoria; set => _TipoTutoria = value; }
         public string Descripcion { get => _Descripcion; set => _Descripcion = value; }
         public string Search { get => search; set => search = value; }
+        public string Usuario { get => _usuario; set => _usuario = value; }
     }
 }

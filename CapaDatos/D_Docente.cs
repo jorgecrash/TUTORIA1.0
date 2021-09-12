@@ -70,7 +70,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("SP_INSERTARDOCENTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-            cmd.Parameters.AddWithValue("@IDDOCENTE", docente.IdDocente);
+            //cmd.Parameters.AddWithValue("@IDDOCENTE", docente.IdDocente);
             cmd.Parameters.AddWithValue("@NOMBRES", docente.Nombres);
             cmd.Parameters.AddWithValue("@APELLIDOS", docente.Apellidos);
             cmd.Parameters.AddWithValue("@TITULO", docente.TituloAcademico);
