@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.circleci",
     "\\CapaPresentacion",
-    "\\Tutorias001",
     "\\Tutorias001\\PruebasFormulario"
   ],
-  "SelectedNode": "\\CapaPresentacion\\FrmTutoria.cs",
+  "SelectedNode": "\\.circleci\\config.yml",
   "PreviewInSolutionExplorer": false
 }
