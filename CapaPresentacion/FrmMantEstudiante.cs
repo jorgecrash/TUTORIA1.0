@@ -37,13 +37,13 @@ namespace CapaPresentacion
             if (Update == false)
             {
                 try
-                {
+                { 
                     entities.Nombres = textNombres.Text;
                     //   entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                     entities.Apellidos = textApellidos.Text;
                     entities.EscuelaProfesional = textEscuela.Text;
                     entities.CodEP = txtIdEP.Text;
-                    entities.Estudiante = txtCodEstudiante.Text;
+                   // entities.Estudiante = txtCodEstudiante.Text;
                     entities.AIngreso = txtIngreso.Text;
                     entities.SemestreActivo = txtSemestreActivo.Text;
                     business.CreatingStudents(entities);
@@ -65,7 +65,7 @@ namespace CapaPresentacion
                     entities.Apellidos = textApellidos.Text;
                     entities.EscuelaProfesional = textEscuela.Text;
                     entities.CodEP = txtIdEP.Text;
-                    entities.Estudiante = txtCodEstudiante.Text;
+                    //entities.Estudiante = txtCodEstudiante.Text;
                     entities.AIngreso = txtIngreso.Text;
                     entities.SemestreActivo = txtSemestreActivo.Text;
                     business.UpdatingStudents(entities);
@@ -89,6 +89,16 @@ namespace CapaPresentacion
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textNombres_TextChanged(object sender, EventArgs e)
         {
 
         }

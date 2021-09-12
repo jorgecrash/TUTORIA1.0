@@ -49,7 +49,7 @@ namespace CapaPresentacion
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.textIdDocente = new CapaPresentacion.AlertaVacioTxtBox();
+            this.textIdDocente = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.topFormulario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -149,6 +149,7 @@ namespace CapaPresentacion
             this.topFormulario.Name = "topFormulario";
             this.topFormulario.Size = new System.Drawing.Size(562, 36);
             this.topFormulario.TabIndex = 41;
+            this.topFormulario.Paint += new System.Windows.Forms.PaintEventHandler(this.topFormulario_Paint);
             // 
             // label3
             // 
@@ -274,12 +275,11 @@ namespace CapaPresentacion
             // 
             // textIdDocente
             // 
-            this.textIdDocente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textIdDocente.BackColor = System.Drawing.Color.White;
             this.textIdDocente.Location = new System.Drawing.Point(26, 84);
             this.textIdDocente.Name = "textIdDocente";
-            this.textIdDocente.Size = new System.Drawing.Size(157, 13);
+            this.textIdDocente.Size = new System.Drawing.Size(157, 20);
             this.textIdDocente.TabIndex = 67;
-            this.textIdDocente.ValidarAlertaTxtBox = true;
             // 
             // FrmMantTutoria
             // 
@@ -337,6 +337,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.DateTimePicker dtpHora;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        public AlertaVacioTxtBox textIdDocente;
+        public System.Windows.Forms.TextBox textIdDocente;
     }
 }
