@@ -27,15 +27,15 @@ namespace CapaPresentacion
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (Update == false)
+            if (validar())
             {
-                if (AlertasForms.ValidarTxtBoxFormulario(this, errorProvider1) == false)
+                if (Update == false)
                 {
                     try
                     {
-                        entities.IdTutoria = textId.Text;
+                        //entities.IdTutoria = textId.Text;
                         entities.IdDocente = textIdDocente.Text;
-                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") +"  "+ dtpHora.Value.TimeOfDay.ToString();
+                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") + "  " + dtpHora.Value.TimeOfDay.ToString();
                         business.CreatingTutoria(entities);
                         FrmSuccess.confirmacionForm("TUTOR REGISTRADO");
                         Close();
@@ -45,17 +45,13 @@ namespace CapaPresentacion
                         MessageBox.Show("No se pudo guardar Tutor ");
                     }
                 }
-            }
-            if (Update == true)
-            {
-                if (AlertasForms.ValidarTxtBoxFormulario(this, errorProvider1) == false)
+                if (Update == true)
                 {
                     try
                     {
-                        entities.IdTutoria = textId.Text;
+                        //entities.IdTutoria = textId.Text;
                         entities.IdDocente = textIdDocente.Text; ;
-                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") +"  "+dtpHora.Value.TimeOfDay.ToString();
-
+                        entities.Horario = dtpFecha.Value.Date.ToString("dd/MM/yyyy") + "  " + dtpHora.Value.TimeOfDay.ToString();
 
                         business.UpdatingTutoria(entities);
 
@@ -105,9 +101,35 @@ namespace CapaPresentacion
 
         }
 
-        private void topFormulario_Paint(object sender, PaintEventArgs e)
+        private bool validar()
         {
+            bool ok = true;
 
+            string docente = textIdDocente.Text;
+
+            string vacio = string.Empty;
+
+            if (docente == vacio) { ok = false; errorProvider1.SetError(textIdDocente, "Este campo no puede estar vacio"); }
+
+
+            return ok;
+        }
+        void metod_validating_TextBox(System.Windows.Forms.TextBox pTextBox)
+        {
+            string campo = pTextBox.Text;
+            string vacio = string.Empty;
+            if (campo == vacio)
+            {
+                errorProvider1.SetError(pTextBox, "Campo vacio");
+            }
+            else
+            {
+                errorProvider1.SetError(pTextBox, "");
+            }
+        }
+        private void textIdDocente_Validating(object sender, CancelEventArgs e)
+        {
+            metod_validating_TextBox(textIdDocente);
         }
     }
 }

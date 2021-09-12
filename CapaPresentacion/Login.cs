@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace CapaPresentacion
 {
@@ -23,68 +22,62 @@ namespace CapaPresentacion
             //buttonIngresar.Focus();
 
         }
-        FrmMain M = new FrmMain();
-        SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
+
         public bool logins(string _usuario, string _clave)
         {
             try
             {
-                conexion.Open();
-               
 
-                SqlCommand cmd = new SqlCommand("SELECT * from Logins  WHERE Usuario= @Usuario AND Contraseña=@Contraseña ", conexion);
-
-                cmd.Parameters.AddWithValue("Usuario", usuario);
-                cmd.Parameters.AddWithValue("Contraseña", clave);
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows.Count == 1)
+                using (SqlConnection conexion = new SqlConnection("Server=tcp:unsaac-server.database.windows.net,1433;Initial Catalog=dbTUTORIA;Persist Security Info=False;User ID=adminxd;Password=5uLh3g5xd7BUWz;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"))
                 {
-                    // this.Hide();
-                    MessageBox.Show("Login exitoso.");
-                    // FrmFicha F = new FrmFicha();
+                    conexion.Open();
+                    //_usuario = txtusuario.Text;
+                    //_clave = txtcontraseña.Text;
 
-                    M.labelUsuario.Text = txtusuario.Text;
-                    M.labelCategoriaU.Text = dt.Rows[0][2].ToString();
-                    conexion.Close();
-                    return true;
-                }
-                else
-                {
-                    if (txtusuario.Text == "" && txtcontraseña.Text != "")
+                    using (SqlCommand cmd = new SqlCommand("SELECT * from Logins  WHERE Logins.Usuario='" + _usuario + "' AND Logins.Contraseña='" + _clave + "'", conexion))
                     {
-                        msgError("Llenar el campo usuario");
-                        txtusuario.Focus();
-                    }
-                    else if (txtusuario.Text != "" && txtcontraseña.Text == "")
-                    {
-                        msgError("Llenar el campo contraseña");
-                        txtcontraseña.Focus();
-                    }
-                    else if (txtusuario.Text == "" && txtcontraseña.Text == "")
-                    {
-                        msgError("Llenar ambos campos");
-                        txtusuario.Focus();
-                    }
-                    else
-                    {
-                        msgError("Error Usuario i/o Contraseña");
-                        txtusuario.Text = "";
-                        txtcontraseña.Text = "";
-                        txtusuario.Focus();
-                    }
-                    conexion.Close();
-                    return false;
-                }
+                        SqlDataReader dr = cmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            MessageBox.Show("Login exitoso.");
+                            obtenerusuario();
+                            Close();
+                            return true;
 
+                        }
+                        else
+                        {
+                            if (txtusuario.Text == "" && txtcontraseña.Text != "")
+                            {
+                                msgError("Llenar el campo usuario");
+                                txtusuario.Focus();
+                            }
+                            else if (txtusuario.Text != "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar el campo contraseña");
+                                txtcontraseña.Focus();
+                            }
+                            else if (txtusuario.Text == "" && txtcontraseña.Text == "")
+                            {
+                                msgError("Llenar ambos campos");
+                                txtusuario.Focus();
+                            }
+                            else
+                            {
+                                msgError("Error Usuario i/o Contraseña");
+                                txtusuario.Text = "";
+                                txtcontraseña.Text = "";
+                                txtusuario.Focus();
+                            }
+                            return false;
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                conexion.Close();
                 return false;
-
             }
 
         }
@@ -144,13 +137,15 @@ namespace CapaPresentacion
         {
             usuario = txtusuario.Text;
             clave = txtcontraseña.Text;
-            bool v = logins(usuario,clave);
-            if (v)
+            bool v = logins(usuario, clave);
+            /*if (v == true)
             {
-                this.Hide();
-                M.ShowDialog();
+                MessageBox.Show("Login exitoso.");
             }
-            
+            else
+            {
+                MessageBox.Show("ERROR : Ingrese usuario y clave ");
+            }*/
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -209,11 +204,6 @@ namespace CapaPresentacion
         }
 
         private void txtcontraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelContraseña_Click(object sender, EventArgs e)
         {
 
         }
