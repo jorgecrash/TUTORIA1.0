@@ -13,22 +13,39 @@ namespace CapaDatos
     public class D_Ficha
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
+        public string indiceñ;
 
-        public DataTable ListFichas()
+        public DataTable ListEstudianteTutoria(E_Ficha ficha)
         {
-            DataTable table = new DataTable();
-            SqlDataReader readRows;
+
+            DataTable tabla = new DataTable();
+            SqlCommand cmd = new SqlCommand("SP_LISTAR_ESTUDIANTE_TUTORIA", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+
+            cmd.Parameters.AddWithValue("@USUARIO", ficha.Search);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+
+            conexion.Close();
+            return tabla;
+        }
+        public DataTable ListFichas(E_Ficha ficha)
+        {
+
+            DataTable tabla = new DataTable();
             SqlCommand cmd = new SqlCommand("SP_LISTARFICHA", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            readRows = cmd.ExecuteReader();
-            table.Load(readRows);
+            cmd.Parameters.AddWithValue("@USUARIO", ficha.Search);
 
-            readRows.Close();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+
             conexion.Close();
-
-            return table;
+            return tabla;
         }
         public DataTable SearchFichas(E_Ficha ficha)
         {
@@ -38,6 +55,23 @@ namespace CapaDatos
             conexion.Open();
 
             cmd.Parameters.AddWithValue("@BUSCAR", ficha.Search);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+
+            conexion.Close();
+            return tabla;
+        }
+        public DataTable SearchEstudiante_Tutoria(E_Ficha ficha)
+        {
+            DataTable tabla = new DataTable();
+            SqlCommand cmd = new SqlCommand("SP_BUSCAR_ESTUDIANTE_TUTORIA", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+            
+            cmd.Parameters.AddWithValue("@BUSCAR", ficha.Search);
+            cmd.Parameters.AddWithValue("@USUARIO", ficha.Usuario);
+
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(tabla);
