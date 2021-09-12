@@ -24,19 +24,13 @@ namespace CapaPresentacion
         public FrmMain()
         {
             InitializeComponent();
-            Login test = new Login();
-            test.ShowDialog();
-            labelUsuario.Text = test.usuario;
-            labelCategoriaU.Text = validarcategoria(test.usuario);
-
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
 
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            //PantallaOk();
-            //InitializeComponent();
+           
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
         {
@@ -100,7 +94,20 @@ namespace CapaPresentacion
 
         private void btnFicha_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new FrmFicha());
+            if (this.Wrapper.Controls.Count > 0)
+                this.Wrapper.Controls.RemoveAt(0);
+            FrmFicha fh = new FrmFicha();
+           // Form fh = new FrmFicha() as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+            this.Wrapper.Controls.Add(fh);
+            this.Wrapper.Tag = fh;
+            
+            fh.Log = labelUsuario.Text;
+            cGuardarDatos.user = labelUsuario.Text;
+            fh.Show();
+            //AbrirFormEnPanel();
         }
         private void btnTutoria_Click(object sender, EventArgs e)
         {

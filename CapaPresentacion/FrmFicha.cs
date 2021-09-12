@@ -17,23 +17,23 @@ namespace CapaPresentacion
     {
         
         N_Ficha oFicha = new N_Ficha();
+        public string Log;
         public FrmFicha()
         {
             InitializeComponent();
             //string a = af.labelUsuario.Text;
-            MostrarTablaFicha();
-            OcultarMoverAncharColumnas();
+            
         }
         public void OcultarMoverAncharColumnas()
         {
-            TablaFicha.Columns[0].DisplayIndex = 14;
-            TablaFicha.Columns[1].DisplayIndex = 14;
+            TablaFicha.Columns[0].DisplayIndex = 13;
+            TablaFicha.Columns[1].DisplayIndex = 13;
 
         }
         public void MostrarTablaFicha()
         {
             N_Ficha oFicha = new N_Ficha();
-            TablaFicha.DataSource = oFicha.ListingFichas();
+            TablaFicha.DataSource = oFicha.ListingFichas(Log);
         }
         public void BuscarFicha(string search)
         {
@@ -44,6 +44,10 @@ namespace CapaPresentacion
         private void textBuscar_TextChanged(object sender, EventArgs e)
         {
             BuscarFicha(textBuscar.Text);
+            if (textBuscar.Text == "")
+            {
+                MostrarTablaFicha();
+            }
         }
         private void btnAgregarFicha_Click(object sender, EventArgs e)
         {
@@ -107,6 +111,17 @@ namespace CapaPresentacion
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmFicha_Load(object sender, EventArgs e)
+        {
+            MostrarTablaFicha();
+            OcultarMoverAncharColumnas();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
