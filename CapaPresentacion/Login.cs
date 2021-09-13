@@ -28,7 +28,7 @@ namespace CapaPresentacion
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection("Server=.;Integrated Security=yes; Database=Tutorias"))
+                using (SqlConnection conexion = new SqlConnection("Server=tcp:unsaac-server.database.windows.net,1433;Initial Catalog=dbTUTORIA;Persist Security Info=False;User ID=adminxd;Password=5uLh3g5xd7BUWz;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"))
                 {
                     conexion.Open();
                     //_usuario = txtusuario.Text;
@@ -204,11 +204,6 @@ namespace CapaPresentacion
         }
 
         private void txtcontraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelContraseña_Click(object sender, EventArgs e)
         {
 
         }

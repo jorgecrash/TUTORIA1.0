@@ -68,7 +68,7 @@ namespace CapaPresentacion
             this.textId = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBuscarEstudianteTutoria = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -124,7 +124,9 @@ namespace CapaPresentacion
             // 
             // textIdTutoria
             // 
+            this.textIdTutoria.BackColor = System.Drawing.Color.White;
             this.textIdTutoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textIdTutoria.Enabled = false;
             this.textIdTutoria.Location = new System.Drawing.Point(506, 55);
             this.textIdTutoria.Margin = new System.Windows.Forms.Padding(4);
             this.textIdTutoria.Name = "textIdTutoria";
@@ -164,7 +166,7 @@ namespace CapaPresentacion
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
             this.btnGuardar.Location = new System.Drawing.Point(598, 791);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -211,7 +213,9 @@ namespace CapaPresentacion
             // 
             // textIdEstudiante
             // 
+            this.textIdEstudiante.BackColor = System.Drawing.Color.White;
             this.textIdEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textIdEstudiante.Enabled = false;
             this.textIdEstudiante.Location = new System.Drawing.Point(201, 53);
             this.textIdEstudiante.Margin = new System.Windows.Forms.Padding(4);
             this.textIdEstudiante.Name = "textIdEstudiante";
@@ -495,18 +499,19 @@ namespace CapaPresentacion
             this.button1.Text = "Historial";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBuscarEstudianteTutoria
             // 
-            this.button2.Location = new System.Drawing.Point(671, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 43);
-            this.button2.TabIndex = 100;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarEstudianteTutoria.Location = new System.Drawing.Point(671, 38);
+            this.btnBuscarEstudianteTutoria.Name = "btnBuscarEstudianteTutoria";
+            this.btnBuscarEstudianteTutoria.Size = new System.Drawing.Size(68, 43);
+            this.btnBuscarEstudianteTutoria.TabIndex = 100;
+            this.btnBuscarEstudianteTutoria.Text = "...";
+            this.btnBuscarEstudianteTutoria.UseVisualStyleBackColor = true;
+            this.btnBuscarEstudianteTutoria.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnBuscarEstudianteTutoria);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textCelularReferencia);
             this.groupBox1.Controls.Add(this.pictureBox8);
@@ -638,7 +643,7 @@ namespace CapaPresentacion
         public System.Windows.Forms.ComboBox comboBoxTipoTutoria;
         public System.Windows.Forms.RichTextBox richTextBoxDescripcion;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBuscarEstudianteTutoria;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button3;

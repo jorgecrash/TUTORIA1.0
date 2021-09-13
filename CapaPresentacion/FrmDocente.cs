@@ -71,8 +71,6 @@ namespace CapaPresentacion
             {
                 FrmMantDocente frm = new FrmMantDocente();
                 frm.Update = true;
-                frm.txtCodDocente .Text = TablaDocente.Rows[e.RowIndex].Cells["IdDocente"].Value.ToString();
-                frm.txtCodDocente.Enabled = false;
                // frm.textCodigo.Text = TablaDocente.Rows[e.RowIndex].Cells["CodEstudiante"].Value.ToString();
                 frm.textNombres.Text = TablaDocente.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaDocente.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
@@ -93,6 +91,21 @@ namespace CapaPresentacion
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
