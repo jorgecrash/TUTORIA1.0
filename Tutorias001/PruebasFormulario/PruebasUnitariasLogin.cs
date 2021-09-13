@@ -4,7 +4,7 @@ using System;
 
 namespace PruebasFormulario
 {
-    /*
+    
     [TestClass]
     public class PruebasUnitariasLogin
     {
@@ -103,5 +103,5 @@ namespace PruebasFormulario
         }
     
     }
-    */
+   
 }
