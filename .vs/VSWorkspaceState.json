@@ -3,8 +3,9 @@
     "",
     "\\.circleci",
     "\\CapaPresentacion",
-    "\\Tutorias001"
+    "\\Tutorias001",
+    "\\Tutorias001\\PruebasFormulario"
   ],
-  "SelectedNode": "\\CapaPresentacion\\FrmTutoria.cs",
+  "SelectedNode": "\\CapaPresentacion\\App.config",
   "PreviewInSolutionExplorer": false
 }
