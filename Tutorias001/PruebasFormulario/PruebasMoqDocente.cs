@@ -10,10 +10,10 @@ using CapaPresentacion;
 
 namespace PruebasFormulario
 {
+    /*
     [TestClass]
     public class PruebasMoqDocente
     {
-        /*
         [TestMethod]
         //---------------------------- test eliminar-----------------------
         public void EliminarDocenteExisteValido()
@@ -207,8 +207,6 @@ namespace PruebasFormulario
             //int actual = D.Object.SearchDocente(edoc);
             //Assert.AreEqual(actual, Expected);
         }
-        */
-
-
-    }
+        
+    }*/
 }
