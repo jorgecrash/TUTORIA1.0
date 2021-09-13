@@ -30,7 +30,7 @@ namespace CapaPresentacion
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
-           
+            
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
         {
@@ -290,6 +290,11 @@ namespace CapaPresentacion
         private void Wrapper_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnEstudiantes_Load(object sender, EventArgs e)
+        {
+            
         }
 
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR

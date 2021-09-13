@@ -109,7 +109,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.IconZoom = 70D;
             this.btnEstudiantes.IsTab = false;
             this.btnEstudiantes.Location = new System.Drawing.Point(17, 31);
-            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Normalcolor = System.Drawing.Color.Maroon;
             this.btnEstudiantes.OnHovercolor = System.Drawing.Color.Maroon;
@@ -121,6 +121,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstudiantes.Textcolor = System.Drawing.Color.White;
             this.btnEstudiantes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiantes.Load += new System.EventHandler(this.btnEstudiantes_Load);
             this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // gunaElipse3
@@ -150,7 +151,7 @@ namespace CapaPresentacion
             this.btnDocentes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDocentes.IsTab = false;
             this.btnDocentes.Location = new System.Drawing.Point(17, 105);
-            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5);
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Normalcolor = System.Drawing.Color.Maroon;
             this.btnDocentes.OnHovercolor = System.Drawing.Color.Maroon;
@@ -190,7 +191,7 @@ namespace CapaPresentacion
             this.btnTutoria.IconZoom = 70D;
             this.btnTutoria.IsTab = false;
             this.btnTutoria.Location = new System.Drawing.Point(17, 177);
-            this.btnTutoria.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnTutoria.Margin = new System.Windows.Forms.Padding(5);
             this.btnTutoria.Name = "btnTutoria";
             this.btnTutoria.Normalcolor = System.Drawing.Color.Maroon;
             this.btnTutoria.OnHovercolor = System.Drawing.Color.Maroon;
@@ -230,7 +231,7 @@ namespace CapaPresentacion
             this.btnTutorados.IconZoom = 70D;
             this.btnTutorados.IsTab = false;
             this.btnTutorados.Location = new System.Drawing.Point(17, 251);
-            this.btnTutorados.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnTutorados.Margin = new System.Windows.Forms.Padding(5);
             this.btnTutorados.Name = "btnTutorados";
             this.btnTutorados.Normalcolor = System.Drawing.Color.Maroon;
             this.btnTutorados.OnHovercolor = System.Drawing.Color.Maroon;
@@ -270,7 +271,7 @@ namespace CapaPresentacion
             this.btnFicha.IconZoom = 68D;
             this.btnFicha.IsTab = false;
             this.btnFicha.Location = new System.Drawing.Point(17, 327);
-            this.btnFicha.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnFicha.Margin = new System.Windows.Forms.Padding(5);
             this.btnFicha.Name = "btnFicha";
             this.btnFicha.Normalcolor = System.Drawing.Color.Maroon;
             this.btnFicha.OnHovercolor = System.Drawing.Color.Maroon;
@@ -298,7 +299,7 @@ namespace CapaPresentacion
             this.panel_botones.Controls.Add(this.btnDocentes);
             this.panel_botones.Controls.Add(this.btnTutoria);
             this.panel_botones.Location = new System.Drawing.Point(16, 284);
-            this.panel_botones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_botones.Margin = new System.Windows.Forms.Padding(4);
             this.panel_botones.Name = "panel_botones";
             this.panel_botones.Size = new System.Drawing.Size(296, 415);
             this.panel_botones.TabIndex = 0;
@@ -326,7 +327,7 @@ namespace CapaPresentacion
             this.Sidebar.Controls.Add(this.shapeContainer1);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(325, 738);
             this.Sidebar.TabIndex = 2;
@@ -337,7 +338,7 @@ namespace CapaPresentacion
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 711);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(325, 27);
             this.panel4.TabIndex = 1;
@@ -347,7 +348,7 @@ namespace CapaPresentacion
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(325, 31);
             this.panel3.TabIndex = 2;
@@ -380,7 +381,7 @@ namespace CapaPresentacion
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(89, 85);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(145, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -436,7 +437,7 @@ namespace CapaPresentacion
             this.Panel_Principal.Controls.Add(this.Sidebar);
             this.Panel_Principal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Principal.Location = new System.Drawing.Point(0, 0);
-            this.Panel_Principal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel_Principal.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_Principal.Name = "Panel_Principal";
             this.Panel_Principal.Size = new System.Drawing.Size(1467, 738);
             this.Panel_Principal.TabIndex = 4;
@@ -446,7 +447,7 @@ namespace CapaPresentacion
             this.Wrapper.BackColor = System.Drawing.SystemColors.Control;
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(325, 31);
-            this.Wrapper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Wrapper.Margin = new System.Windows.Forms.Padding(4);
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(1142, 680);
             this.Wrapper.TabIndex = 5;
@@ -458,7 +459,7 @@ namespace CapaPresentacion
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(325, 711);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1142, 27);
             this.panel2.TabIndex = 4;
@@ -468,7 +469,7 @@ namespace CapaPresentacion
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.logo__3__sin_fondo;
             this.pictureBox3.Location = new System.Drawing.Point(857, -140);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(389, 226);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -485,7 +486,7 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(325, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1142, 31);
             this.panel1.TabIndex = 3;
@@ -498,7 +499,7 @@ namespace CapaPresentacion
             this.btnNormal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNormal.Image = global::CapaPresentacion.Properties.Resources.maximize_sin_bordes;
             this.btnNormal.Location = new System.Drawing.Point(1074, 6);
-            this.btnNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNormal.Margin = new System.Windows.Forms.Padding(4);
             this.btnNormal.Name = "btnNormal";
             this.btnNormal.Size = new System.Drawing.Size(23, 25);
             this.btnNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -513,7 +514,7 @@ namespace CapaPresentacion
             this.btnMaximized.BackColor = System.Drawing.Color.Transparent;
             this.btnMaximized.Image = global::CapaPresentacion.Properties.Resources.maximize_sin_bordes;
             this.btnMaximized.Location = new System.Drawing.Point(1074, 6);
-            this.btnMaximized.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMaximized.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximized.Name = "btnMaximized";
             this.btnMaximized.Size = new System.Drawing.Size(23, 25);
             this.btnMaximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -528,7 +529,7 @@ namespace CapaPresentacion
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::CapaPresentacion.Properties.Resources.minimize_sin_bordes;
             this.btnMinimizar.Location = new System.Drawing.Point(1044, 6);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(23, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -542,7 +543,7 @@ namespace CapaPresentacion
             this.Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Salir.Image = global::CapaPresentacion.Properties.Resources.cerrar;
             this.Salir.Location = new System.Drawing.Point(1105, 6);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(23, 25);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -558,7 +559,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.Panel_Principal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.Opacity = 0.97D;
