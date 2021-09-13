@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\.circleci",
-    "\\CapaPresentacion"
+    "\\CapaPresentacion",
+    "\\Tutorias001",
+    "\\Tutorias001\\PruebasFormulario"
   ],
-  "SelectedNode": "\\CapaPresentacion\\FrmMantFicha.Designer.cs",
+  "SelectedNode": "\\Tutorias001\\PruebasFormulario\\PruebasMoqDocente.cs",
   "PreviewInSolutionExplorer": false
 }
