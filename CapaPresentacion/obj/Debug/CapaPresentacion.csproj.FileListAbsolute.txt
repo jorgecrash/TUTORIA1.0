@@ -411,3 +411,4 @@ D:\TutoriaFinal(OJO)\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.cspr
 D:\TutoriaFinal(OJO)\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\TutoriaFinal(OJO)\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 D:\TutoriaFinal(OJO)\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmBuscarEstudianteTutoria.resources
+C:\Users\angel\OneDrive\Documents\desarrollo de software\TUTORIA1.0\CapaPresentacion\obj\Debug\CapaPresentacion.FrmBuscarEstudianteTutoria.resources
