@@ -46,7 +46,6 @@
       <HintPath>..\..\..\..\..\Downloads\Guna-Framework-master\Guna-Framework-master\Guna Framework\Guna Framework\bin\Debug\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -61,13 +60,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlertasForms.cs" />
-    <Compile Include="AlertaVacioTxtBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="AlertaVacioTxtBox.Designer.cs">
-      <DependentUpon>AlertaVacioTxtBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmDocente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,12 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo %282%29_sin fondo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo %283%29_sin fondo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

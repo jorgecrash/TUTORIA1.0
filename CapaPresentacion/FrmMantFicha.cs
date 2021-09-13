@@ -27,7 +27,7 @@ namespace CapaPresentacion
         }
         private void FrmMantFicha_Load(object sender, EventArgs e)
         {
-
+           // textIdEstudiante.Text = cGuardarDatos.IdEstudiante;
         }
         public string Encriptar(string _cadenaAencriptar)
         {
@@ -92,6 +92,19 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show("No se pudo editar la categoria" + ex);
                 }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmBuscarEstudianteTutoria Es = new FrmBuscarEstudianteTutoria();
+           // Es.indice=log
+           DialogResult R= Es.ShowDialog();
+            
+            if(R==DialogResult.OK)
+            {
+                textIdEstudiante.Text = cGuardarDatos.IdEstudiante;
+                textIdTutoria.Text = cGuardarDatos.IdTutoria;
             }
         }
     }
