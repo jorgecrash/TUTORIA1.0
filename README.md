@@ -49,8 +49,7 @@ FUNCIONES:
  -Datos Estudiantes
  ![image](https://user-images.githubusercontent.com/72510761/133948036-cbe8fc79-6c3d-4e4f-97df-c1f795c38137.png)
 
- *FICHA TUTORIA
- -Sesiones Turoria
+ *FICHA TUTORIA -Sesiones Turoria
  ![image](https://user-images.githubusercontent.com/72510761/133948048-7da41a6a-3ed4-412d-9fae-dcb2ffb99c81.png)
 
  -Buscar tutor
