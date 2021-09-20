@@ -19,6 +19,8 @@ Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de c
 
 FUNCIONES:
 
+*MAIN
+ -Estudiantes,Profesores,Tutoria,Tutorandos
 *DOCENTE
  -Agregar
  -Eliminar
@@ -32,6 +34,19 @@ FUNCIONES:
  -Editar
  
 *FICHA TUTORA
- -tudiantesEs Datosa
+ -Datos Estudiantes
+ -Sesiones Turoria
+ -Buscar tutor
+ -Buscar Estudiante
+ -Asignar horario Turoria
+ -Registro Estudiante a tutoria
+ -Agregar Tutoria
+ -Historial Estudiantes Tutoria
+ ![image](https://user-images.githubusercontent.com/72510761/133947808-763ea022-f287-472d-b8c3-1fbab5624b5d.png)
+
+ 
+ *LOGIN
+ -ID
+ -Contraseña
  
 
