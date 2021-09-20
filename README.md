@@ -23,6 +23,10 @@ FUNCIONES:
  -Estudiantes,Profesores,Tutoria,Tutorandos
 *DOCENTE
  -Agregar
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/133947890-4ac06b43-5c46-4e01-aba6-5afde5423883.png)
+
+
  -Eliminar
  -Buscar
  -Editar
