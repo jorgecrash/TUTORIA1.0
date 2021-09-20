@@ -31,8 +31,7 @@ FUNCIONES:
  -Bsucar
  -Editar
  
-*FICHA TUTORIA
- -
-*
+*FICHA TUTORA
+ -tudiantesEs Datosa
  
 
