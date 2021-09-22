@@ -19,6 +19,10 @@ Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de c
 
 FUNCIONES:
 
+*pantalla de carga
+
+![image](https://user-images.githubusercontent.com/72510761/134270280-8f861799-6c76-472c-b913-72087230ff47.png)
+
 *LOGIN
  -ID
  -Contraseña
