@@ -17,9 +17,9 @@
 Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de cada INTERFAZ
 
 
-FUNCIONES:
+FUNCIONES DE DIRECTOR
 
-*pantalla de carga
+*PANTALLA DE CARGA
 
 ![image](https://user-images.githubusercontent.com/72510761/134270280-8f861799-6c76-472c-b913-72087230ff47.png)
 
@@ -114,8 +114,40 @@ FUNCIONES:
  
  
 
+ FUNCIONES DE DOCENTE CONTRATADO
  
+ *MAIN
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134270938-c753eb9b-d34f-4af7-93b4-fd536e2d4b71.png)
 
+*FICHA TUTORIA
+
+ -Buscar Estudiante de tutoria
+ 
+![image](https://user-images.githubusercontent.com/72510761/134270996-3af7bf62-c054-4704-b946-58e04d5f85d5.png)
+
+ -Eliminar EStudiante de tutoria
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134271236-4595edef-58f2-45fd-b0f4-f8d5bb4aab85.png)
+
+ -Agregar Estudiante a Tutoria
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134271292-b8b731c0-730c-4607-863d-edda426eaf72.png)
+
+ -EDitar estudiante de tutoria
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134271328-d2a188fb-56fd-4e56-99c2-f58c20b7ff17.png)
+
+
+FUNCIONES DE DOCENTE NOMBRADO
+ 
+ *MAIN
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134271487-c3acf715-840a-4a86-949a-c55ce6ab793f.png)
+
+ *FICHA TUTORIA
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134271544-5ac43dda-3d00-477b-99c0-0869fa6ead7f.png)
 
  
  
