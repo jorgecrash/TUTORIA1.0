@@ -10,7 +10,6 @@
 * Jara Hillpa Luis Abelardo					        160544                         *
 * Rodríguez ojeda, Jorge Víctor				      171069                         *
 * Salas Ccolqque, Willian					          174450                         *
-* Yuca Lima Karla Urbelinda 					      182941                         *
 * Yañez Tuero, Jose Angel					          171573                         *
 ****************************************************************************
 Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de cada INTERFAZ
