@@ -19,75 +19,104 @@ Aqui se encuentra un proyecto de SISTEMA DE TUTORIAS  con pruebas UNITARIAS de c
 
 FUNCIONES:
 
+*LOGIN
+ -ID
+ -Contraseña
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134268813-aab404af-c004-47ec-97fa-3d3af6cb6710.png)
+
+
 *MAIN
  -Estudiantes,Profesores,Tutoria,Tutorandos
  
- ![image](https://user-images.githubusercontent.com/72510761/133947982-b3c6536c-d85b-4456-ba44-15a335f73d8b.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134268880-63c2c7c7-2e6b-4e9e-88aa-5c414e2b64c6.png)
+
 
 
 *DOCENTE
  -Agregar
  
- ![image](https://user-images.githubusercontent.com/72510761/133948005-1dd73045-08c5-4bd8-8ae8-f68c1de3ec01.png)
-
+ ![image](https://user-images.githubusercontent.com/72510761/134269074-3b518055-38c0-42ed-a93d-530fe603bdae.png)
 
 
  -Eliminar
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134269136-e7306ef4-b7d3-4401-957f-d5ce7df51ae7.png)
+
  -Buscar
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134269245-ef81024f-bfdd-400a-890b-1e07b73b0985.png)
+ 
  -Editar
  
+ ![image](https://user-images.githubusercontent.com/72510761/134269175-88db852d-2c0d-4aa2-9b84-c12f503004a6.png)
+
 *ALUMNO
  -Agregar
  
- ![image](https://user-images.githubusercontent.com/72510761/133948022-b001a704-0abf-4ed1-96a2-50e85a7405a8.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134269289-53a518bc-be44-47ca-8f6f-1097ac9afb8d.png)
 
  -Eliminar
- -Bsucar
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134269333-b9896a3c-75c1-4c9b-b721-f0f5339f54fb.png)
+
+ -Buscar
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134269384-59f9c302-55df-4909-bbcc-2255399f9deb.png)
+
  -Editar
  
+ ![image](https://user-images.githubusercontent.com/72510761/134269420-6d5a9da3-dda1-4565-9efd-d0027d841802.png)
+
 *FICHA TUTORA
  -Datos Estudiantes
  
- ![image](https://user-images.githubusercontent.com/72510761/133948036-cbe8fc79-6c3d-4e4f-97df-c1f795c38137.png)
+![image](https://user-images.githubusercontent.com/72510761/134269540-a41c1b4f-71b8-4943-a8d2-4562687db12c.png)
 
- *FICHA TUTORIA -Sesiones Turoria
+-Sesiones Turoria
  
- ![image](https://user-images.githubusercontent.com/72510761/133948048-7da41a6a-3ed4-412d-9fae-dcb2ffb99c81.png)
+![image](https://user-images.githubusercontent.com/72510761/134269585-339790e6-1e40-45fe-bfb4-ec224e9a9d29.png)
 
  -Buscar tutor
  
- ![image](https://user-images.githubusercontent.com/72510761/133948056-5bd4dc4d-543d-4378-891e-5f1804b2a056.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134269643-ca476b0b-0007-4685-9125-10c88903b0b3.png)
 
- -Buscar Estudiante
+ -Eliminar Tutor
  
- ![image](https://user-images.githubusercontent.com/72510761/133948061-507e32d8-a916-46d4-bce6-fbfabc9a2a8f.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134269754-ee55384e-c88e-4666-8dda-417d0cbf5382.png)
 
- -Asignar horario Turoria
+ -Editar Tutor
  
- ![image](https://user-images.githubusercontent.com/72510761/133948064-18284055-5ffa-45f0-bd97-fb5afee3b9ba.png)
-
- -Registro Estudiante a tutoria
- 
- ![image](https://user-images.githubusercontent.com/72510761/133948084-2c981dce-6f84-4c25-8869-751b35da4ebd.png)
-
- -Agregar Tutoria
- 
- ![image](https://user-images.githubusercontent.com/72510761/133948090-a5e56914-871b-446d-9ac4-73b754667d9c.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134269805-e065e692-e746-44dd-875e-e0cea41ac35c.png)
 
  
- ![image](https://user-images.githubusercontent.com/72510761/133947965-5657d171-cedd-4ef7-bbc7-0ef91aaf1dcf.png)
+ -Buscar Estudiante Tutorado
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134269847-185bc3e2-687c-4115-a579-6670f9850285.png)
 
 
- -Historial Estudiantes Tutoria
+ -REgistrar Estudiate a Tutoria
  
- ![image](https://user-images.githubusercontent.com/72510761/133947808-763ea022-f287-472d-b8c3-1fbab5624b5d.png)
+ ![image](https://user-images.githubusercontent.com/72510761/134269929-db44e01f-d7cf-4527-9f91-70c8fa5bfbc5.png)
+
+ -Eliminar Estudiante de Tutoria
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134270005-07e7fd46-e8ac-41ed-a3ef-cdfb31275ff7.png)
+
+ -Editar Estudiante  de Tutoria
+ 
+ ![image](https://user-images.githubusercontent.com/72510761/134270054-78b5e51f-07ed-413f-9581-f34107cd5de6.png)
 
  
- *LOGIN
- -ID
- -Contraseña
  
- ![image](https://user-images.githubusercontent.com/72510761/133948092-37266a8c-1e1b-48b3-b1bd-83775e26e7d1.png)
+
+ 
+
+
+ 
+ 
+ 
+ 
 
  
 
