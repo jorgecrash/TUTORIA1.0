@@ -12,7 +12,7 @@ CREATE DATABASE Tutorias
 GO
 USE Tutorias
 GO
--- Docente
+-- ************************************************TABLA DOCENTE************************************************************
 create table Docente(
 	IdDocente varchar(10),
 	Nombres varchar(30),
@@ -82,6 +82,7 @@ from Docente
 order by IdDocente asc
 go
 
+-- *************************************************TABLA ESTUDIANTE****************************************************
 create table Estudiante(
 	IdEstudiante varchar(10),
 	Nombres varchar(100),
@@ -141,29 +142,21 @@ select IdEstudiante ,Nombres,Apellidos,SemestreActivo,EscuelaProfesional,codigoE
 from Estudiante
 where Nombres like @BUSCAR + '%' or Apellidos like @BUSCAR + '%' or codigoEP like @BUSCAR + '%' or AIngreso like @BUSCAR + '%' or EscuelaProfesional like @BUSCAR + '%'
 go
--- Login
+--
+--*************************************************TABLA LOGINS***********************************************************
+
 create table Logins(
 	Usuario varchar(40) not null,
-	Contrase�a varchar(40) not null,
-	CategoriaLogin varchar (40)
+	Contraseña varchar(40) not null,
+	CategoriaLogin varchar (40),
+	IdDocente varchar(10) ,
+	primary key(IdDocente),
+	FOREIGN KEY (IdDocente) REFERENCES Docente(IdDocente) ON DELETE CASCADE ON UPDATE CASCADE
 );
 go
 
-insert into Logins values ('Cata','cata','Contratado')
-insert into Logins values ('Elvis','1234','Estudiante')
-insert into Logins values ('edwin','edwin','Nombrado')
-insert into Logins values ('emilio','emilio','Nombrado')
-insert into Logins values ('guzman','guzman','Nombrado')
-insert into Logins values ('medrano','medrano','Nombrado')
-insert into Logins values ('arturo','arturo','Nombrado')
-insert into Logins values ('carbajal','carbajal','Nombrado')
-insert into Logins values ('lauro','lauro','Nombrado')
---
+--*************************************************TABLA TUTORIA***********************************************************
 go
-
---=================================================================================================================
--- TABLA TUTORIA
-
 create table Tutoria(
 	IdTutoria varchar(10) ,
 	IdDocente varchar(10),
@@ -175,13 +168,14 @@ go
 
 --------------------------------------------
 ----Stored Procedures for search Tutoria
+
 CREATE PROC SP_BUSCARTUTORIA
 @BUSCAR varchar(30)
 as
 select IdTutoria, T.IdDocente, Nombres, Apellidos, Horario
 from Tutoria T inner join Docente D 
 ON T.IdDocente = D.IdDocente
-where Nombres like @BUSCAR + '%' or Apellidos like @BUSCAR + '%' or  Horario like @BUSCAR 
+where Nombres like @BUSCAR + '%' or Apellidos like @BUSCAR + '%' or  Horario like @BUSCAR +'%'or  IdTutoria like @BUSCAR +'%' or  T.IdDocente like @BUSCAR +'%'
 
 select top 100 IdTutoria, T.IdDocente, Nombres, Apellidos, Horario
 from Tutoria T inner join Docente D 
@@ -224,8 +218,8 @@ ON T.IdDocente = D.IdDocente
 order by IdTutoria asc
 go
 
---=================================================================================================================
--- TABLA Registro
+
+--*************************************************TABLA REGISTRO***********************************************************
 
 create table Registro(
 	IdTutoria varchar(10),
@@ -236,14 +230,17 @@ create table Registro(
 );
 go
 ---PROCEDIMIENTO ALMACENADO BUSCARTUTORADO
+
 CREATE PROC SP_BUSCARTUTORADO
 @BUSCAR varchar(50)
 as
-select IdTutoria, R.IdEstudiante, Nombres, Apellidos, 
-	SemestreActivo, AIngreso, EscuelaProfesional, CodigoEP
+select top 100 R.IdTutoria,D.Nombres, R.IdEstudiante, E.Nombres, E.Apellidos, 
+	SemestreActivo, AIngreso, E.EscuelaProfesional, CodigoEP
 	from Registro R inner join Estudiante E 
-	ON R.IdEstudiante = E.IdEstudiante
-where	E.IdEstudiante like @BUSCAR + '%'
+	ON R.IdEstudiante = E.IdEstudiante inner join Tutoria T on R.IdTutoria=T.IdTutoria
+	inner join Docente D on T.IdDocente= D.IdDocente
+	where E.Nombres like @BUSCAR + '%' or E.Apellidos like @BUSCAR + '%' or D.Nombres like @BUSCAR + '%'
+	order by R.IdTutoria asc
 go
 ---PROCEDIMIENTO ALMACENADO INSERTAR TUTORADO
 create proc SP_INSERTARTUTORADO
@@ -269,7 +266,7 @@ as
 delete Registro
 Where IdEstudiante=@IDESTUDIANTE
 go
---select * from Estudiante
+
 
 ----Listing Student
 create proc SP_LISTARTUTORADO
@@ -282,10 +279,7 @@ select top 100 R.IdTutoria,D.Nombres, R.IdEstudiante, E.Nombres, E.Apellidos,
 	order by R.IdTutoria asc
 go
 
---- Search students
-
---=================================================================================================================
--- TABLA RegistroFicha
+-- --*************************************************TABLA REGISTROFICHA***********************************************************
 
 create table RegistroFicha(
 	IdFichaTutoria varchar(10),
@@ -305,16 +299,19 @@ create table RegistroFicha(
 go
 --------------------------------------------
 ---PROCEDIMIENTO ALMACENADO BUSCARFICHA
+
 CREATE PROC SP_BUSCARFICHA
 @BUSCAR varchar(20)
 as
-select IdFichaTutoria, IdTutoria, R.IdEstudiante, Nombres, Apellidos, NroCelular, Direccion, 
+select T.IdTutoria, R.IdEstudiante, E.Nombres, E.Apellidos, NroCelular, Direccion, 
 	Email, PersonaReferencia, CelularReferencia, Fecha, TipoTutoria, Descripcion
 	from RegistroFicha R INNER JOIN Estudiante E
-	ON R.IdEstudiante = E.IdEstudiante
-	where Nombres like @BUSCAR + '%'
+	ON R.IdEstudiante = E.IdEstudiante inner join Tutoria T on R.IdTutoria=T.IdTutoria
+	inner join Docente D on T.IdDocente= D.IdDocente inner join Logins L on D.IdDocente=L.IdDocente
+	where E.Nombres like @BUSCAR + '%' or E.Apellidos like @BUSCAR + '%'
+	order by IdFichaTutoria asc
 go
----PROCEDIMIENTO ALMACENADO INSERTAR ESTUDIANTE
+---PROCEDIMIENTO ALMACENADO INSERTAR FICHA
 create proc SP_INSERTARFICHA
 @IDFICHATUTORIA varchar(10),
 @IDTUTORIA varchar(10),
@@ -332,7 +329,7 @@ insert into RegistroFicha values (@IDFICHATUTORIA ,@IDTUTORIA, @IDESTUDIANTE, @N
 									@PERSONAREFERENCIA, @CELULARREFERENCIA, @FECHA, @TIPOTUTORIA, @DESCRIPCION)
 
 go
----PROCEDIMIENTO ALMACENADO EDITARESTUDIANTE
+---PROCEDIMIENTO ALMACENADO EDITAR FICHA
 
 create proc SP_EDITARFICHA
 @IDFICHATUTORIA varchar(10),
@@ -360,19 +357,21 @@ delete RegistroFicha
 Where IdFichaTutoria = @IDFICHATUTORIA
 go
 ---Listar ficha
-
+--drop proc SP_LISTARFICHA
+go
 create proc SP_LISTARFICHA
+@USUARIO varchar(40)
 as
-select TOP 100  T.IdTutoria,D.Nombres, R.IdEstudiante, E.Nombres, E.Apellidos, NroCelular, Direccion, 
+select R.IdFichaTutoria,R.IdTutoria, R.IdEstudiante, E.Nombres, E.Apellidos, NroCelular, Direccion, 
 	Email, PersonaReferencia, CelularReferencia, Fecha, TipoTutoria, Descripcion
 	from RegistroFicha R INNER JOIN Estudiante E
 	ON R.IdEstudiante = E.IdEstudiante inner join Tutoria T on R.IdTutoria=T.IdTutoria
-	inner join Docente D on T.IdDocente= D.IdDocente
+	inner join Docente D on T.IdDocente= D.IdDocente inner join Logins L on D.IdDocente=L.IdDocente
+	where L.Usuario=@USUARIO
 	order by IdFichaTutoria asc
 go
 
-
---- Search students
+-- ***************************************PROCEDIMIENTOS ALMACENADOS EXTRAS ***********************************************************
 create proc SP_ListarDocenteTutoria
 as
 select IdDocente,Apellidos,Nombres from Docente
@@ -383,7 +382,7 @@ as
 select IdDocente,Apellidos,Nombres
 	from Docente
 	where Nombres like @BUSCAR + '%'or Apellidos like @BUSCAR + '%'
-go
+
 -- 
 GO
 create proc SP_LISTAREGISTROESTUDIANTETUTORIA
@@ -401,9 +400,7 @@ as
 	select Tu.IdTutoria, D.Apellidos + ' , ' + D.Nombres as Tutor , Tu.Horario
 	from Tutoria Tu inner join Docente D on Tu.IdDocente=D.IdDocente 
 	where D.Apellidos like @BUSCAR + '%' or D.Nombres like @BUSCAR + '%'
-go
---drop proc  SP_BUSCAR_REGISTRO_ESTUDIANTE
---
+
 go
 CREATE PROC SP_BUSCAR_REGISTRO_ESTUDIANTE
 @BUSCAR varchar(20)
@@ -411,6 +408,82 @@ as
 	select IdEstudiante, Apellidos + ' , ' + Nombres AS NOMBRES
 	from Estudiante
 	where Apellidos like @BUSCAR + '%' or  Nombres like @BUSCAR + '%'
+
+GO
+-- procedimiento para buscar estudiante y su tutoria
+CREATE PROC SP_LISTAR_ESTUDIANTE_TUTORIA
+@USUARIO varchar(20)
+as
+select T.IdTutoria, R.IdEstudiante, E.Apellidos, E.Nombres
+	from RegistroFicha R INNER JOIN Estudiante E
+	ON R.IdEstudiante = E.IdEstudiante inner join Tutoria T on R.IdTutoria=T.IdTutoria
+	inner join Docente D on T.IdDocente= D.IdDocente inner join Logins L on D.IdDocente=L.IdDocente
+	where L.Usuario=@USUARIO
+	order by IdFichaTutoria asc
+
+GO
+
+CREATE PROC SP_BUSCAR_ESTUDIANTE_TUTORIA
+@BUSCAR varchar(20),
+@USUARIO varchar(40)	
+as
+select T.IdTutoria, R.IdEstudiante, E.Apellidos, E.Nombres
+	from RegistroFicha R INNER JOIN Estudiante E
+	ON R.IdEstudiante = E.IdEstudiante inner join Tutoria T on R.IdTutoria=T.IdTutoria
+	inner join Docente D on T.IdDocente= D.IdDocente inner join Logins L on D.IdDocente=L.IdDocente
+	where (L.Usuario=@USUARIO) and (E.Apellidos like @BUSCAR + '%' or E.Nombres like @BUSCAR + '%')  
+	order by IdFichaTutoria asc
+select * from Logins
+
+--procedimiento para listar las tutorias de un estudiante 
 go
---crear procedimiento para listar a los alumnos de 1 tutor es especifico
-select * from Estudiante
+CREATE PROC SP_HISTORIAL_ESTUDIANTE_TUTORIA
+@IDESTUDIANTE varchar(10)
+as
+	select TipoTutoria ,Fecha, Descripcion
+		from RegistroFicha
+		where IdEstudiante=@IDESTUDIANTE
+
+
+go
+-- procedimiento para generar codigo
+CREATE FUNCTION NuevoDocente()
+RETURNS varchar(5)
+AS
+BEGIN
+	declare @Codigo varchar(5)
+	
+	set @Codigo=((select MAX(IdDocente)  from Docente))
+	set @Codigo='D' + RIGHT('0000' + LTRIM(right(isnull(@Codigo,'0000'),4)+1 ),4)
+   RETURN (@codigo)
+END
+go
+
+--NUEVO PARA FICHA TUTORIA
+
+CREATE FUNCTION NuevoFichaTutoria()
+RETURNS varchar(10)
+AS
+begin
+	declare @Codigo varchar(6)
+	
+	set @Codigo=((select MAX(IdFichaTutoria)  from RegistroFicha))
+	set @Codigo='RF' + RIGHT('0000' + LTRIM(right(isnull(@Codigo,'0000'),4)+1 ),4)
+    RETURN (@codigo)
+end 
+
+
+go
+CREATE FUNCTION NuevoTutoria()
+RETURNS varchar(10)
+AS
+begin
+	declare @Codigo varchar(6)
+	
+	set @Codigo=((select MAX(IdTutoria)  from Tutoria))
+	set @Codigo='TU' + RIGHT('0000' + LTRIM(right(isnull(@Codigo,'0000'),4)+1 ),4)
+    RETURN (@codigo)
+end 
+go
+
+select * from Docente
